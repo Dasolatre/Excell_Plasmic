@@ -164,22 +164,6 @@ function PlasmicLearn__RenderFunc(props) {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__x3Er5)}
                   >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___5Z8Ja)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "223px"
-                          : "317px"
-                      }
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"16px"}
-                      loading={"lazy"}
-                    />
-
                     <h1
                       className={classNames(
                         projectcss.all,
@@ -233,24 +217,7 @@ function PlasmicLearn__RenderFunc(props) {
                   component={Link}
                   href={"#"}
                   platform={"nextjs"}
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__yPpu9)}
-                    displayHeight={"40px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"298px"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    src={{
-                      src: "/plasmic/excell_website_final/images/layer2.svg",
-                      fullWidth: 220.00169372558594,
-                      fullHeight: 80.00094604492188,
-                      aspectRatio: 2.75
-                    }}
-                  />
-                </PlasmicLink__>
+                />
               }
               className={classNames("__wab_instance", sty.navigationBar)}
               closeButton={
