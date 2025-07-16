@@ -1359,7 +1359,18 @@ function PlasmicGetSolar__RenderFunc(props) {
                               { value: null, label: null, type: "option" },
                               { value: null, label: null, type: "option" },
                               { type: "option", value: null, label: null },
-                              { type: "option", value: null }
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null },
+                              { type: "option", value: null, label: null }
                             ];
 
                             __composite["0"]["value"] = "Residential";
@@ -1373,6 +1384,37 @@ function PlasmicGetSolar__RenderFunc(props) {
                             __composite["3"]["label"] =
                               "Agriculture, Hunting, and Forestry";
                             __composite["4"]["value"] = "Construction";
+                            __composite["4"]["label"] = "Construction";
+                            __composite["5"]["value"] = "Finance";
+                            __composite["5"]["label"] = "Finance";
+                            __composite["6"]["value"] = "Fishing";
+                            __composite["6"]["label"] = "Fishing";
+                            __composite["7"]["value"] =
+                              "Health and Social Work";
+                            __composite["7"]["label"] =
+                              "Health and Social Work";
+                            __composite["8"]["value"] = "Mining and Quarrying";
+                            __composite["8"]["label"] = "Mining and Quarrying";
+                            __composite["9"]["value"] = "Manufacturing";
+                            __composite["9"]["label"] = "Manufacturing";
+                            __composite["10"]["value"] = "Private Education";
+                            __composite["10"]["label"] = "Private Education";
+                            __composite["11"]["value"] =
+                              "Real Estate, Renting, and Business Service";
+                            __composite["11"]["label"] =
+                              "Real Estate, Renting, and Business Service";
+                            __composite["12"]["value"] =
+                              "Transport, Storage, and Communication";
+                            __composite["12"]["label"] =
+                              "Transport, Storage, and Communication";
+                            __composite["13"]["value"] = "Utilities";
+                            __composite["13"]["label"] = "Utilities";
+                            __composite["14"]["value"] =
+                              "Wholesale & Retail Trade";
+                            __composite["14"]["label"] =
+                              "Wholesale & Retail Trade";
+                            __composite["15"]["value"] = "Others";
+                            __composite["15"]["label"] = "Others";
                             return __composite;
                           })()}
                           placeholder={"Select..."}
