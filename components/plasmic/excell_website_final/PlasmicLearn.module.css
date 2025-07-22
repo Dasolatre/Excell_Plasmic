@@ -28,6 +28,7 @@
   }
 }
 .landingPage {
+  display: flex;
   flex-direction: column;
   position: relative;
   width: 100%;
@@ -38,7 +39,6 @@
   background: url("/plasmic/excell_website_final/images/contactUsBackground.png") top 50% left 50% / cover repeat;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
-  display: none;
   padding: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {

@@ -84,12 +84,6 @@ function PlasmicLearn__RenderFunc(props) {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "variable",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
-      {
         path: "faQsTab.activeKey",
         type: "private",
         variableType: "text",
@@ -143,7 +137,6 @@ function PlasmicLearn__RenderFunc(props) {
             plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.learnPage
           )}
-          id={``}
         >
           <div
             data-plasmic-name={"landingPage"}
