@@ -17,7 +17,6 @@ import {
   deriveRenderOpts,
   hasVariant,
   renderPlasmicSlot,
-  useCurrentUser,
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
@@ -65,7 +64,6 @@ function PlasmicLabel__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {

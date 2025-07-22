@@ -14,8 +14,7 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  renderPlasmicSlot,
-  useCurrentUser
+  renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { BaseText } from "@plasmicpkgs/react-aria/skinny/registerText";
@@ -59,7 +58,6 @@ function PlasmicDescription__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   return (
     <BaseText
       data-plasmic-name={"root"}

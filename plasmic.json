@@ -1199,7 +1199,7 @@
           "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
           "renderModuleFilePath": "plasmic/excell_website_final/PlasmicLearn.jsx",
           "importSpec": {
-            "modulePath": "../pages/learn.jsx"
+            "modulePath": "../pages/new-page-2.jsx"
           },
           "cssFilePath": "plasmic/excell_website_final/PlasmicLearn.module.css",
           "scheme": "blackbox",

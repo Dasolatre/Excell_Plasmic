@@ -14,8 +14,7 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  renderPlasmicSlot,
-  useCurrentUser
+  renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { BaseSection } from "@plasmicpkgs/react-aria/skinny/registerSection";
@@ -60,7 +59,6 @@ function PlasmicMenuSection__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   return (
     <BaseSection
       data-plasmic-name={"root"}
