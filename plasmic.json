@@ -1246,6 +1246,20 @@
           "cssFilePath": "plasmic/excell_website_final/PlasmicModal.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "_vzfz8sK38yQ",
+          "name": "Test",
+          "type": "managed",
+          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
+          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicTest.jsx",
+          "importSpec": {
+            "modulePath": "../pages/test.jsx"
+          },
+          "cssFilePath": "plasmic/excell_website_final/PlasmicTest.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/test"
         }
       ],
       "icons": [
