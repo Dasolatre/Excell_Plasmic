@@ -13,7 +13,6 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import {
-  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
   PlasmicImg as PlasmicImg__,
   PlasmicLink as PlasmicLink__,
   Stack as Stack__,
@@ -22,12 +21,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants,
   hasVariant,
-  useCurrentUser,
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import * as plasmicAuth from "@plasmicapp/react-web/lib/auth";
-import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import { useScreenVariants as useScreenVariants_3Kid9VNeHn18 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3kid9VNeHn18/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -79,7 +75,6 @@ function PlasmicContactUs__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -1182,31 +1177,9 @@ function makeNodeComponent(nodeName) {
   return func;
 }
 
-function withUsePlasmicAuth(WrappedComponent) {
-  const WithUsePlasmicAuthComponent = props => {
-    const dataSourceCtx = usePlasmicDataSourceContext() ?? {};
-    const { isUserLoading, user, token } = plasmicAuth.usePlasmicAuth({
-      appId: "dFCW3EJJak7e5FJ1Eb9ZNV"
-    });
-    return (
-      <PlasmicDataSourceContextProvider__
-        value={{
-          ...dataSourceCtx,
-          isUserLoading,
-          userAuthToken: token,
-          user
-        }}
-      >
-        <WrappedComponent {...props} />
-      </PlasmicDataSourceContextProvider__>
-    );
-  };
-  return WithUsePlasmicAuthComponent;
-}
-
 export const PlasmicContactUs = Object.assign(
   // Top-level PlasmicContactUs renders the root element
-  withUsePlasmicAuth(makeNodeComponent("contactUsPage")),
+  makeNodeComponent("contactUsPage"),
   {
     // Helper components rendering sub-elements
     landingPage: makeNodeComponent("landingPage"),

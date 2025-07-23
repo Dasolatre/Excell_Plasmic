@@ -14,8 +14,7 @@ import {
   Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  useCurrentUser
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { BaseListBoxItem } from "@plasmicpkgs/react-aria/skinny/registerListBoxItem";
@@ -68,7 +67,6 @@ function PlasmicMenuItem__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const [$ccVariants, setDollarCcVariants] = React.useState({
     hovered: false,
     pressed: false,
