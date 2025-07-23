@@ -123,13 +123,14 @@ function PlasmicLearn__RenderFunc(props) {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <div
+        <PlasmicLink__
           data-plasmic-name={"learnPage"}
           data-plasmic-override={overrides.learnPage}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           className={classNames(
             projectcss.all,
+            projectcss.a,
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
@@ -137,6 +138,8 @@ function PlasmicLearn__RenderFunc(props) {
             plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.learnPage
           )}
+          component={Link}
+          platform={"nextjs"}
         >
           <div
             data-plasmic-name={"landingPage"}
@@ -1003,7 +1006,7 @@ function PlasmicLearn__RenderFunc(props) {
               </div>
             </div>
           </footer>
-        </div>
+        </PlasmicLink__>
       </div>
     </React.Fragment>
   );
