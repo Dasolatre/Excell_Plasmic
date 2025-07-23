@@ -120,7 +120,6 @@
 }
 .navigationBar:global(.__wab_instance) {
   width: 100%;
-  display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
@@ -138,6 +137,7 @@
   z-index: 999;
   position: absolute;
   min-width: 0;
+  display: none;
   padding: 24px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -152,6 +152,7 @@
     color: var(--token-PC6O9-hPHdvT);
     padding-bottom: 24px;
     padding-top: 16px;
+    display: flex;
     margin: 0px;
   }
 }
