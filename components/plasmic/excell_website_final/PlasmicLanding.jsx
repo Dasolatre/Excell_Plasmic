@@ -13,6 +13,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import {
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
   PlasmicImg as PlasmicImg__,
   PlasmicLink as PlasmicLink__,
   Stack as Stack__,
@@ -25,9 +26,12 @@ import {
   generateStateValueProp,
   hasVariant,
   initializeCodeComponentStates,
+  useCurrentUser,
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import * as plasmicAuth from "@plasmicapp/react-web/lib/auth";
+import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
@@ -83,6 +87,7 @@ function PlasmicLanding__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -1859,9 +1864,31 @@ function makeNodeComponent(nodeName) {
   return func;
 }
 
+function withUsePlasmicAuth(WrappedComponent) {
+  const WithUsePlasmicAuthComponent = props => {
+    const dataSourceCtx = usePlasmicDataSourceContext() ?? {};
+    const { isUserLoading, user, token } = plasmicAuth.usePlasmicAuth({
+      appId: "dFCW3EJJak7e5FJ1Eb9ZNV"
+    });
+    return (
+      <PlasmicDataSourceContextProvider__
+        value={{
+          ...dataSourceCtx,
+          isUserLoading,
+          userAuthToken: token,
+          user
+        }}
+      >
+        <WrappedComponent {...props} />
+      </PlasmicDataSourceContextProvider__>
+    );
+  };
+  return WithUsePlasmicAuthComponent;
+}
+
 export const PlasmicLanding = Object.assign(
   // Top-level PlasmicLanding renders the root element
-  makeNodeComponent("homePage"),
+  withUsePlasmicAuth(makeNodeComponent("homePage")),
   {
     // Helper components rendering sub-elements
     landingPage: makeNodeComponent("landingPage"),
