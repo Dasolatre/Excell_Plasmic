@@ -290,7 +290,26 @@ function PlasmicLanding__RenderFunc(props) {
                     href={`/new-page-2`}
                     platform={"nextjs"}
                   >
-                    {"Learn"}
+                    <React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
+                      {
+                        <PlasmicLink__
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            projectcss.__wab_text,
+                            projectcss.plasmic_default__inline,
+                            sty.link__ptpRf
+                          )}
+                          component={Link}
+                          href={"/new-page-2"}
+                          platform={"nextjs"}
+                        >
+                          {"Learn"}
+                        </PlasmicLink__>
+                      }
+                      <React.Fragment>{""}</React.Fragment>
+                    </React.Fragment>
                   </PlasmicLink__>
                   <PlasmicLink__
                     className={classNames(
