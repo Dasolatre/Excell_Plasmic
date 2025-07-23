@@ -361,7 +361,7 @@ function PlasmicSolutions__RenderFunc(props) {
                       sty.link___8Y1Pb
                     )}
                     component={Link}
-                    href={`/new-page-2`}
+                    href={`/TestPage`}
                     platform={"nextjs"}
                   >
                     {"Learn"}
