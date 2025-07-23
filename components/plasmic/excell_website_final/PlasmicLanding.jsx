@@ -284,10 +284,10 @@ function PlasmicLanding__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link___032Zt
+                      sty.link__fCcB5
                     )}
                     component={Link}
-                    href={`/TestPage`}
+                    href={`/new-page-2`}
                     platform={"nextjs"}
                   >
                     {"Learn"}
