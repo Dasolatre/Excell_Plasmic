@@ -1273,6 +1273,19 @@
           "cssFilePath": "plasmic/excell_website_final/PlasmicButton2.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "x-0MJgWs5WQl",
+          "name": "LearnAccordion",
+          "type": "managed",
+          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
+          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicLearnAccordion.jsx",
+          "importSpec": {
+            "modulePath": "LearnAccordion.jsx"
+          },
+          "cssFilePath": "plasmic/excell_website_final/PlasmicLearnAccordion.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

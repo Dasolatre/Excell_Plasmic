@@ -20,18 +20,11 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
-  generateOnMutateForSpec,
-  generateStateOnChangePropForCodeComponents,
-  generateStateValueProp,
-  hasVariant,
-  initializeCodeComponentStates,
-  useDollarState
+  hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-import { AntdAccordion } from "@plasmicpkgs/antd5/skinny/registerCollapse";
-import { accordionHelpers as AntdAccordion_Helpers } from "@plasmicpkgs/antd5/skinny/registerCollapse";
-import { AntdAccordionItem } from "@plasmicpkgs/antd5/skinny/registerCollapse";
+import LearnAccordion from "../../LearnAccordion"; // plasmic-import: x-0MJgWs5WQl/component
 import { useScreenVariants as useScreenVariants_3Kid9VNeHn18 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3kid9VNeHn18/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -78,28 +71,6 @@ function PlasmicNewPage__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const stateSpecs = React.useMemo(
-    () => [
-      {
-        path: "accordion.activePanelId",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined,
-        onMutate: generateOnMutateForSpec(
-          "activePanelId",
-          AntdAccordion_Helpers
-        )
-      }
-    ],
-
-    [$props, $ctx, $refs]
-  );
-  const $state = useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3Kid9VNeHn18()
   });
@@ -165,11 +136,13 @@ function PlasmicNewPage__RenderFunc(props) {
                     />
 
                     <h1
+                      data-plasmic-name={"h1"}
+                      data-plasmic-override={overrides.h1}
                       className={classNames(
                         projectcss.all,
                         projectcss.h1,
                         projectcss.__wab_text,
-                        sty.h1__ojlps
+                        sty.h1
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly") ? (
@@ -410,175 +383,11 @@ function PlasmicNewPage__RenderFunc(props) {
             className={classNames(projectcss.all, sty.container)}
             id={"reach-out-section"}
           >
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"card"}
-              data-plasmic-override={overrides.card}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.card)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__rCd08)}
-              >
-                <h1
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1___1Ey3Q
-                  )}
-                >
-                  {"About Solar"}
-                </h1>
-                {(() => {
-                  const child$Props = {
-                    activeKey: generateStateValueProp($state, [
-                      "accordion",
-                      "activePanelId"
-                    ]),
-                    bordered: true,
-                    className: classNames("__wab_instance", sty.accordion),
-                    expandIconPosition: "end",
-                    items: (
-                      <React.Fragment>
-                        <AntdAccordionItem
-                          className={classNames(
-                            "__wab_instance",
-                            sty.accordionItem__tRpIj
-                          )}
-                          id={1}
-                          label2={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__s0Nz
-                              )}
-                            >
-                              {"First Item"}
-                            </div>
-                          }
-                          showArrow={true}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__dF9W
-                            )}
-                          >
-                            {"First Children"}
-                          </div>
-                        </AntdAccordionItem>
-                        <AntdAccordionItem
-                          className={classNames(
-                            "__wab_instance",
-                            sty.accordionItem__ihPbD
-                          )}
-                          id={2}
-                          label2={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__z41O
-                              )}
-                            >
-                              {"Second Item"}
-                            </div>
-                          }
-                          showArrow={true}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___93YZh
-                            )}
-                          >
-                            {"Second Children"}
-                          </div>
-                        </AntdAccordionItem>
-                      </React.Fragment>
-                    ),
-
-                    onChange: async (...eventArgs) => {
-                      generateStateOnChangePropForCodeComponents(
-                        $state,
-                        "activePanelId",
-                        ["accordion", "activePanelId"],
-                        AntdAccordion_Helpers
-                      ).apply(null, eventArgs);
-                    },
-                    size: "large"
-                  };
-                  initializeCodeComponentStates(
-                    $state,
-                    [
-                      {
-                        name: "activePanelId",
-                        plasmicStateName: "accordion.activePanelId"
-                      }
-                    ],
-
-                    [],
-                    AntdAccordion_Helpers ?? {},
-                    child$Props
-                  );
-                  return (
-                    <AntdAccordion
-                      data-plasmic-name={"accordion"}
-                      data-plasmic-override={overrides.accordion}
-                      {...child$Props}
-                    />
-                  );
-                })()}
-              </Stack__>
-              <div className={classNames(projectcss.all, sty.freeBox___5GpDg)}>
-                <h1
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1__rIjwd
-                  )}
-                >
-                  {"Got Questions"}
-                </h1>
-                <h1
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1__iZnnP
-                  )}
-                >
-                  {"Send Us Your Inquiries"}
-                </h1>
-                <PlasmicLink__
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__tIsY
-                  )}
-                  component={Link}
-                  href={`/get-solar`}
-                  platform={"nextjs"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ca5Ox
-                    )}
-                  >
-                    {"Go to Get Solar Page"}
-                  </div>
-                </PlasmicLink__>
-              </div>
-            </Stack__>
+            <LearnAccordion
+              data-plasmic-name={"learnAccordion"}
+              data-plasmic-override={overrides.learnAccordion}
+              className={classNames("__wab_instance", sty.learnAccordion)}
+            />
           </Stack__>
           <footer
             data-plasmic-name={"footer"}
@@ -906,13 +715,13 @@ const PlasmicDescendants = {
     "landingPage",
     "container2",
     "heading",
+    "h1",
     "navigationBar",
     "logo3",
     "solution3",
     "logo4",
     "container",
-    "card",
-    "accordion",
+    "learnAccordion",
     "footer",
     "section5",
     "brandLogo3",
@@ -927,21 +736,22 @@ const PlasmicDescendants = {
     "landingPage",
     "container2",
     "heading",
+    "h1",
     "navigationBar",
     "logo3",
     "solution3",
     "logo4"
   ],
 
-  container2: ["container2", "heading"],
-  heading: ["heading"],
+  container2: ["container2", "heading", "h1"],
+  heading: ["heading", "h1"],
+  h1: ["h1"],
   navigationBar: ["navigationBar", "logo3", "solution3", "logo4"],
   logo3: ["logo3"],
   solution3: ["solution3"],
   logo4: ["logo4"],
-  container: ["container", "card", "accordion"],
-  card: ["card", "accordion"],
-  accordion: ["accordion"],
+  container: ["container", "learnAccordion"],
+  learnAccordion: ["learnAccordion"],
   footer: [
     "footer",
     "section5",
@@ -1014,13 +824,13 @@ export const PlasmicNewPage = Object.assign(
     landingPage: makeNodeComponent("landingPage"),
     container2: makeNodeComponent("container2"),
     heading: makeNodeComponent("heading"),
+    h1: makeNodeComponent("h1"),
     navigationBar: makeNodeComponent("navigationBar"),
     logo3: makeNodeComponent("logo3"),
     solution3: makeNodeComponent("solution3"),
     logo4: makeNodeComponent("logo4"),
     container: makeNodeComponent("container"),
-    card: makeNodeComponent("card"),
-    accordion: makeNodeComponent("accordion"),
+    learnAccordion: makeNodeComponent("learnAccordion"),
     footer: makeNodeComponent("footer"),
     section5: makeNodeComponent("section5"),
     brandLogo3: makeNodeComponent("brandLogo3"),

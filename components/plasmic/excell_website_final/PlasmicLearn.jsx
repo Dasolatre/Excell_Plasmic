@@ -20,21 +20,11 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
-  generateOnMutateForSpec,
-  generateStateOnChangeProp,
-  generateStateOnChangePropForCodeComponents,
-  generateStateValueProp,
-  hasVariant,
-  initializeCodeComponentStates,
-  useDollarState
+  hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-import { AntdTabs } from "@plasmicpkgs/antd5/skinny/registerTabs";
-import { AntdTabItem } from "@plasmicpkgs/antd5/skinny/registerTabs";
-import { AntdAccordion } from "@plasmicpkgs/antd5/skinny/registerCollapse";
-import { accordionHelpers as AntdAccordion_Helpers } from "@plasmicpkgs/antd5/skinny/registerCollapse";
-import { AntdAccordionItem } from "@plasmicpkgs/antd5/skinny/registerCollapse";
+import LearnAccordion from "../../LearnAccordion"; // plasmic-import: x-0MJgWs5WQl/component
 import { useScreenVariants as useScreenVariants_3Kid9VNeHn18 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3kid9VNeHn18/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -81,34 +71,6 @@ function PlasmicLearn__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const stateSpecs = React.useMemo(
-    () => [
-      {
-        path: "faQsTab.activeKey",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "1"
-      },
-      {
-        path: "aboutAccordion.activePanelId",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined,
-        onMutate: generateOnMutateForSpec(
-          "activePanelId",
-          AntdAccordion_Helpers
-        )
-      }
-    ],
-
-    [$props, $ctx, $refs]
-  );
-  const $state = useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3Kid9VNeHn18()
   });
@@ -396,215 +358,17 @@ function PlasmicLearn__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.card)}
             >
-              <AntdTabs
-                data-plasmic-name={"faQsTab"}
-                data-plasmic-override={overrides.faQsTab}
-                activeKey={generateStateValueProp($state, [
-                  "faQsTab",
-                  "activeKey"
-                ])}
-                animateTabBar={true}
-                animateTabContent={false}
-                animated={true}
-                className={classNames("__wab_instance", sty.faQsTab)}
-                defaultActiveKey={"1"}
-                items={
-                  <AntdTabItem
-                    data-plasmic-name={"aboutSolar"}
-                    data-plasmic-override={overrides.aboutSolar}
-                    className={classNames("__wab_instance", sty.aboutSolar)}
-                    forceRender={false}
-                    key={"1"}
-                    label={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__r909J
-                        )}
-                      >
-                        {"About Solar"}
-                      </div>
-                    }
-                  >
-                    {(() => {
-                      const child$Props = {
-                        activeKey: generateStateValueProp($state, [
-                          "aboutAccordion",
-                          "activePanelId"
-                        ]),
-                        bordered: true,
-                        className: classNames(
-                          "__wab_instance",
-                          sty.aboutAccordion
-                        ),
-                        expandIconPosition: "end",
-                        forceRender: false,
-                        items: (
-                          <React.Fragment>
-                            <AntdAccordionItem
-                              data-plasmic-name={"_1"}
-                              data-plasmic-override={overrides._1}
-                              className={classNames("__wab_instance", sty._1)}
-                              id={1}
-                              label2={
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__ybQGa
-                                  )}
-                                >
-                                  {"Why go Solar now?"}
-                                </div>
-                              }
-                              showArrow={true}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__kmaK1
-                                )}
-                              >
-                                {
-                                  "It\u2019s abundant, clean, and can drastically lower your bills."
-                                }
-                              </div>
-                            </AntdAccordionItem>
-                            <AntdAccordionItem
-                              data-plasmic-name={"_2"}
-                              data-plasmic-override={overrides._2}
-                              className={classNames("__wab_instance", sty._2)}
-                              id={2}
-                              label2={
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text___7AxjU
-                                  )}
-                                >
-                                  {
-                                    "How does a Solar Photovoltaic (PV) system work?"
-                                  }
-                                </div>
-                              }
-                              showArrow={true}
-                            >
-                              {
-                                "PV cells collect sunlight, converted via inverter into usable energy that powers your business operations."
-                              }
-                            </AntdAccordionItem>
-                            <AntdAccordionItem
-                              data-plasmic-name={"_3"}
-                              data-plasmic-override={overrides._3}
-                              className={classNames("__wab_instance", sty._3)}
-                              id={"3"}
-                              label2={
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__rmwPy
-                                  )}
-                                >
-                                  {"What is Net Metering?"}
-                                </div>
-                              }
-                              showArrow={true}
-                            >
-                              {
-                                "Feed excess power to the grid and earn bill credits\u2014if eligible. Under the Renewable Energy Act (RA 9513) and its rules, net metering is available to qualified users, subject to certain utility and technical limitations. We\u2019ll help you check if your system can apply."
-                              }
-                            </AntdAccordionItem>
-                            <AntdAccordionItem
-                              data-plasmic-name={"_4"}
-                              data-plasmic-override={overrides._4}
-                              className={classNames("__wab_instance", sty._4)}
-                              id={"4"}
-                              label2={
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__k4PbD
-                                  )}
-                                >
-                                  {
-                                    "How much can I save on my electricity bills?"
-                                  }
-                                </div>
-                              }
-                              showArrow={true}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___1Bq8P
-                                )}
-                              >
-                                {
-                                  "Depending on your setup, solar can cut electricity costs by up to 60%. Actual savings vary based on system design and building energy use."
-                                }
-                              </div>
-                            </AntdAccordionItem>
-                          </React.Fragment>
-                        ),
-
-                        onChange: async (...eventArgs) => {
-                          generateStateOnChangePropForCodeComponents(
-                            $state,
-                            "activePanelId",
-                            ["aboutAccordion", "activePanelId"],
-                            AntdAccordion_Helpers
-                          ).apply(null, eventArgs);
-                        },
-                        size: "large"
-                      };
-                      initializeCodeComponentStates(
-                        $state,
-                        [
-                          {
-                            name: "activePanelId",
-                            plasmicStateName: "aboutAccordion.activePanelId"
-                          }
-                        ],
-
-                        [],
-                        AntdAccordion_Helpers ?? {},
-                        child$Props
-                      );
-                      return (
-                        <AntdAccordion
-                          data-plasmic-name={"aboutAccordion"}
-                          data-plasmic-override={overrides.aboutAccordion}
-                          {...child$Props}
-                        />
-                      );
-                    })()}
-                  </AntdTabItem>
-                }
-                onChange={async (...eventArgs) => {
-                  generateStateOnChangeProp($state, [
-                    "faQsTab",
-                    "activeKey"
-                  ]).apply(null, eventArgs);
-                }}
-                size={"large"}
-                sticky={false}
-                tabBarBackground={"#FFF"}
-                tabsDropdownScopeClassName={sty["faQsTab__tabsDropdown"]}
-                tabsScopeClassName={sty["faQsTab__tabs"]}
-                type={"card"}
-              />
-
               <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__vbPwe)}
               >
+                <LearnAccordion
+                  data-plasmic-name={"learnAccordion"}
+                  data-plasmic-override={overrides.learnAccordion}
+                  className={classNames("__wab_instance", sty.learnAccordion)}
+                />
+
                 <Stack__
                   as={"div"}
                   hasGap={true}
@@ -991,13 +755,7 @@ const PlasmicDescendants = {
     "heading",
     "container",
     "card",
-    "faQsTab",
-    "aboutSolar",
-    "aboutAccordion",
-    "_1",
-    "_2",
-    "_3",
-    "_4",
+    "learnAccordion",
     "footer",
     "section5",
     "brandLogo3",
@@ -1022,36 +780,9 @@ const PlasmicDescendants = {
   solution3: ["solution3"],
   logo4: ["logo4"],
   heading: ["heading"],
-  container: [
-    "container",
-    "card",
-    "faQsTab",
-    "aboutSolar",
-    "aboutAccordion",
-    "_1",
-    "_2",
-    "_3",
-    "_4"
-  ],
-
-  card: [
-    "card",
-    "faQsTab",
-    "aboutSolar",
-    "aboutAccordion",
-    "_1",
-    "_2",
-    "_3",
-    "_4"
-  ],
-
-  faQsTab: ["faQsTab", "aboutSolar", "aboutAccordion", "_1", "_2", "_3", "_4"],
-  aboutSolar: ["aboutSolar", "aboutAccordion", "_1", "_2", "_3", "_4"],
-  aboutAccordion: ["aboutAccordion", "_1", "_2", "_3", "_4"],
-  _1: ["_1"],
-  _2: ["_2"],
-  _3: ["_3"],
-  _4: ["_4"],
+  container: ["container", "card", "learnAccordion"],
+  card: ["card", "learnAccordion"],
+  learnAccordion: ["learnAccordion"],
   footer: [
     "footer",
     "section5",
@@ -1129,13 +860,7 @@ export const PlasmicLearn = Object.assign(
     heading: makeNodeComponent("heading"),
     container: makeNodeComponent("container"),
     card: makeNodeComponent("card"),
-    faQsTab: makeNodeComponent("faQsTab"),
-    aboutSolar: makeNodeComponent("aboutSolar"),
-    aboutAccordion: makeNodeComponent("aboutAccordion"),
-    _1: makeNodeComponent("_1"),
-    _2: makeNodeComponent("_2"),
-    _3: makeNodeComponent("_3"),
-    _4: makeNodeComponent("_4"),
+    learnAccordion: makeNodeComponent("learnAccordion"),
     footer: makeNodeComponent("footer"),
     section5: makeNodeComponent("section5"),
     brandLogo3: makeNodeComponent("brandLogo3"),
