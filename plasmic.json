@@ -2112,6 +2112,11 @@
           "id": "KP9c2sX0Ad0j",
           "name": "branchLogo.png",
           "filePath": "../public/plasmic/excell_website_final/images/branchLogoPng.png"
+        },
+        {
+          "id": "t_fGoCy3UmP8",
+          "name": "image",
+          "filePath": "../public/plasmic/excell_website_final/images/image.png"
         }
       ],
       "indirect": false,
