@@ -1254,7 +1254,7 @@
           "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
           "renderModuleFilePath": "plasmic/excell_website_final/PlasmicNewPage.jsx",
           "importSpec": {
-            "modulePath": "../pages/new-page.jsx"
+            "modulePath": "../pages/TestPage.jsx"
           },
           "cssFilePath": "plasmic/excell_website_final/PlasmicNewPage.module.css",
           "scheme": "blackbox",
