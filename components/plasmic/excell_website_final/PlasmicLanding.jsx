@@ -289,6 +289,7 @@ function PlasmicLanding__RenderFunc(props) {
                     component={Link}
                     href={`/new-page-2`}
                     platform={"nextjs"}
+                    target={"_blank"}
                   >
                     {"Learn"}
                   </PlasmicLink__>
