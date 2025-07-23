@@ -13,26 +13,20 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import {
-  PlasmicImg as PlasmicImg__,
   PlasmicLink as PlasmicLink__,
   Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants,
-  hasVariant
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import { useScreenVariants as useScreenVariants_3Kid9VNeHn18 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3kid9VNeHn18/globalVariant
+import Button2 from "../../Button2"; // plasmic-import: x3cP0LSzfthw/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
 import sty from "./PlasmicNewPage.module.css"; // plasmic-import: qJnrkQ2kVZUX/css
-import GeoAltFill1SvgIcon from "./icons/PlasmicIcon__GeoAltFill1Svg"; // plasmic-import: YEWPN-2nVWdu/icon
-import EnvelopeFill1SvgIcon from "./icons/PlasmicIcon__EnvelopeFill1Svg"; // plasmic-import: yiqTHAMM2X5j/icon
-import Linkedin2SvgIcon from "./icons/PlasmicIcon__Linkedin2Svg"; // plasmic-import: 6HNgcahnQu82/icon
-import Facebook2SvgIcon from "./icons/PlasmicIcon__Facebook2Svg"; // plasmic-import: IENMmqVlMhTI/icon
-import ArrowUpRightCircleFill2SvgIcon from "./icons/PlasmicIcon__ArrowUpRightCircleFill2Svg"; // plasmic-import: pCYqUEbGa2Pj/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: bbuNX9X5GDMe/icon
+import CircleIcon from "./icons/PlasmicIcon__Circle"; // plasmic-import: P6bjUNWJZmH7/icon
 
 createPlasmicElementProxy;
 
@@ -69,9 +63,6 @@ function PlasmicNewPage__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_3Kid9VNeHn18()
-  });
   return (
     <React.Fragment>
       <Head></Head>
@@ -98,297 +89,102 @@ function PlasmicNewPage__RenderFunc(props) {
             sty.root
           )}
         >
-          <div className={classNames(projectcss.all, sty.freeBox___87K)}>
-            <div
-              data-plasmic-name={"section5"}
-              data-plasmic-override={overrides.section5}
-              className={classNames(projectcss.all, sty.section5)}
+          <div className={classNames(projectcss.all, sty.freeBox__a0W8X)}>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"foreground2"}
+              data-plasmic-override={overrides.foreground2}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.foreground2)}
             >
-              <div
-                data-plasmic-name={"brandLogo3"}
-                data-plasmic-override={overrides.brandLogo3}
-                className={classNames(projectcss.all, sty.brandLogo3)}
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___2RLzs)}
               >
-                <PlasmicImg__
-                  data-plasmic-name={"img"}
-                  data-plasmic-override={overrides.img}
-                  alt={""}
-                  className={classNames(sty.img)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "50%"
-                  }
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"240px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/excell_website_final/images/excellHorizontalLogoPng.png",
-                    fullWidth: 2001,
-                    fullHeight: 706,
-                    aspectRatio: undefined
-                  }}
-                />
-
                 <div
-                  data-plasmic-name={"section6"}
-                  data-plasmic-override={overrides.section6}
-                  className={classNames(projectcss.all, sty.section6)}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__e0Fu
+                  )}
                 >
-                  <div className={classNames(projectcss.all, sty.column__p2Wa)}>
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                  <React.Fragment>
+                    <React.Fragment>{"Designs that "}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ textDecoration: "underline" }}
+                    >
+                      {"scale"}
+                    </span>
+                  </React.Fragment>
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__esklv
+                  )}
+                >
+                  {
+                    "Orci dui condimentum rutrum laoreet hac purus porta sem sem a vivamus a posuere vel molestie."
+                  }
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__lAYq)}
+              >
+                <Button2
+                  data-plasmic-name={"button2"}
+                  data-plasmic-override={overrides.button2}
+                  className={classNames("__wab_instance", sty.button2)}
+                  color={"white"}
+                  end={
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__rmaKn)}
+                      role={"img"}
+                    />
+                  }
+                  iconEnd={true}
+                  label={
+                    <div
                       className={classNames(
                         projectcss.all,
-                        sty.freeBox___1Wt1J
+                        projectcss.__wab_text,
+                        sty.text__t181J
                       )}
                     >
-                      <h4
-                        data-plasmic-name={"h4"}
-                        data-plasmic-override={overrides.h4}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4
-                        )}
-                      >
-                        {"Better Energy, Better Business."}
-                      </h4>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__yoRjn
-                        )}
-                      >
-                        {
-                          "We help businesses thrive by turning unused spaces into energy-saving assets. Our end-to-end solar solutions\u2014from expert energy assessments to premium installations and lifetime support\u2014are built for long-term value, reliability, and sustainability."
-                        }
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__aui6L
-                        )}
-                      >
-                        {
-                          "\u00a9 Copyright 2025 Excell Energy and Powergen Inc. All rights reserved."
-                        }
-                      </div>
-                    </Stack__>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__oY84C)}
-                  >
-                    <div
-                      data-plasmic-name={"whereToFindUs3"}
-                      data-plasmic-override={overrides.whereToFindUs3}
-                      className={classNames(projectcss.all, sty.whereToFindUs3)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__kaCtx
-                        )}
-                      >
-                        <h5
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h5,
-                            projectcss.__wab_text,
-                            sty.h5___8Eixi
-                          )}
-                        >
-                          {"Where to find us?"}
-                        </h5>
-                      </div>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__bAYqM
-                        )}
-                      >
-                        <GeoAltFill1SvgIcon
-                          className={classNames(projectcss.all, sty.svg__wdTkj)}
-                          role={"img"}
-                        />
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__e8FMh
-                          )}
-                        >
-                          {
-                            "Unit 2618, 26th flr, High Street South Corporate Plaza Tower 1 26th St, cor 9th Ave, 1634 Taguig, Philippines"
-                          }
-                        </div>
-                      </Stack__>
+                      {"Start now"}
                     </div>
-                    <div
-                      data-plasmic-name={"connectWithUs4"}
-                      data-plasmic-override={overrides.connectWithUs4}
-                      className={classNames(projectcss.all, sty.connectWithUs4)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__tcrtD
-                        )}
-                      >
-                        <h5
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h5,
-                            projectcss.__wab_text,
-                            sty.h5__sBfkV
-                          )}
-                        >
-                          {"Connect with us!"}
-                        </h5>
-                      </div>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__hqkK
-                        )}
-                      >
-                        <EnvelopeFill1SvgIcon
-                          className={classNames(projectcss.all, sty.svg__sen0)}
-                          role={"img"}
-                        />
+                  }
+                  size={"extraLarge"}
+                  start={
+                    <CircleIcon
+                      className={classNames(projectcss.all, sty.svg__s1Ufk)}
+                      role={"img"}
+                    />
+                  }
+                />
 
-                        <PlasmicLink__
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.a,
-                            projectcss.__wab_text,
-                            sty.link__ytun1
-                          )}
-                          component={Link}
-                          href={"https://www.plasmic.app/"}
-                          platform={"nextjs"}
-                        >
-                          {"solutions@excell.energy"}
-                        </PlasmicLink__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__smfPk
-                        )}
-                      >
-                        <Linkedin2SvgIcon
-                          className={classNames(projectcss.all, sty.svg__i5W9A)}
-                          role={"img"}
-                        />
-
-                        <PlasmicLink__
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.a,
-                            projectcss.__wab_text,
-                            sty.link__ghV4
-                          )}
-                          component={Link}
-                          href={"https://www.plasmic.app/"}
-                          platform={"nextjs"}
-                        >
-                          {"Excell Energy and PowerGen Corp."}
-                        </PlasmicLink__>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox___6S0TD
-                        )}
-                      >
-                        <Facebook2SvgIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___6P4Xg
-                          )}
-                          role={"img"}
-                        />
-
-                        <PlasmicLink__
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.a,
-                            projectcss.__wab_text,
-                            sty.link__e7C55
-                          )}
-                          component={Link}
-                          href={"https://www.plasmic.app/"}
-                          platform={"nextjs"}
-                        >
-                          {"Excell Energy and PowerGen Corp."}
-                        </PlasmicLink__>
-                      </Stack__>
-                    </div>
-                    <div
-                      data-plasmic-name={"getSolar3"}
-                      data-plasmic-override={overrides.getSolar3}
-                      className={classNames(projectcss.all, sty.getSolar3)}
-                    >
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__xBqs
-                        )}
-                      >
-                        <Stack__
-                          as={PlasmicLink__}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.a,
-                            sty.link__zh4R5
-                          )}
-                          component={Link}
-                          platform={"nextjs"}
-                        >
-                          <h5
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h5,
-                              projectcss.__wab_text,
-                              sty.h5__cL8KZ
-                            )}
-                          >
-                            {"Get Solar"}
-                          </h5>
-                          <ArrowUpRightCircleFill2SvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__fwgMt
-                            )}
-                            role={"img"}
-                          />
-                        </Stack__>
-                      </Stack__>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                <PlasmicLink__
+                  data-plasmic-name={"link"}
+                  data-plasmic-override={overrides.link}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link
+                  )}
+                  component={Link}
+                  href={"https://www.plasmic.app/"}
+                  platform={"nextjs"}
+                >
+                  {"Learn more..."}
+                </PlasmicLink__>
+              </Stack__>
+            </Stack__>
           </div>
         </div>
       </div>
@@ -397,45 +193,10 @@ function PlasmicNewPage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "section5",
-    "brandLogo3",
-    "img",
-    "section6",
-    "h4",
-    "whereToFindUs3",
-    "connectWithUs4",
-    "getSolar3"
-  ],
-
-  section5: [
-    "section5",
-    "brandLogo3",
-    "img",
-    "section6",
-    "h4",
-    "whereToFindUs3",
-    "connectWithUs4",
-    "getSolar3"
-  ],
-
-  brandLogo3: [
-    "brandLogo3",
-    "img",
-    "section6",
-    "h4",
-    "whereToFindUs3",
-    "connectWithUs4",
-    "getSolar3"
-  ],
-
-  img: ["img"],
-  section6: ["section6", "h4", "whereToFindUs3", "connectWithUs4", "getSolar3"],
-  h4: ["h4"],
-  whereToFindUs3: ["whereToFindUs3"],
-  connectWithUs4: ["connectWithUs4"],
-  getSolar3: ["getSolar3"]
+  root: ["root", "foreground2", "button2", "link"],
+  foreground2: ["foreground2", "button2", "link"],
+  button2: ["button2"],
+  link: ["link"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -470,14 +231,9 @@ export const PlasmicNewPage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    section5: makeNodeComponent("section5"),
-    brandLogo3: makeNodeComponent("brandLogo3"),
-    img: makeNodeComponent("img"),
-    section6: makeNodeComponent("section6"),
-    h4: makeNodeComponent("h4"),
-    whereToFindUs3: makeNodeComponent("whereToFindUs3"),
-    connectWithUs4: makeNodeComponent("connectWithUs4"),
-    getSolar3: makeNodeComponent("getSolar3"),
+    foreground2: makeNodeComponent("foreground2"),
+    button2: makeNodeComponent("button2"),
+    link: makeNodeComponent("link"),
     // Metadata about props expected for PlasmicNewPage
     internalVariantProps: PlasmicNewPage__VariantProps,
     internalArgProps: PlasmicNewPage__ArgProps,

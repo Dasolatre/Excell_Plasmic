@@ -1260,6 +1260,19 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/new-page"
+        },
+        {
+          "id": "x3cP0LSzfthw",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
+          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicButton2.jsx",
+          "importSpec": {
+            "modulePath": "Button2.jsx"
+          },
+          "cssFilePath": "plasmic/excell_website_final/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
