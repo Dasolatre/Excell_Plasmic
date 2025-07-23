@@ -10,20 +10,22 @@
 // Component: qJnrkQ2kVZUX
 import * as React from "react";
 import Head from "next/head";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import {
-  PlasmicImg as PlasmicImg__,
-  PlasmicLink as PlasmicLink__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants,
-  hasVariant
+  generateOnMutateForSpec,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  initializeCodeComponentStates,
+  useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-import { useScreenVariants as useScreenVariants_3Kid9VNeHn18 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3kid9VNeHn18/globalVariant
+import { AntdAccordion } from "@plasmicpkgs/antd5/skinny/registerCollapse";
+import { accordionHelpers as AntdAccordion_Helpers } from "@plasmicpkgs/antd5/skinny/registerCollapse";
+import { AntdAccordionItem } from "@plasmicpkgs/antd5/skinny/registerCollapse";
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
@@ -64,8 +66,27 @@ function PlasmicNewPage__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_3Kid9VNeHn18()
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "accordion.activePanelId",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined,
+        onMutate: generateOnMutateForSpec(
+          "activePanelId",
+          AntdAccordion_Helpers
+        )
+      }
+    ],
+
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
   });
   return (
     <React.Fragment>
@@ -79,8 +100,8 @@ function PlasmicNewPage__RenderFunc(props) {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"learnPage"}
-          data-plasmic-override={overrides.learnPage}
+          data-plasmic-name={"testingPage"}
+          data-plasmic-override={overrides.testingPage}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           className={classNames(
@@ -90,245 +111,136 @@ function PlasmicNewPage__RenderFunc(props) {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
-            sty.learnPage
+            sty.testingPage
           )}
         >
-          <div className={classNames(projectcss.all, sty.freeBox__ylYQb)}>
-            <div className={classNames(projectcss.all, sty.freeBox__w8S3B)}>
+          <section
+            data-plasmic-name={"section"}
+            data-plasmic-override={overrides.section}
+            className={classNames(projectcss.all, sty.section)}
+          >
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox)}
+            >
               <div
-                data-plasmic-name={"columns"}
-                data-plasmic-override={overrides.columns}
-                className={classNames(projectcss.all, sty.columns)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__bMXbj
+                )}
               >
-                <div
-                  data-plasmic-name={"column"}
-                  data-plasmic-override={overrides.column}
-                  className={classNames(projectcss.all, sty.column)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__bFLdh)}
-                  >
-                    <div
-                      data-plasmic-name={"text"}
-                      data-plasmic-override={overrides.text}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text
-                      )}
-                    >
-                      <React.Fragment>
-                        <React.Fragment>
-                          {"Got Questions?\n\u00a0"}
-                        </React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"Reach us Today"}
-                        </span>
-                        <React.Fragment>{"\n"}</React.Fragment>
-                      </React.Fragment>
-                    </div>
-                  </div>
-                </div>
+                {"About Solar"}
               </div>
-            </div>
-            <NavigationBar
-              data-plasmic-name={"navigationBar"}
-              data-plasmic-override={overrides.navigationBar}
-              brand={
-                <PlasmicLink__
-                  data-plasmic-name={"logo3"}
-                  data-plasmic-override={overrides.logo3}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.logo3
-                  )}
-                  component={Link}
-                  href={"#"}
-                  platform={"nextjs"}
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__oUtbo)}
-                    displayHeight={"40px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"298px"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    src={{
-                      src: "/plasmic/excell_website_final/images/layer2.svg",
-                      fullWidth: 220.00169372558594,
-                      fullHeight: 80.00094604492188,
-                      aspectRatio: 2.75
-                    }}
-                  />
-                </PlasmicLink__>
-              }
-              className={classNames("__wab_instance", sty.navigationBar)}
-              closeButton={
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__cDz9K)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"32px"}
-                  src={{
-                    src: "/plasmic/excell_website_final/images/xLgSvg2.svg",
-                    fullWidth: 24,
-                    fullHeight: 25,
-                    aspectRatio: 0.96
-                  }}
-                />
-              }
-              forceOpenMenu={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : false
-              }
-              itemsGap={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? 48 : 48
-              }
-              menuItems={
-                <React.Fragment>
-                  <PlasmicLink__
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__twZyv
-                    )}
-                    component={Link}
-                    platform={"nextjs"}
-                  >
-                    {"Home"}
-                  </PlasmicLink__>
-                  <PlasmicLink__
-                    data-plasmic-name={"solution3"}
-                    data-plasmic-override={overrides.solution3}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.solution3
-                    )}
-                    component={Link}
-                    platform={"nextjs"}
-                  >
-                    {"Solution"}
-                  </PlasmicLink__>
-                  <PlasmicLink__
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__eg7AD
-                    )}
-                    component={Link}
-                    platform={"nextjs"}
-                  >
-                    {"Projects"}
-                  </PlasmicLink__>
-                  <PlasmicLink__
-                    data-plasmic-name={"logo4"}
-                    data-plasmic-override={overrides.logo4}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.logo4
-                    )}
-                    component={Link}
-                    platform={"nextjs"}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__cUyhn)}
-                      displayHeight={"64px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"298px"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      src={{
-                        src: "/plasmic/excell_website_final/images/excellVerticalLogoPng.png",
-                        fullWidth: 987,
-                        fullHeight: 1002,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </PlasmicLink__>
-                  <PlasmicLink__
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__nAdB
-                    )}
-                    component={Link}
-                    platform={"nextjs"}
-                  >
-                    {"About"}
-                  </PlasmicLink__>
-                  <PlasmicLink__
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__jq0Kv
-                    )}
-                    component={Link}
-                    platform={"nextjs"}
-                  >
-                    {"Learn"}
-                  </PlasmicLink__>
-                  <PlasmicLink__
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__gOh9Y
-                    )}
-                    component={Link}
-                    platform={"nextjs"}
-                  >
-                    {"Contact Us"}
-                  </PlasmicLink__>
-                </React.Fragment>
-              }
-              openButton={
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__xhVpy)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"32px"}
-                  src={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? {
-                          src: "/plasmic/excell_website_final/images/hamburgerMenuSvg.svg",
-                          fullWidth: 24,
-                          fullHeight: 25,
-                          aspectRatio: 0.96
+              {(() => {
+                const child$Props = {
+                  activeKey: generateStateValueProp($state, [
+                    "accordion",
+                    "activePanelId"
+                  ]),
+                  bordered: true,
+                  className: classNames("__wab_instance", sty.accordion),
+                  expandIconPosition: "end",
+                  items: (
+                    <React.Fragment>
+                      <AntdAccordionItem
+                        className={classNames(
+                          "__wab_instance",
+                          sty.accordionItem___55LGl
+                        )}
+                        forceRender={false}
+                        id={1}
+                        label2={
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__sZgaU
+                            )}
+                          >
+                            {"First Item"}
+                          </div>
                         }
-                      : undefined
-                  }
-                  width={"32"}
-                />
-              }
-              responsiveBreakpoint={768}
-            />
-          </div>
+                        showArrow={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__rfyov
+                          )}
+                        >
+                          {"First Children"}
+                        </div>
+                      </AntdAccordionItem>
+                      <AntdAccordionItem
+                        className={classNames(
+                          "__wab_instance",
+                          sty.accordionItem__nuU2U
+                        )}
+                        id={2}
+                        label2={
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___3Nxr8
+                            )}
+                          >
+                            {"Second Item"}
+                          </div>
+                        }
+                        showArrow={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__apIa8
+                          )}
+                        >
+                          {"Second Children"}
+                        </div>
+                      </AntdAccordionItem>
+                    </React.Fragment>
+                  ),
+
+                  onChange: async (...eventArgs) => {
+                    generateStateOnChangePropForCodeComponents(
+                      $state,
+                      "activePanelId",
+                      ["accordion", "activePanelId"],
+                      AntdAccordion_Helpers
+                    ).apply(null, eventArgs);
+                  },
+                  size: "large"
+                };
+                initializeCodeComponentStates(
+                  $state,
+                  [
+                    {
+                      name: "activePanelId",
+                      plasmicStateName: "accordion.activePanelId"
+                    }
+                  ],
+
+                  [],
+                  AntdAccordion_Helpers ?? {},
+                  child$Props
+                );
+                return (
+                  <AntdAccordion
+                    data-plasmic-name={"accordion"}
+                    data-plasmic-override={overrides.accordion}
+                    {...child$Props}
+                  />
+                );
+              })()}
+            </Stack__>
+          </section>
         </div>
       </div>
     </React.Fragment>
@@ -336,24 +248,10 @@ function PlasmicNewPage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  learnPage: [
-    "learnPage",
-    "columns",
-    "column",
-    "text",
-    "navigationBar",
-    "logo3",
-    "solution3",
-    "logo4"
-  ],
-
-  columns: ["columns", "column", "text"],
-  column: ["column", "text"],
-  text: ["text"],
-  navigationBar: ["navigationBar", "logo3", "solution3", "logo4"],
-  logo3: ["logo3"],
-  solution3: ["solution3"],
-  logo4: ["logo4"]
+  testingPage: ["testingPage", "section", "freeBox", "accordion"],
+  section: ["section", "freeBox", "accordion"],
+  freeBox: ["freeBox", "accordion"],
+  accordion: ["accordion"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -375,7 +273,7 @@ function makeNodeComponent(nodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "learnPage") {
+  if (nodeName === "testingPage") {
     func.displayName = "PlasmicNewPage";
   } else {
     func.displayName = `PlasmicNewPage.${nodeName}`;
@@ -385,16 +283,12 @@ function makeNodeComponent(nodeName) {
 
 export const PlasmicNewPage = Object.assign(
   // Top-level PlasmicNewPage renders the root element
-  makeNodeComponent("learnPage"),
+  makeNodeComponent("testingPage"),
   {
     // Helper components rendering sub-elements
-    columns: makeNodeComponent("columns"),
-    column: makeNodeComponent("column"),
-    text: makeNodeComponent("text"),
-    navigationBar: makeNodeComponent("navigationBar"),
-    logo3: makeNodeComponent("logo3"),
-    solution3: makeNodeComponent("solution3"),
-    logo4: makeNodeComponent("logo4"),
+    section: makeNodeComponent("section"),
+    freeBox: makeNodeComponent("freeBox"),
+    accordion: makeNodeComponent("accordion"),
     // Metadata about props expected for PlasmicNewPage
     internalVariantProps: PlasmicNewPage__VariantProps,
     internalArgProps: PlasmicNewPage__ArgProps,

@@ -151,37 +151,7 @@ function PlasmicLearn__RenderFunc(props) {
               <NavigationBar
                 data-plasmic-name={"navigationBar"}
                 data-plasmic-override={overrides.navigationBar}
-                brand={
-                  <PlasmicLink__
-                    data-plasmic-name={"logo3"}
-                    data-plasmic-override={overrides.logo3}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.logo3
-                    )}
-                    component={Link}
-                    href={"#"}
-                    platform={"nextjs"}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__yPpu9)}
-                      displayHeight={"40px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"298px"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      src={{
-                        src: "/plasmic/excell_website_final/images/layer2.svg",
-                        fullWidth: 220.00169372558594,
-                        fullHeight: 80.00094604492188,
-                        aspectRatio: 2.75
-                      }}
-                    />
-                  </PlasmicLink__>
-                }
+                brand={null}
                 className={classNames("__wab_instance", sty.navigationBar)}
                 closeButton={
                   <PlasmicImg__
@@ -1016,7 +986,6 @@ const PlasmicDescendants = {
     "landingPage",
     "container2",
     "navigationBar",
-    "logo3",
     "solution3",
     "logo4",
     "heading",
@@ -1043,23 +1012,13 @@ const PlasmicDescendants = {
     "landingPage",
     "container2",
     "navigationBar",
-    "logo3",
     "solution3",
     "logo4",
     "heading"
   ],
 
-  container2: [
-    "container2",
-    "navigationBar",
-    "logo3",
-    "solution3",
-    "logo4",
-    "heading"
-  ],
-
-  navigationBar: ["navigationBar", "logo3", "solution3", "logo4"],
-  logo3: ["logo3"],
+  container2: ["container2", "navigationBar", "solution3", "logo4", "heading"],
+  navigationBar: ["navigationBar", "solution3", "logo4"],
   solution3: ["solution3"],
   logo4: ["logo4"],
   heading: ["heading"],
@@ -1165,7 +1124,6 @@ export const PlasmicLearn = Object.assign(
     landingPage: makeNodeComponent("landingPage"),
     container2: makeNodeComponent("container2"),
     navigationBar: makeNodeComponent("navigationBar"),
-    logo3: makeNodeComponent("logo3"),
     solution3: makeNodeComponent("solution3"),
     logo4: makeNodeComponent("logo4"),
     heading: makeNodeComponent("heading"),
