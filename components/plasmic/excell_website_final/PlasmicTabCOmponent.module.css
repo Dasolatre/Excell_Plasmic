@@ -1,0 +1,108 @@
+.faQsTab:global(.__wab_instance) {
+  width: 100%;
+  overflow: scroll;
+  max-width: 100%;
+  object-fit: cover;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: var(--token-PC6O9-hPHdvT);
+  position: relative;
+  min-width: 0;
+}
+.aboutSolar:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  font-family: "Open Sans", sans-serif;
+  color: var(--token-PC6O9-hPHdvT);
+}
+.text__l5BtY {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-bSbL7gS-JLE7);
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  min-width: 0;
+}
+.aboutAccordion:global(.__wab_instance) {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: var(--token-PC6O9-hPHdvT);
+  font-weight: 600;
+  min-width: 0;
+}
+._1:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--token-PC6O9-hPHdvT);
+}
+.text__f0KQs {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-PC6O9-hPHdvT);
+  min-width: 0;
+}
+.text__duE1 {
+  color: #535353d9;
+}
+._2:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--token-PC6O9-hPHdvT);
+}
+.text__g6G6F {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-PC6O9-hPHdvT);
+  min-width: 0;
+}
+._3:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  color: var(--token-PC6O9-hPHdvT);
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.text___7Nnq {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-PC6O9-hPHdvT);
+  min-width: 0;
+}
+._4:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--token-PC6O9-hPHdvT);
+}
+.text__veuBb {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-PC6O9-hPHdvT);
+  min-width: 0;
+}
+.text__qoFl {
+  color: var(--token-PC6O9-hPHdvT);
+}

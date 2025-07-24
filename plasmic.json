@@ -1286,6 +1286,33 @@
           "cssFilePath": "plasmic/excell_website_final/PlasmicLearnAccordion.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "ScqfZYBQYDXV",
+          "name": "NewPage2",
+          "type": "managed",
+          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
+          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicNewPage2.jsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.jsx"
+          },
+          "cssFilePath": "plasmic/excell_website_final/PlasmicNewPage2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/new-page"
+        },
+        {
+          "id": "5N6Gaf5ZBLNG",
+          "name": "TabCOmponent",
+          "type": "managed",
+          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
+          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicTabCOmponent.jsx",
+          "importSpec": {
+            "modulePath": "TabCOmponent.jsx"
+          },
+          "cssFilePath": "plasmic/excell_website_final/PlasmicTabCOmponent.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

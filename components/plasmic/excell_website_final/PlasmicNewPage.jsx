@@ -23,8 +23,8 @@ import {
   hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import TabCOmponent from "../../TabCOmponent"; // plasmic-import: 5N6Gaf5ZBLNG/component
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-import LearnAccordion from "../../LearnAccordion"; // plasmic-import: x-0MJgWs5WQl/component
 import { useScreenVariants as useScreenVariants_3Kid9VNeHn18 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3kid9VNeHn18/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -136,13 +136,11 @@ function PlasmicNewPage__RenderFunc(props) {
                     />
 
                     <h1
-                      data-plasmic-name={"h1"}
-                      data-plasmic-override={overrides.h1}
                       className={classNames(
                         projectcss.all,
                         projectcss.h1,
                         projectcss.__wab_text,
-                        sty.h1
+                        sty.h1__ojlps
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly") ? (
@@ -174,6 +172,79 @@ function PlasmicNewPage__RenderFunc(props) {
                   </div>
                 </div>
               </div>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__sdxzp)}
+              >
+                <TabCOmponent
+                  data-plasmic-name={"tabCOmponent"}
+                  data-plasmic-override={overrides.tabCOmponent}
+                  className={classNames("__wab_instance", sty.tabCOmponent)}
+                />
+
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__tRhc)}
+                >
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__fBrLi)}
+                  >
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1___3QbI
+                      )}
+                    >
+                      {"Can't find what you need?"}
+                    </h1>
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__lmmBt
+                      )}
+                    >
+                      {"We got you covered!"}
+                    </h1>
+                  </Stack__>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___0BkQ)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__qdh7B)}
+                    >
+                      <Stack__
+                        as={PlasmicLink__}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__doFT
+                        )}
+                        component={Link}
+                        platform={"nextjs"}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___0Kb6A
+                          )}
+                        >
+                          {"Send us your Questions"}
+                        </div>
+                      </Stack__>
+                    </div>
+                  </div>
+                </Stack__>
+              </Stack__>
             </div>
             <NavigationBar
               data-plasmic-name={"navigationBar"}
@@ -382,13 +453,8 @@ function PlasmicNewPage__RenderFunc(props) {
             hasGap={true}
             className={classNames(projectcss.all, sty.container)}
             id={"reach-out-section"}
-          >
-            <LearnAccordion
-              data-plasmic-name={"learnAccordion"}
-              data-plasmic-override={overrides.learnAccordion}
-              className={classNames("__wab_instance", sty.learnAccordion)}
-            />
-          </Stack__>
+          />
+
           <footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -715,13 +781,12 @@ const PlasmicDescendants = {
     "landingPage",
     "container2",
     "heading",
-    "h1",
+    "tabCOmponent",
     "navigationBar",
     "logo3",
     "solution3",
     "logo4",
     "container",
-    "learnAccordion",
     "footer",
     "section5",
     "brandLogo3",
@@ -736,22 +801,21 @@ const PlasmicDescendants = {
     "landingPage",
     "container2",
     "heading",
-    "h1",
+    "tabCOmponent",
     "navigationBar",
     "logo3",
     "solution3",
     "logo4"
   ],
 
-  container2: ["container2", "heading", "h1"],
-  heading: ["heading", "h1"],
-  h1: ["h1"],
+  container2: ["container2", "heading", "tabCOmponent"],
+  heading: ["heading"],
+  tabCOmponent: ["tabCOmponent"],
   navigationBar: ["navigationBar", "logo3", "solution3", "logo4"],
   logo3: ["logo3"],
   solution3: ["solution3"],
   logo4: ["logo4"],
-  container: ["container", "learnAccordion"],
-  learnAccordion: ["learnAccordion"],
+  container: ["container"],
   footer: [
     "footer",
     "section5",
@@ -824,13 +888,12 @@ export const PlasmicNewPage = Object.assign(
     landingPage: makeNodeComponent("landingPage"),
     container2: makeNodeComponent("container2"),
     heading: makeNodeComponent("heading"),
-    h1: makeNodeComponent("h1"),
+    tabCOmponent: makeNodeComponent("tabCOmponent"),
     navigationBar: makeNodeComponent("navigationBar"),
     logo3: makeNodeComponent("logo3"),
     solution3: makeNodeComponent("solution3"),
     logo4: makeNodeComponent("logo4"),
     container: makeNodeComponent("container"),
-    learnAccordion: makeNodeComponent("learnAccordion"),
     footer: makeNodeComponent("footer"),
     section5: makeNodeComponent("section5"),
     brandLogo3: makeNodeComponent("brandLogo3"),
