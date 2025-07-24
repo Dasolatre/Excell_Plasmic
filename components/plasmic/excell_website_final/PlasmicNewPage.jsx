@@ -381,59 +381,8 @@ function PlasmicNewPage__RenderFunc(props) {
             hasGap={true}
             className={classNames(projectcss.all, sty.container)}
             id={"reach-out-section"}
-          >
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"card"}
-              data-plasmic-override={overrides.card}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.card)}
-            >
-              <div
-                data-plasmic-name={"columns"}
-                data-plasmic-override={overrides.columns}
-                className={classNames(projectcss.all, sty.columns)}
-              >
-                <div
-                  data-plasmic-name={"card6"}
-                  data-plasmic-override={overrides.card6}
-                  className={classNames(projectcss.all, sty.card6)}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__gUvX2)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__eV1Cr)}
-                    >
-                      <PlasmicLink__
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          sty.link___9R96C
-                        )}
-                        component={Link}
-                        platform={"nextjs"}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__n2Qh4
-                          )}
-                        >
-                          {"Send Us Your Questions"}
-                        </div>
-                      </PlasmicLink__>
-                    </Stack__>
-                  </Stack__>
-                </div>
-              </div>
-            </Stack__>
-          </Stack__>
+          />
+
           <footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -766,9 +715,6 @@ const PlasmicDescendants = {
     "solution3",
     "logo4",
     "container",
-    "card",
-    "columns",
-    "card6",
     "footer",
     "section5",
     "brandLogo3",
@@ -797,10 +743,7 @@ const PlasmicDescendants = {
   logo3: ["logo3"],
   solution3: ["solution3"],
   logo4: ["logo4"],
-  container: ["container", "card", "columns", "card6"],
-  card: ["card", "columns", "card6"],
-  columns: ["columns", "card6"],
-  card6: ["card6"],
+  container: ["container"],
   footer: [
     "footer",
     "section5",
@@ -879,9 +822,6 @@ export const PlasmicNewPage = Object.assign(
     solution3: makeNodeComponent("solution3"),
     logo4: makeNodeComponent("logo4"),
     container: makeNodeComponent("container"),
-    card: makeNodeComponent("card"),
-    columns: makeNodeComponent("columns"),
-    card6: makeNodeComponent("card6"),
     footer: makeNodeComponent("footer"),
     section5: makeNodeComponent("section5"),
     brandLogo3: makeNodeComponent("brandLogo3"),
