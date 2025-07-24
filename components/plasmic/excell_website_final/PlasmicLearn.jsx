@@ -345,82 +345,72 @@ function PlasmicLearn__RenderFunc(props) {
           </div>
           <Stack__
             as={"div"}
-            data-plasmic-name={"container"}
-            data-plasmic-override={overrides.container}
+            data-plasmic-name={"card"}
+            data-plasmic-override={overrides.card}
             hasGap={true}
-            className={classNames(projectcss.all, sty.container)}
+            className={classNames(projectcss.all, sty.card)}
           >
+            <TabCOmponent
+              data-plasmic-name={"tabCOmponent"}
+              data-plasmic-override={overrides.tabCOmponent}
+              className={classNames("__wab_instance", sty.tabCOmponent)}
+            />
+
             <Stack__
               as={"div"}
-              data-plasmic-name={"card"}
-              data-plasmic-override={overrides.card}
               hasGap={true}
-              className={classNames(projectcss.all, sty.card)}
+              className={classNames(projectcss.all, sty.freeBox__vbPwe)}
             >
-              <TabCOmponent
-                data-plasmic-name={"tabCOmponent"}
-                data-plasmic-override={overrides.tabCOmponent}
-                className={classNames("__wab_instance", sty.tabCOmponent)}
-              />
-
               <Stack__
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__vbPwe)}
+                className={classNames(projectcss.all, sty.freeBox__yWXc6)}
               >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__yWXc6)}
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__hFc
+                  )}
                 >
-                  <h1
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.h1__hFc
-                    )}
-                  >
-                    {"Can't find what you need?"}
-                  </h1>
-                  <h1
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.h1__ow0Dr
-                    )}
-                  >
-                    {"We got you covered!"}
-                  </h1>
-                </Stack__>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___3MpzZ)}
+                  {"Can't find what you need?"}
+                </h1>
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__ow0Dr
+                  )}
                 >
-                  <Stack__
-                    as={PlasmicLink__}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link___000VX
-                    )}
-                    component={Link}
-                    href={`/get-solar`}
-                    platform={"nextjs"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__hft2
-                      )}
-                    >
-                      {"Send us your Questions"}
-                    </div>
-                  </Stack__>
-                </div>
+                  {"We got you covered!"}
+                </h1>
               </Stack__>
+              <div className={classNames(projectcss.all, sty.freeBox___3MpzZ)}>
+                <Stack__
+                  as={PlasmicLink__}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link___000VX
+                  )}
+                  component={Link}
+                  href={`/get-solar`}
+                  platform={"nextjs"}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__hft2
+                    )}
+                  >
+                    {"Send us your Questions"}
+                  </div>
+                </Stack__>
+              </div>
             </Stack__>
           </Stack__>
           <footer
@@ -752,7 +742,6 @@ const PlasmicDescendants = {
     "solution3",
     "logo4",
     "heading",
-    "container",
     "card",
     "tabCOmponent",
     "footer",
@@ -779,7 +768,6 @@ const PlasmicDescendants = {
   solution3: ["solution3"],
   logo4: ["logo4"],
   heading: ["heading"],
-  container: ["container", "card", "tabCOmponent"],
   card: ["card", "tabCOmponent"],
   tabCOmponent: ["tabCOmponent"],
   footer: [
@@ -857,7 +845,6 @@ export const PlasmicLearn = Object.assign(
     solution3: makeNodeComponent("solution3"),
     logo4: makeNodeComponent("logo4"),
     heading: makeNodeComponent("heading"),
-    container: makeNodeComponent("container"),
     card: makeNodeComponent("card"),
     tabCOmponent: makeNodeComponent("tabCOmponent"),
     footer: makeNodeComponent("footer"),
