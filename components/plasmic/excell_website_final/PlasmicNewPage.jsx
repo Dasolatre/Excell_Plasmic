@@ -23,7 +23,6 @@ import {
   hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import TabCOmponent from "../../TabCOmponent"; // plasmic-import: 5N6Gaf5ZBLNG/component
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import { useScreenVariants as useScreenVariants_3Kid9VNeHn18 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3kid9VNeHn18/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -177,12 +176,6 @@ function PlasmicNewPage__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__sdxzp)}
               >
-                <TabCOmponent
-                  data-plasmic-name={"tabCOmponent"}
-                  data-plasmic-override={overrides.tabCOmponent}
-                  className={classNames("__wab_instance", sty.tabCOmponent)}
-                />
-
                 <Stack__
                   as={"div"}
                   hasGap={true}
@@ -781,7 +774,6 @@ const PlasmicDescendants = {
     "landingPage",
     "container2",
     "heading",
-    "tabCOmponent",
     "navigationBar",
     "logo3",
     "solution3",
@@ -801,16 +793,14 @@ const PlasmicDescendants = {
     "landingPage",
     "container2",
     "heading",
-    "tabCOmponent",
     "navigationBar",
     "logo3",
     "solution3",
     "logo4"
   ],
 
-  container2: ["container2", "heading", "tabCOmponent"],
+  container2: ["container2", "heading"],
   heading: ["heading"],
-  tabCOmponent: ["tabCOmponent"],
   navigationBar: ["navigationBar", "logo3", "solution3", "logo4"],
   logo3: ["logo3"],
   solution3: ["solution3"],
@@ -888,7 +878,6 @@ export const PlasmicNewPage = Object.assign(
     landingPage: makeNodeComponent("landingPage"),
     container2: makeNodeComponent("container2"),
     heading: makeNodeComponent("heading"),
-    tabCOmponent: makeNodeComponent("tabCOmponent"),
     navigationBar: makeNodeComponent("navigationBar"),
     logo3: makeNodeComponent("logo3"),
     solution3: makeNodeComponent("solution3"),
