@@ -24,7 +24,6 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-import TabCOmponent from "../../TabCOmponent"; // plasmic-import: 5N6Gaf5ZBLNG/component
 import { useScreenVariants as useScreenVariants_3Kid9VNeHn18 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3kid9VNeHn18/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -390,12 +389,6 @@ function PlasmicNewPage__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.card)}
             >
-              <TabCOmponent
-                data-plasmic-name={"tabCOmponent"}
-                data-plasmic-override={overrides.tabCOmponent}
-                className={classNames("__wab_instance", sty.tabCOmponent)}
-              />
-
               <div
                 data-plasmic-name={"columns"}
                 data-plasmic-override={overrides.columns}
@@ -774,7 +767,6 @@ const PlasmicDescendants = {
     "logo4",
     "container",
     "card",
-    "tabCOmponent",
     "columns",
     "card6",
     "footer",
@@ -805,9 +797,8 @@ const PlasmicDescendants = {
   logo3: ["logo3"],
   solution3: ["solution3"],
   logo4: ["logo4"],
-  container: ["container", "card", "tabCOmponent", "columns", "card6"],
-  card: ["card", "tabCOmponent", "columns", "card6"],
-  tabCOmponent: ["tabCOmponent"],
+  container: ["container", "card", "columns", "card6"],
+  card: ["card", "columns", "card6"],
   columns: ["columns", "card6"],
   card6: ["card6"],
   footer: [
@@ -889,7 +880,6 @@ export const PlasmicNewPage = Object.assign(
     logo4: makeNodeComponent("logo4"),
     container: makeNodeComponent("container"),
     card: makeNodeComponent("card"),
-    tabCOmponent: makeNodeComponent("tabCOmponent"),
     columns: makeNodeComponent("columns"),
     card6: makeNodeComponent("card6"),
     footer: makeNodeComponent("footer"),
