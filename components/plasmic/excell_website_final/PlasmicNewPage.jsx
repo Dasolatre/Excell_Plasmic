@@ -23,8 +23,8 @@ import {
   hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import TabCOmponent from "../../TabCOmponent"; // plasmic-import: 5N6Gaf5ZBLNG/component
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
+import TabCOmponent from "../../TabCOmponent"; // plasmic-import: 5N6Gaf5ZBLNG/component
 import { useScreenVariants as useScreenVariants_3Kid9VNeHn18 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3kid9VNeHn18/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -174,17 +174,6 @@ function PlasmicNewPage__RenderFunc(props) {
                   </div>
                 </div>
               </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__mh41)}
-              >
-                <TabCOmponent
-                  data-plasmic-name={"tabCOmponent"}
-                  data-plasmic-override={overrides.tabCOmponent}
-                  className={classNames("__wab_instance", sty.tabCOmponent)}
-                />
-              </Stack__>
             </div>
             <NavigationBar
               data-plasmic-name={"navigationBar"}
@@ -393,8 +382,65 @@ function PlasmicNewPage__RenderFunc(props) {
             hasGap={true}
             className={classNames(projectcss.all, sty.container)}
             id={"reach-out-section"}
-          />
+          >
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"card"}
+              data-plasmic-override={overrides.card}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.card)}
+            >
+              <TabCOmponent
+                data-plasmic-name={"tabCOmponent"}
+                data-plasmic-override={overrides.tabCOmponent}
+                className={classNames("__wab_instance", sty.tabCOmponent)}
+              />
 
+              <div
+                data-plasmic-name={"columns"}
+                data-plasmic-override={overrides.columns}
+                className={classNames(projectcss.all, sty.columns)}
+              >
+                <div
+                  data-plasmic-name={"card6"}
+                  data-plasmic-override={overrides.card6}
+                  className={classNames(projectcss.all, sty.card6)}
+                >
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__gUvX2)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__eV1Cr)}
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link___9R96C
+                        )}
+                        component={Link}
+                        platform={"nextjs"}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__n2Qh4
+                          )}
+                        >
+                          {"Send Us Your Questions"}
+                        </div>
+                      </PlasmicLink__>
+                    </Stack__>
+                  </Stack__>
+                </div>
+              </div>
+            </Stack__>
+          </Stack__>
           <footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -722,12 +768,15 @@ const PlasmicDescendants = {
     "container2",
     "heading",
     "h1",
-    "tabCOmponent",
     "navigationBar",
     "logo3",
     "solution3",
     "logo4",
     "container",
+    "card",
+    "tabCOmponent",
+    "columns",
+    "card6",
     "footer",
     "section5",
     "brandLogo3",
@@ -743,22 +792,24 @@ const PlasmicDescendants = {
     "container2",
     "heading",
     "h1",
-    "tabCOmponent",
     "navigationBar",
     "logo3",
     "solution3",
     "logo4"
   ],
 
-  container2: ["container2", "heading", "h1", "tabCOmponent"],
+  container2: ["container2", "heading", "h1"],
   heading: ["heading", "h1"],
   h1: ["h1"],
-  tabCOmponent: ["tabCOmponent"],
   navigationBar: ["navigationBar", "logo3", "solution3", "logo4"],
   logo3: ["logo3"],
   solution3: ["solution3"],
   logo4: ["logo4"],
-  container: ["container"],
+  container: ["container", "card", "tabCOmponent", "columns", "card6"],
+  card: ["card", "tabCOmponent", "columns", "card6"],
+  tabCOmponent: ["tabCOmponent"],
+  columns: ["columns", "card6"],
+  card6: ["card6"],
   footer: [
     "footer",
     "section5",
@@ -832,12 +883,15 @@ export const PlasmicNewPage = Object.assign(
     container2: makeNodeComponent("container2"),
     heading: makeNodeComponent("heading"),
     h1: makeNodeComponent("h1"),
-    tabCOmponent: makeNodeComponent("tabCOmponent"),
     navigationBar: makeNodeComponent("navigationBar"),
     logo3: makeNodeComponent("logo3"),
     solution3: makeNodeComponent("solution3"),
     logo4: makeNodeComponent("logo4"),
     container: makeNodeComponent("container"),
+    card: makeNodeComponent("card"),
+    tabCOmponent: makeNodeComponent("tabCOmponent"),
+    columns: makeNodeComponent("columns"),
+    card6: makeNodeComponent("card6"),
     footer: makeNodeComponent("footer"),
     section5: makeNodeComponent("section5"),
     brandLogo3: makeNodeComponent("brandLogo3"),
