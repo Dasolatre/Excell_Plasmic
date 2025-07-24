@@ -386,6 +386,60 @@
     margin: 0px;
   }
 }
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 320px;
+  flex-direction: column;
+  left: auto;
+  top: auto;
+  z-index: 0;
+  background: var(--token-NP8OXYMDqRsl);
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  padding: 80px;
+  margin: 0px;
+}
+.container > :global(.__wab_flex-container) {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.container > :global(.__wab_flex-container) > *,
+.container > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.container > :global(.__wab_flex-container) > picture > img,
+.container
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .container {
+    height: 120px;
+    left: auto;
+    top: auto;
+    position: relative;
+    flex-grow: 0;
+    justify-self: auto;
+    flex-shrink: 0;
+    z-index: 1;
+    width: 100%;
+    min-width: 0;
+    padding: 48px 24px;
+    margin: 0px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .container > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -394,13 +448,16 @@
   height: auto;
   max-width: 100%;
   box-shadow: inset 8px 8px 56px 0px #00000014;
-  left: 0px;
-  top: 0px;
+  left: auto;
+  top: -150%;
   z-index: 999;
   background: #ffffff;
+  margin-bottom: 0px;
+  margin-top: calc(0px + 16px) !important;
+  margin-right: 0px;
+  margin-left: 0px;
   border-radius: 24px;
   padding: 48px;
-  margin: 0px;
 }
 .card > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -418,8 +475,9 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .card {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: auto;
+    top: -300%;
+    margin-top: calc(0px + 16px) !important;
   }
 }
 .freeBox__vbPwe {
