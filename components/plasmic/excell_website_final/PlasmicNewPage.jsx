@@ -115,6 +115,82 @@ function PlasmicNewPage__RenderFunc(props) {
                 className={classNames(projectcss.all, sty.heading)}
               >
                 <div className={classNames(projectcss.all, sty.column__hPLp)}>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__sdxzp)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__tRhc)}
+                    >
+                      <Stack__
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__fBrLi
+                        )}
+                      >
+                        <h1
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h1,
+                            projectcss.__wab_text,
+                            sty.h1___3QbI
+                          )}
+                        >
+                          {"Can't find what you need?"}
+                        </h1>
+                        <h1
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h1,
+                            projectcss.__wab_text,
+                            sty.h1__lmmBt
+                          )}
+                        >
+                          {"We got you covered!"}
+                        </h1>
+                      </Stack__>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___0BkQ
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__qdh7B
+                          )}
+                        >
+                          <Stack__
+                            as={PlasmicLink__}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.a,
+                              sty.link__doFT
+                            )}
+                            component={Link}
+                            platform={"nextjs"}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___0Kb6A
+                              )}
+                            >
+                              {"Send us your Questions"}
+                            </div>
+                          </Stack__>
+                        </div>
+                      </div>
+                    </Stack__>
+                  </Stack__>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__fz9T)}
                   >
@@ -171,73 +247,6 @@ function PlasmicNewPage__RenderFunc(props) {
                   </div>
                 </div>
               </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__sdxzp)}
-              >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__tRhc)}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__fBrLi)}
-                  >
-                    <h1
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h1,
-                        projectcss.__wab_text,
-                        sty.h1___3QbI
-                      )}
-                    >
-                      {"Can't find what you need?"}
-                    </h1>
-                    <h1
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h1,
-                        projectcss.__wab_text,
-                        sty.h1__lmmBt
-                      )}
-                    >
-                      {"We got you covered!"}
-                    </h1>
-                  </Stack__>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___0BkQ)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__qdh7B)}
-                    >
-                      <Stack__
-                        as={PlasmicLink__}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          sty.link__doFT
-                        )}
-                        component={Link}
-                        platform={"nextjs"}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___0Kb6A
-                          )}
-                        >
-                          {"Send us your Questions"}
-                        </div>
-                      </Stack__>
-                    </div>
-                  </div>
-                </Stack__>
-              </Stack__>
             </div>
             <NavigationBar
               data-plasmic-name={"navigationBar"}
