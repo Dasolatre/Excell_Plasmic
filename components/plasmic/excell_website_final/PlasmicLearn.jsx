@@ -305,11 +305,13 @@ function PlasmicLearn__RenderFunc(props) {
                     />
 
                     <h1
+                      data-plasmic-name={"h1"}
+                      data-plasmic-override={overrides.h1}
                       className={classNames(
                         projectcss.all,
                         projectcss.h1,
                         projectcss.__wab_text,
-                        sty.h1__xg4W0
+                        sty.h1
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly") ? (
@@ -341,6 +343,11 @@ function PlasmicLearn__RenderFunc(props) {
                   </div>
                 </div>
               </div>
+              <TabCOmponent
+                data-plasmic-name={"tabCOmponent"}
+                data-plasmic-override={overrides.tabCOmponent}
+                className={classNames("__wab_instance", sty.tabCOmponent)}
+              />
             </div>
           </div>
           <Stack__
@@ -349,80 +356,8 @@ function PlasmicLearn__RenderFunc(props) {
             data-plasmic-override={overrides.container}
             hasGap={true}
             className={classNames(projectcss.all, sty.container)}
-          >
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"card"}
-              data-plasmic-override={overrides.card}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.card)}
-            >
-              <TabCOmponent
-                data-plasmic-name={"tabCOmponent"}
-                data-plasmic-override={overrides.tabCOmponent}
-                className={classNames("__wab_instance", sty.tabCOmponent)}
-              />
+          />
 
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__vbPwe)}
-              >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__yWXc6)}
-                >
-                  <h1
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.h1__hFc
-                    )}
-                  >
-                    {"Can't find what you need?"}
-                  </h1>
-                  <h1
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.h1__ow0Dr
-                    )}
-                  >
-                    {"We got you covered!"}
-                  </h1>
-                </Stack__>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___3MpzZ)}
-                >
-                  <Stack__
-                    as={PlasmicLink__}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link___000VX
-                    )}
-                    component={Link}
-                    href={`/get-solar`}
-                    platform={"nextjs"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__hft2
-                      )}
-                    >
-                      {"Send us your Questions"}
-                    </div>
-                  </Stack__>
-                </div>
-              </Stack__>
-            </Stack__>
-          </Stack__>
           <footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -752,9 +687,9 @@ const PlasmicDescendants = {
     "solution3",
     "logo4",
     "heading",
-    "container",
-    "card",
+    "h1",
     "tabCOmponent",
+    "container",
     "footer",
     "section5",
     "brandLogo3",
@@ -771,17 +706,28 @@ const PlasmicDescendants = {
     "navigationBar",
     "solution3",
     "logo4",
-    "heading"
+    "heading",
+    "h1",
+    "tabCOmponent"
   ],
 
-  container2: ["container2", "navigationBar", "solution3", "logo4", "heading"],
+  container2: [
+    "container2",
+    "navigationBar",
+    "solution3",
+    "logo4",
+    "heading",
+    "h1",
+    "tabCOmponent"
+  ],
+
   navigationBar: ["navigationBar", "solution3", "logo4"],
   solution3: ["solution3"],
   logo4: ["logo4"],
-  heading: ["heading"],
-  container: ["container", "card", "tabCOmponent"],
-  card: ["card", "tabCOmponent"],
+  heading: ["heading", "h1"],
+  h1: ["h1"],
   tabCOmponent: ["tabCOmponent"],
+  container: ["container"],
   footer: [
     "footer",
     "section5",
@@ -857,9 +803,9 @@ export const PlasmicLearn = Object.assign(
     solution3: makeNodeComponent("solution3"),
     logo4: makeNodeComponent("logo4"),
     heading: makeNodeComponent("heading"),
-    container: makeNodeComponent("container"),
-    card: makeNodeComponent("card"),
+    h1: makeNodeComponent("h1"),
     tabCOmponent: makeNodeComponent("tabCOmponent"),
+    container: makeNodeComponent("container"),
     footer: makeNodeComponent("footer"),
     section5: makeNodeComponent("section5"),
     brandLogo3: makeNodeComponent("brandLogo3"),
