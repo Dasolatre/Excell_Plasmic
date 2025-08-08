@@ -994,11 +994,10 @@
   padding: 0px;
 }
 .sliderCarousel6:global(.__wab_instance) {
-  width: 100%;
+  width: auto;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
-  min-width: 0;
 }
 .cmsEntryField___67RBx:global(.__wab_instance) {
   object-fit: cover;
@@ -1217,12 +1216,11 @@
   padding: 0px;
 }
 .cmsDataFetcher__yjE:global(.__wab_instance) {
-  width: 100%;
+  width: auto;
   display: flex;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
-  min-width: 0;
 }
 .freeBox__s6Ikl {
   display: flex;
