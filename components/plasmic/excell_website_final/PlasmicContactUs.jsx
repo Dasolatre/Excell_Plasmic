@@ -15,7 +15,6 @@ import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
   PlasmicLink as PlasmicLink__,
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -396,34 +395,24 @@ function PlasmicContactUs__RenderFunc(props) {
               responsiveBreakpoint={768}
             />
           </div>
-          <Stack__
-            as={"div"}
+          <div
             data-plasmic-name={"container"}
             data-plasmic-override={overrides.container}
-            hasGap={true}
             className={classNames(projectcss.all, sty.container)}
             id={"reach-out-section"}
           >
-            <Stack__
-              as={"div"}
+            <div
               data-plasmic-name={"card"}
               data-plasmic-override={overrides.card}
-              hasGap={true}
               className={classNames(projectcss.all, sty.card)}
             >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns___6ZgWx)}
-              >
+              <div className={classNames(projectcss.all, sty.columns___6ZgWx)}>
                 <div
                   data-plasmic-name={"contactCard"}
                   data-plasmic-override={overrides.contactCard}
                   className={classNames(projectcss.all, sty.contactCard)}
                 >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__t9JNj)}
                   >
                     <TelephoneFillSvgIcon
@@ -431,9 +420,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       role={"img"}
                     />
 
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__rnnvn)}
                     >
                       <h4
@@ -446,9 +433,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       >
                         {"Contact "}
                       </h4>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox__dDMz
@@ -463,18 +448,16 @@ function PlasmicContactUs__RenderFunc(props) {
                         >
                           {"(+63)912345678"}
                         </div>
-                      </Stack__>
-                    </Stack__>
-                  </Stack__>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div
                   data-plasmic-name={"contactCard2"}
                   data-plasmic-override={overrides.contactCard2}
                   className={classNames(projectcss.all, sty.contactCard2)}
                 >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__xwfuk)}
                   >
                     <Linkedin1SvgIcon
@@ -482,9 +465,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       role={"img"}
                     />
 
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__iyrde)}
                     >
                       <h4
@@ -497,9 +478,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       >
                         {"LinkedIn"}
                       </h4>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox__w0Sxy
@@ -514,24 +493,18 @@ function PlasmicContactUs__RenderFunc(props) {
                         >
                           {"Excell Energy"}
                         </div>
-                      </Stack__>
-                    </Stack__>
-                  </Stack__>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns___9Gzjm)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.columns___9Gzjm)}>
                 <div
                   data-plasmic-name={"contactCard3"}
                   data-plasmic-override={overrides.contactCard3}
                   className={classNames(projectcss.all, sty.contactCard3)}
                 >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__yRuJu)}
                   >
                     <EnvelopeFillSvgIcon
@@ -539,9 +512,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       role={"img"}
                     />
 
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__p4GZi)}
                     >
                       <h4
@@ -554,9 +525,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       >
                         {"Email"}
                       </h4>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox___3Ri3Z
@@ -571,18 +540,16 @@ function PlasmicContactUs__RenderFunc(props) {
                         >
                           {"solutions@excell.energy"}
                         </div>
-                      </Stack__>
-                    </Stack__>
-                  </Stack__>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div
                   data-plasmic-name={"contactCard4"}
                   data-plasmic-override={overrides.contactCard4}
                   className={classNames(projectcss.all, sty.contactCard4)}
                 >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__ovJ5D)}
                   >
                     <Facebook1SvgIcon
@@ -590,9 +557,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       role={"img"}
                     />
 
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(
                         projectcss.all,
                         sty.freeBox___6JMrc
@@ -608,9 +573,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       >
                         {"Facebook Page"}
                       </h4>
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox___10RHi
@@ -625,25 +588,21 @@ function PlasmicContactUs__RenderFunc(props) {
                         >
                           {"Excell Energy & Powergen Corp"}
                         </div>
-                      </Stack__>
-                    </Stack__>
-                  </Stack__>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </Stack__>
+              </div>
               <div className={classNames(projectcss.all, sty.columns__kKqEq)}>
                 <div
                   data-plasmic-name={"card5"}
                   data-plasmic-override={overrides.card5}
                   className={classNames(projectcss.all, sty.card5)}
                 >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__awdYm)}
                   >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__lZIpa)}
                     >
                       <div
@@ -674,22 +633,18 @@ function PlasmicContactUs__RenderFunc(props) {
                           </span>
                         </React.Fragment>
                       </h1>
-                    </Stack__>
-                  </Stack__>
+                    </div>
+                  </div>
                 </div>
                 <div
                   data-plasmic-name={"card6"}
                   data-plasmic-override={overrides.card6}
                   className={classNames(projectcss.all, sty.card6)}
                 >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__sQpYb)}
                   >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__chDbS)}
                     >
                       <div
@@ -723,12 +678,12 @@ function PlasmicContactUs__RenderFunc(props) {
                           {"Send Us Your Questions"}
                         </div>
                       </PlasmicLink__>
-                    </Stack__>
-                  </Stack__>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </Stack__>
-          </Stack__>
+            </div>
+          </div>
           <footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -775,9 +730,7 @@ function PlasmicContactUs__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.column__prrk)}
                     >
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox__cWz73
@@ -815,7 +768,7 @@ function PlasmicContactUs__RenderFunc(props) {
                             "\u00a9 Copyright 2025 Excell Energy and Powergen Inc. All rights reserved."
                           }
                         </div>
-                      </Stack__>
+                      </div>
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column___6QM0M)}
@@ -845,9 +798,7 @@ function PlasmicContactUs__RenderFunc(props) {
                             {"Where to find us?"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__jnzav
@@ -872,7 +823,7 @@ function PlasmicContactUs__RenderFunc(props) {
                               "Unit 2618, 26th flr, High Street South Corporate Plaza Tower 1 26th St, cor 9th Ave, 1634 Taguig, Philippines"
                             }
                           </div>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"connectWithUs4"}
@@ -899,9 +850,7 @@ function PlasmicContactUs__RenderFunc(props) {
                             {"Connect with us!"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox___6IGy8
@@ -928,10 +877,8 @@ function PlasmicContactUs__RenderFunc(props) {
                           >
                             {"solutions@excell.energy"}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__ppR0
@@ -958,10 +905,8 @@ function PlasmicContactUs__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__fxwIt
@@ -988,24 +933,20 @@ function PlasmicContactUs__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"getSolar3"}
                         data-plasmic-override={overrides.getSolar3}
                         className={classNames(projectcss.all, sty.getSolar3)}
                       >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__fbjBc
                           )}
                         >
-                          <Stack__
-                            as={PlasmicLink__}
-                            hasGap={true}
+                          <PlasmicLink__
                             className={classNames(
                               projectcss.all,
                               projectcss.a,
@@ -1032,8 +973,8 @@ function PlasmicContactUs__RenderFunc(props) {
                               )}
                               role={"img"}
                             />
-                          </Stack__>
-                        </Stack__>
+                          </PlasmicLink__>
+                        </div>
                       </div>
                     </div>
                   </div>

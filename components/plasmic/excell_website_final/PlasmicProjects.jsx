@@ -15,7 +15,6 @@ import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
   PlasmicLink as PlasmicLink__,
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -198,11 +197,7 @@ function PlasmicProjects__RenderFunc(props) {
                 data-plasmic-override={overrides.heading}
                 className={classNames(projectcss.all, sty.heading)}
               >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.column__nV9WU)}
-                >
+                <div className={classNames(projectcss.all, sty.column__nV9WU)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__nxYtI)}
                   >
@@ -254,19 +249,13 @@ function PlasmicProjects__RenderFunc(props) {
                       )}
                     </h1>
                   </div>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__opdNk)}
                   >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__t9QC)}
                     >
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox__y0FrW
@@ -288,7 +277,7 @@ function PlasmicProjects__RenderFunc(props) {
                         >
                           {"About Us"}
                         </label>
-                      </Stack__>
+                      </div>
                       <h1
                         className={classNames(
                           projectcss.all,
@@ -299,10 +288,8 @@ function PlasmicProjects__RenderFunc(props) {
                       >
                         {"Our \u00a0Finished Projects"}
                       </h1>
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    </div>
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__z6Nzr)}
                     >
                       <div
@@ -316,9 +303,7 @@ function PlasmicProjects__RenderFunc(props) {
                           "Explore our diverse range of solar energy projects designed to deliver sustainable and efficient solutions. \n\nOur commitment to innovation and reliability drives each project, helping businesses transition to clean energy seamlessly."
                         }
                       </div>
-                      <Stack__
-                        as={PlasmicLink__}
-                        hasGap={true}
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -355,10 +340,10 @@ function PlasmicProjects__RenderFunc(props) {
                         >
                           {"Start Your Project With Us"}
                         </div>
-                      </Stack__>
-                    </Stack__>
-                  </Stack__>
-                </Stack__>
+                      </PlasmicLink__>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <NavigationBar
@@ -619,9 +604,7 @@ function PlasmicProjects__RenderFunc(props) {
                       className={classNames(projectcss.all, sty.freeBox__bLxlc)}
                     />
 
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.columns__seCOc)}
                     >
                       <div
@@ -682,19 +665,15 @@ function PlasmicProjects__RenderFunc(props) {
                                   sty.freeBox__w2YIm
                                 )}
                               >
-                                <Stack__
-                                  as={"div"}
+                                <div
                                   data-plasmic-name={"card8"}
                                   data-plasmic-override={overrides.card8}
-                                  hasGap={true}
                                   className={classNames(
                                     projectcss.all,
                                     sty.card8
                                   )}
                                 >
-                                  <Stack__
-                                    as={"div"}
-                                    hasGap={true}
+                                  <div
                                     className={classNames(
                                       projectcss.all,
                                       sty.freeBox__mJxdy
@@ -877,9 +856,7 @@ function PlasmicProjects__RenderFunc(props) {
                                           sty.column__nTmqY
                                         )}
                                       >
-                                        <Stack__
-                                          as={"div"}
-                                          hasGap={true}
+                                        <div
                                           className={classNames(
                                             projectcss.all,
                                             sty.freeBox___6YkiK
@@ -901,9 +878,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             )}
                                           />
 
-                                          <Stack__
-                                            as={"div"}
-                                            hasGap={true}
+                                          <div
                                             className={classNames(
                                               projectcss.all,
                                               sty.freeBox___1B4Fl
@@ -932,7 +907,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 plasmic_antd_5_hostless_css.plasmic_tokens
                                               )}
                                             />
-                                          </Stack__>
+                                          </div>
                                           <CmsRowField
                                             className={classNames(
                                               "__wab_instance",
@@ -948,11 +923,11 @@ function PlasmicProjects__RenderFunc(props) {
                                               plasmic_antd_5_hostless_css.plasmic_tokens
                                             )}
                                           />
-                                        </Stack__>
+                                        </div>
                                       </div>
                                     </div>
-                                  </Stack__>
-                                </Stack__>
+                                  </div>
+                                </div>
                               </div>
                             )}
                           </DataCtxReader__>
@@ -1031,19 +1006,15 @@ function PlasmicProjects__RenderFunc(props) {
                                   )}
                                 />
 
-                                <Stack__
-                                  as={"div"}
+                                <div
                                   data-plasmic-name={"card9"}
                                   data-plasmic-override={overrides.card9}
-                                  hasGap={true}
                                   className={classNames(
                                     projectcss.all,
                                     sty.card9
                                   )}
                                 >
-                                  <Stack__
-                                    as={"div"}
-                                    hasGap={true}
+                                  <div
                                     className={classNames(
                                       projectcss.all,
                                       sty.freeBox__wqoAq
@@ -1226,9 +1197,7 @@ function PlasmicProjects__RenderFunc(props) {
                                           sty.column__nq7Pa
                                         )}
                                       >
-                                        <Stack__
-                                          as={"div"}
-                                          hasGap={true}
+                                        <div
                                           className={classNames(
                                             projectcss.all,
                                             sty.freeBox__jsP7F
@@ -1250,9 +1219,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             )}
                                           />
 
-                                          <Stack__
-                                            as={"div"}
-                                            hasGap={true}
+                                          <div
                                             className={classNames(
                                               projectcss.all,
                                               sty.freeBox__qi6C2
@@ -1281,7 +1248,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 plasmic_antd_5_hostless_css.plasmic_tokens
                                               )}
                                             />
-                                          </Stack__>
+                                          </div>
                                           <CmsRowField
                                             className={classNames(
                                               "__wab_instance",
@@ -1297,11 +1264,11 @@ function PlasmicProjects__RenderFunc(props) {
                                               plasmic_antd_5_hostless_css.plasmic_tokens
                                             )}
                                           />
-                                        </Stack__>
+                                        </div>
                                       </div>
                                     </div>
-                                  </Stack__>
-                                </Stack__>
+                                  </div>
+                                </div>
                               </div>
                             )}
                           </DataCtxReader__>
@@ -1380,19 +1347,15 @@ function PlasmicProjects__RenderFunc(props) {
                                   )}
                                 />
 
-                                <Stack__
-                                  as={"div"}
+                                <div
                                   data-plasmic-name={"card10"}
                                   data-plasmic-override={overrides.card10}
-                                  hasGap={true}
                                   className={classNames(
                                     projectcss.all,
                                     sty.card10
                                   )}
                                 >
-                                  <Stack__
-                                    as={"div"}
-                                    hasGap={true}
+                                  <div
                                     className={classNames(
                                       projectcss.all,
                                       sty.freeBox__rCa
@@ -1575,9 +1538,7 @@ function PlasmicProjects__RenderFunc(props) {
                                           sty.column__qe1Qk
                                         )}
                                       >
-                                        <Stack__
-                                          as={"div"}
-                                          hasGap={true}
+                                        <div
                                           className={classNames(
                                             projectcss.all,
                                             sty.freeBox__gQwIu
@@ -1599,9 +1560,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             )}
                                           />
 
-                                          <Stack__
-                                            as={"div"}
-                                            hasGap={true}
+                                          <div
                                             className={classNames(
                                               projectcss.all,
                                               sty.freeBox__iqkkg
@@ -1630,7 +1589,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 plasmic_antd_5_hostless_css.plasmic_tokens
                                               )}
                                             />
-                                          </Stack__>
+                                          </div>
                                           <CmsRowField
                                             className={classNames(
                                               "__wab_instance",
@@ -1646,17 +1605,17 @@ function PlasmicProjects__RenderFunc(props) {
                                               plasmic_antd_5_hostless_css.plasmic_tokens
                                             )}
                                           />
-                                        </Stack__>
+                                        </div>
                                       </div>
                                     </div>
-                                  </Stack__>
-                                </Stack__>
+                                  </div>
+                                </div>
                               </div>
                             )}
                           </DataCtxReader__>
                         </CmsQueryRepeater>
                       </div>
-                    </Stack__>
+                    </div>
                   </React.Fragment>
                 )}
               </DataCtxReader__>
@@ -1714,9 +1673,7 @@ function PlasmicProjects__RenderFunc(props) {
                       className={classNames(projectcss.all, sty.freeBox__yPDc)}
                     />
 
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.columns__xJgw4)}
                     >
                       <div
@@ -1777,19 +1734,15 @@ function PlasmicProjects__RenderFunc(props) {
                                   sty.freeBox__sFq1H
                                 )}
                               >
-                                <Stack__
-                                  as={"div"}
+                                <div
                                   data-plasmic-name={"card11"}
                                   data-plasmic-override={overrides.card11}
-                                  hasGap={true}
                                   className={classNames(
                                     projectcss.all,
                                     sty.card11
                                   )}
                                 >
-                                  <Stack__
-                                    as={"div"}
-                                    hasGap={true}
+                                  <div
                                     className={classNames(
                                       projectcss.all,
                                       sty.freeBox__zuFVh
@@ -1972,9 +1925,7 @@ function PlasmicProjects__RenderFunc(props) {
                                           sty.column__w36XT
                                         )}
                                       >
-                                        <Stack__
-                                          as={"div"}
-                                          hasGap={true}
+                                        <div
                                           className={classNames(
                                             projectcss.all,
                                             sty.freeBox__uj1Mk
@@ -1996,9 +1947,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             )}
                                           />
 
-                                          <Stack__
-                                            as={"div"}
-                                            hasGap={true}
+                                          <div
                                             className={classNames(
                                               projectcss.all,
                                               sty.freeBox__bXqXt
@@ -2019,7 +1968,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 plasmic_antd_5_hostless_css.plasmic_tokens
                                               )}
                                             />
-                                          </Stack__>
+                                          </div>
                                           <CmsRowField
                                             className={classNames(
                                               "__wab_instance",
@@ -2035,11 +1984,11 @@ function PlasmicProjects__RenderFunc(props) {
                                               plasmic_antd_5_hostless_css.plasmic_tokens
                                             )}
                                           />
-                                        </Stack__>
+                                        </div>
                                       </div>
                                     </div>
-                                  </Stack__>
-                                </Stack__>
+                                  </div>
+                                </div>
                               </div>
                             )}
                           </DataCtxReader__>
@@ -2118,19 +2067,15 @@ function PlasmicProjects__RenderFunc(props) {
                                   )}
                                 />
 
-                                <Stack__
-                                  as={"div"}
+                                <div
                                   data-plasmic-name={"card12"}
                                   data-plasmic-override={overrides.card12}
-                                  hasGap={true}
                                   className={classNames(
                                     projectcss.all,
                                     sty.card12
                                   )}
                                 >
-                                  <Stack__
-                                    as={"div"}
-                                    hasGap={true}
+                                  <div
                                     className={classNames(
                                       projectcss.all,
                                       sty.freeBox__k0MpN
@@ -2313,9 +2258,7 @@ function PlasmicProjects__RenderFunc(props) {
                                           sty.column__wezvk
                                         )}
                                       >
-                                        <Stack__
-                                          as={"div"}
-                                          hasGap={true}
+                                        <div
                                           className={classNames(
                                             projectcss.all,
                                             sty.freeBox__kp3E
@@ -2337,9 +2280,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             )}
                                           />
 
-                                          <Stack__
-                                            as={"div"}
-                                            hasGap={true}
+                                          <div
                                             className={classNames(
                                               projectcss.all,
                                               sty.freeBox__kCkYm
@@ -2360,7 +2301,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 plasmic_antd_5_hostless_css.plasmic_tokens
                                               )}
                                             />
-                                          </Stack__>
+                                          </div>
                                           <CmsRowField
                                             className={classNames(
                                               "__wab_instance",
@@ -2376,11 +2317,11 @@ function PlasmicProjects__RenderFunc(props) {
                                               plasmic_antd_5_hostless_css.plasmic_tokens
                                             )}
                                           />
-                                        </Stack__>
+                                        </div>
                                       </div>
                                     </div>
-                                  </Stack__>
-                                </Stack__>
+                                  </div>
+                                </div>
                               </div>
                             )}
                           </DataCtxReader__>
@@ -2459,19 +2400,15 @@ function PlasmicProjects__RenderFunc(props) {
                                   )}
                                 />
 
-                                <Stack__
-                                  as={"div"}
+                                <div
                                   data-plasmic-name={"card17"}
                                   data-plasmic-override={overrides.card17}
-                                  hasGap={true}
                                   className={classNames(
                                     projectcss.all,
                                     sty.card17
                                   )}
                                 >
-                                  <Stack__
-                                    as={"div"}
-                                    hasGap={true}
+                                  <div
                                     className={classNames(
                                       projectcss.all,
                                       sty.freeBox___6NvPb
@@ -2654,9 +2591,7 @@ function PlasmicProjects__RenderFunc(props) {
                                           sty.column__dCgP6
                                         )}
                                       >
-                                        <Stack__
-                                          as={"div"}
-                                          hasGap={true}
+                                        <div
                                           className={classNames(
                                             projectcss.all,
                                             sty.freeBox__qVPk0
@@ -2678,9 +2613,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             )}
                                           />
 
-                                          <Stack__
-                                            as={"div"}
-                                            hasGap={true}
+                                          <div
                                             className={classNames(
                                               projectcss.all,
                                               sty.freeBox__cEYm
@@ -2701,7 +2634,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 plasmic_antd_5_hostless_css.plasmic_tokens
                                               )}
                                             />
-                                          </Stack__>
+                                          </div>
                                           <CmsRowField
                                             className={classNames(
                                               "__wab_instance",
@@ -2717,17 +2650,17 @@ function PlasmicProjects__RenderFunc(props) {
                                               plasmic_antd_5_hostless_css.plasmic_tokens
                                             )}
                                           />
-                                        </Stack__>
+                                        </div>
                                       </div>
                                     </div>
-                                  </Stack__>
-                                </Stack__>
+                                  </div>
+                                </div>
                               </div>
                             )}
                           </DataCtxReader__>
                         </CmsQueryRepeater>
                       </div>
-                    </Stack__>
+                    </div>
                   </React.Fragment>
                 )}
               </DataCtxReader__>
@@ -2788,9 +2721,7 @@ function PlasmicProjects__RenderFunc(props) {
                       )}
                     />
 
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(
                         projectcss.all,
                         sty.columns___5YkoP
@@ -2854,19 +2785,15 @@ function PlasmicProjects__RenderFunc(props) {
                                   sty.freeBox__mejgt
                                 )}
                               >
-                                <Stack__
-                                  as={"div"}
+                                <div
                                   data-plasmic-name={"card15"}
                                   data-plasmic-override={overrides.card15}
-                                  hasGap={true}
                                   className={classNames(
                                     projectcss.all,
                                     sty.card15
                                   )}
                                 >
-                                  <Stack__
-                                    as={"div"}
-                                    hasGap={true}
+                                  <div
                                     className={classNames(
                                       projectcss.all,
                                       sty.freeBox___767Yx
@@ -3033,9 +2960,7 @@ function PlasmicProjects__RenderFunc(props) {
                                           sty.column__jyx2D
                                         )}
                                       >
-                                        <Stack__
-                                          as={"div"}
-                                          hasGap={true}
+                                        <div
                                           className={classNames(
                                             projectcss.all,
                                             sty.freeBox__lK59
@@ -3057,9 +2982,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             )}
                                           />
 
-                                          <Stack__
-                                            as={"div"}
-                                            hasGap={true}
+                                          <div
                                             className={classNames(
                                               projectcss.all,
                                               sty.freeBox__y3LzO
@@ -3080,7 +3003,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 plasmic_antd_5_hostless_css.plasmic_tokens
                                               )}
                                             />
-                                          </Stack__>
+                                          </div>
                                           <CmsRowField
                                             className={classNames(
                                               "__wab_instance",
@@ -3096,17 +3019,17 @@ function PlasmicProjects__RenderFunc(props) {
                                               plasmic_antd_5_hostless_css.plasmic_tokens
                                             )}
                                           />
-                                        </Stack__>
+                                        </div>
                                       </div>
                                     </div>
-                                  </Stack__>
-                                </Stack__>
+                                  </div>
+                                </div>
                               </div>
                             )}
                           </DataCtxReader__>
                         </CmsQueryRepeater>
                       </div>
-                    </Stack__>
+                    </div>
                   </React.Fragment>
                 )}
               </DataCtxReader__>
@@ -3158,9 +3081,7 @@ function PlasmicProjects__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.column__s74RC)}
                     >
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox__kBUre
@@ -3198,7 +3119,7 @@ function PlasmicProjects__RenderFunc(props) {
                             "\u00a9 Copyright 2025 Excell Energy and Powergen Inc. All rights reserved."
                           }
                         </div>
-                      </Stack__>
+                      </div>
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column__zq8Vq)}
@@ -3228,9 +3149,7 @@ function PlasmicProjects__RenderFunc(props) {
                             {"Where to find us?"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__mAlkz
@@ -3255,7 +3174,7 @@ function PlasmicProjects__RenderFunc(props) {
                               "Unit 2618, 26th flr, High Street South Corporate Plaza Tower 1 26th St, cor 9th Ave, 1634 Taguig, Philippines"
                             }
                           </div>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"connectWithUs4"}
@@ -3282,9 +3201,7 @@ function PlasmicProjects__RenderFunc(props) {
                             {"Connect with us!"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__pRo5
@@ -3311,10 +3228,8 @@ function PlasmicProjects__RenderFunc(props) {
                           >
                             {"solutions@excell.energy"}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__eyToW
@@ -3341,10 +3256,8 @@ function PlasmicProjects__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__di3X
@@ -3371,24 +3284,20 @@ function PlasmicProjects__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"getSolar3"}
                         data-plasmic-override={overrides.getSolar3}
                         className={classNames(projectcss.all, sty.getSolar3)}
                       >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__hayZ4
                           )}
                         >
-                          <Stack__
-                            as={PlasmicLink__}
-                            hasGap={true}
+                          <PlasmicLink__
                             className={classNames(
                               projectcss.all,
                               projectcss.a,
@@ -3415,8 +3324,8 @@ function PlasmicProjects__RenderFunc(props) {
                               )}
                               role={"img"}
                             />
-                          </Stack__>
-                        </Stack__>
+                          </PlasmicLink__>
+                        </div>
                       </div>
                     </div>
                   </div>

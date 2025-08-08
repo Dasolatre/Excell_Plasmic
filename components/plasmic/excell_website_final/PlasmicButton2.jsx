@@ -11,7 +11,6 @@
 import * as React from "react";
 import { useRouter } from "next/router";
 import {
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -400,9 +399,7 @@ function PlasmicButton2__RenderFunc(props) {
         }
       />
 
-      <Stack__
-        as={"div"}
-        hasGap={true}
+      <div
         className={classNames(projectcss.all, sty.freeBox__kuI8H, {
           [sty.freeBoxcolor_neutral__kuI8Hm6Aok]: hasVariant(
             $state,
@@ -830,7 +827,7 @@ function PlasmicButton2__RenderFunc(props) {
             })
           })}
         </div>
-      </Stack__>
+      </div>
     </BaseButton>
   );
 }

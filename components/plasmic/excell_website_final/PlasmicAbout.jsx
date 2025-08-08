@@ -15,7 +15,6 @@ import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
   PlasmicLink as PlasmicLink__,
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -133,11 +132,7 @@ function PlasmicAbout__RenderFunc(props) {
                 data-plasmic-override={overrides.heading}
                 className={classNames(projectcss.all, sty.heading)}
               >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.column__a8VSo)}
-                >
+                <div className={classNames(projectcss.all, sty.column__a8VSo)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox___5Vdoq)}
                   >
@@ -180,19 +175,13 @@ function PlasmicAbout__RenderFunc(props) {
                       )}
                     </h1>
                   </div>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__emZ9)}
                   >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__zAzaM)}
                     >
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox__qPGA
@@ -214,7 +203,7 @@ function PlasmicAbout__RenderFunc(props) {
                         >
                           {"About Us"}
                         </label>
-                      </Stack__>
+                      </div>
                       <h1
                         className={classNames(
                           projectcss.all,
@@ -225,10 +214,8 @@ function PlasmicAbout__RenderFunc(props) {
                       >
                         {"What exactly does Excell Energy do?"}
                       </h1>
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    </div>
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__cojry)}
                     >
                       <div
@@ -242,9 +229,7 @@ function PlasmicAbout__RenderFunc(props) {
                           "Excell Energy provides full-cycle solar solutions for commercial and industrial clients. From your first consultation to regular maintenance, we ensure your system performs at 100%.\r"
                         }
                       </div>
-                      <Stack__
-                        as={PlasmicLink__}
-                        hasGap={true}
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -281,10 +266,10 @@ function PlasmicAbout__RenderFunc(props) {
                         >
                           {"Get Solar Now"}
                         </div>
-                      </Stack__>
-                    </Stack__>
-                  </Stack__>
-                </Stack__>
+                      </PlasmicLink__>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <NavigationBar
@@ -487,23 +472,13 @@ function PlasmicAbout__RenderFunc(props) {
               responsiveBreakpoint={768}
             />
           </div>
-          <Stack__
-            as={"div"}
+          <div
             data-plasmic-name={"behindExcell"}
             data-plasmic-override={overrides.behindExcell}
-            hasGap={true}
             className={classNames(projectcss.all, sty.behindExcell)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__nr8LR)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__xVyXt)}
-              >
+            <div className={classNames(projectcss.all, sty.columns__nr8LR)}>
+              <div className={classNames(projectcss.all, sty.column__xVyXt)}>
                 <h1
                   className={classNames(
                     projectcss.all,
@@ -535,9 +510,7 @@ function PlasmicAbout__RenderFunc(props) {
                     </React.Fragment>
                   </React.Fragment>
                 </div>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -560,8 +533,8 @@ function PlasmicAbout__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.svg__eSnqz)}
                     role={"img"}
                   />
-                </Stack__>
-              </Stack__>
+                </PlasmicLink__>
+              </div>
               <div className={classNames(projectcss.all, sty.column__o6AEf)}>
                 <PlasmicImg__
                   alt={""}
@@ -585,20 +558,14 @@ function PlasmicAbout__RenderFunc(props) {
                   }}
                 />
               </div>
-            </Stack__>
-          </Stack__>
-          <Stack__
-            as={"div"}
+            </div>
+          </div>
+          <div
             data-plasmic-name={"renewableEnergy"}
             data-plasmic-override={overrides.renewableEnergy}
-            hasGap={true}
             className={classNames(projectcss.all, sty.renewableEnergy)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__qF9W7)}
-            >
+            <div className={classNames(projectcss.all, sty.columns__qF9W7)}>
               <div className={classNames(projectcss.all, sty.column___8M2Dz)}>
                 <PlasmicImg__
                   alt={""}
@@ -622,11 +589,7 @@ function PlasmicAbout__RenderFunc(props) {
                   }}
                 />
               </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__miUav)}
-              >
+              <div className={classNames(projectcss.all, sty.column__miUav)}>
                 <h1
                   className={classNames(
                     projectcss.all,
@@ -648,9 +611,7 @@ function PlasmicAbout__RenderFunc(props) {
                     "We aim to drive the shift to sustainable energy, one rooftop at a time. With smart tech, flexible financing, and a client-first mindset, we make solar work for your business.\r"
                   }
                 </div>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -673,27 +634,17 @@ function PlasmicAbout__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.svg__e5K4F)}
                     role={"img"}
                   />
-                </Stack__>
-              </Stack__>
-            </Stack__>
-          </Stack__>
-          <Stack__
-            as={"div"}
+                </PlasmicLink__>
+              </div>
+            </div>
+          </div>
+          <div
             data-plasmic-name={"companyCards"}
             data-plasmic-override={overrides.companyCards}
-            hasGap={true}
             className={classNames(projectcss.all, sty.companyCards)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__uC9B)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column___933Eg)}
-              >
+            <div className={classNames(projectcss.all, sty.columns__uC9B)}>
+              <div className={classNames(projectcss.all, sty.column___933Eg)}>
                 <h2
                   data-plasmic-name={"h2"}
                   data-plasmic-override={overrides.h2}
@@ -714,11 +665,7 @@ function PlasmicAbout__RenderFunc(props) {
                     </span>
                   </React.Fragment>
                 </h2>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__mI4Im)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__mI4Im)}>
                   <Reveal
                     className={classNames("__wab_instance", sty.reveal___5YWqr)}
                     direction={"right"}
@@ -726,11 +673,9 @@ function PlasmicAbout__RenderFunc(props) {
                     effect={"fade"}
                     triggerOnce={true}
                   >
-                    <Stack__
-                      as={"div"}
+                    <div
                       data-plasmic-name={"card7"}
                       data-plasmic-override={overrides.card7}
-                      hasGap={true}
                       className={classNames(projectcss.all, sty.card7)}
                     >
                       <PlasmicImg__
@@ -750,7 +695,7 @@ function PlasmicAbout__RenderFunc(props) {
                           aspectRatio: undefined
                         }}
                       />
-                    </Stack__>
+                    </div>
                   </Reveal>
                   <Reveal
                     className={classNames("__wab_instance", sty.reveal__gIr3U)}
@@ -759,11 +704,9 @@ function PlasmicAbout__RenderFunc(props) {
                     effect={"fade"}
                     triggerOnce={true}
                   >
-                    <Stack__
-                      as={"div"}
+                    <div
                       data-plasmic-name={"card8"}
                       data-plasmic-override={overrides.card8}
-                      hasGap={true}
                       className={classNames(projectcss.all, sty.card8)}
                     >
                       <PlasmicImg__
@@ -783,7 +726,7 @@ function PlasmicAbout__RenderFunc(props) {
                           aspectRatio: 4.125
                         }}
                       />
-                    </Stack__>
+                    </div>
                   </Reveal>
                   <Reveal
                     className={classNames("__wab_instance", sty.reveal__uTlKp)}
@@ -792,11 +735,9 @@ function PlasmicAbout__RenderFunc(props) {
                     effect={"fade"}
                     triggerOnce={true}
                   >
-                    <Stack__
-                      as={"div"}
+                    <div
                       data-plasmic-name={"card9"}
                       data-plasmic-override={overrides.card9}
-                      hasGap={true}
                       className={classNames(projectcss.all, sty.card9)}
                     >
                       <PlasmicImg__
@@ -816,7 +757,7 @@ function PlasmicAbout__RenderFunc(props) {
                           aspectRatio: 2.848485
                         }}
                       />
-                    </Stack__>
+                    </div>
                   </Reveal>
                   <Reveal
                     className={classNames("__wab_instance", sty.reveal__ib3Pt)}
@@ -825,11 +766,9 @@ function PlasmicAbout__RenderFunc(props) {
                     effect={"fade"}
                     triggerOnce={true}
                   >
-                    <Stack__
-                      as={"div"}
+                    <div
                       data-plasmic-name={"card10"}
                       data-plasmic-override={overrides.card10}
-                      hasGap={true}
                       className={classNames(projectcss.all, sty.card10)}
                     >
                       <PlasmicImg__
@@ -849,13 +788,11 @@ function PlasmicAbout__RenderFunc(props) {
                           aspectRatio: undefined
                         }}
                       />
-                    </Stack__>
+                    </div>
                   </Reveal>
-                  <Stack__
-                    as={"div"}
+                  <div
                     data-plasmic-name={"card11"}
                     data-plasmic-override={overrides.card11}
-                    hasGap={true}
                     className={classNames(projectcss.all, sty.card11)}
                   >
                     <PlasmicImg__
@@ -891,12 +828,10 @@ function PlasmicAbout__RenderFunc(props) {
                         "Subject to fixed monthly fee; To be transferred to customer after the term of the agreement; Customer can opt to pre-pay upon payment of termination fee."
                       }
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
+                  </div>
+                  <div
                     data-plasmic-name={"card12"}
                     data-plasmic-override={overrides.card12}
-                    hasGap={true}
                     className={classNames(projectcss.all, sty.card12)}
                   >
                     <PlasmicImg__
@@ -932,11 +867,11 @@ function PlasmicAbout__RenderFunc(props) {
                         "Pay for the energy the PV System generates (p/kWh) with minimum guaranteed fee per month."
                       }
                     </div>
-                  </Stack__>
-                </Stack__>
-              </Stack__>
-            </Stack__>
-          </Stack__>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -983,9 +918,7 @@ function PlasmicAbout__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.column___8BEzh)}
                     >
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox___02PHr
@@ -1025,7 +958,7 @@ function PlasmicAbout__RenderFunc(props) {
                             "\u00a9 Copyright 2025 Excell Energy and Powergen Inc. All rights reserved."
                           }
                         </div>
-                      </Stack__>
+                      </div>
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column__kpTkH)}
@@ -1055,9 +988,7 @@ function PlasmicAbout__RenderFunc(props) {
                             {"Where to find us?"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox___0EadK
@@ -1082,7 +1013,7 @@ function PlasmicAbout__RenderFunc(props) {
                               "Unit 2618, 26th flr, High Street South Corporate Plaza Tower 1 26th St, cor 9th Ave, 1634 Taguig, Philippines"
                             }
                           </div>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"connectWithUs4"}
@@ -1109,9 +1040,7 @@ function PlasmicAbout__RenderFunc(props) {
                             {"Connect with us!"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__kQHw9
@@ -1138,10 +1067,8 @@ function PlasmicAbout__RenderFunc(props) {
                           >
                             {"solutions@excell.energy"}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__oh5R2
@@ -1168,10 +1095,8 @@ function PlasmicAbout__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__hh6ME
@@ -1198,24 +1123,20 @@ function PlasmicAbout__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"getSolar3"}
                         data-plasmic-override={overrides.getSolar3}
                         className={classNames(projectcss.all, sty.getSolar3)}
                       >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox___3GOx
                           )}
                         >
-                          <Stack__
-                            as={PlasmicLink__}
-                            hasGap={true}
+                          <PlasmicLink__
                             className={classNames(
                               projectcss.all,
                               projectcss.a,
@@ -1242,8 +1163,8 @@ function PlasmicAbout__RenderFunc(props) {
                               )}
                               role={"img"}
                             />
-                          </Stack__>
-                        </Stack__>
+                          </PlasmicLink__>
+                        </div>
                       </div>
                     </div>
                   </div>

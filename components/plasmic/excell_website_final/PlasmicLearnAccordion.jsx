@@ -13,7 +13,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import {
   PlasmicLink as PlasmicLink__,
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -95,13 +94,11 @@ function PlasmicLearnAccordion__RenderFunc(props) {
     screen: useScreenVariants_3Kid9VNeHn18()
   });
   return (
-    <Stack__
-      as={"div"}
+    <div
       data-plasmic-name={"card"}
       data-plasmic-override={overrides.card}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      hasGap={true}
       className={classNames(
         projectcss.all,
         projectcss.root_reset,
@@ -112,11 +109,7 @@ function PlasmicLearnAccordion__RenderFunc(props) {
         sty.card
       )}
     >
-      <Stack__
-        as={"div"}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__lUcct)}
-      >
+      <div className={classNames(projectcss.all, sty.freeBox__lUcct)}>
         <h1
           className={classNames(
             projectcss.all,
@@ -230,7 +223,7 @@ function PlasmicLearnAccordion__RenderFunc(props) {
             />
           );
         })()}
-      </Stack__>
+      </div>
       <div className={classNames(projectcss.all, sty.freeBox__w4Ok)}>
         <h1
           className={classNames(
@@ -271,7 +264,7 @@ function PlasmicLearnAccordion__RenderFunc(props) {
           </div>
         </PlasmicLink__>
       </div>
-    </Stack__>
+    </div>
   );
 }
 

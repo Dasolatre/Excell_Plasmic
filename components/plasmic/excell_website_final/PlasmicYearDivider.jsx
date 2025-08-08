@@ -11,7 +11,6 @@
 import * as React from "react";
 import { useRouter } from "next/router";
 import {
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts
@@ -59,13 +58,11 @@ function PlasmicYearDivider__RenderFunc(props) {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   return (
-    <Stack__
-      as={"div"}
+    <div
       data-plasmic-name={"yearDivider"}
       data-plasmic-override={overrides.yearDivider}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      hasGap={true}
       className={classNames(
         projectcss.all,
         projectcss.root_reset,
@@ -95,7 +92,7 @@ function PlasmicYearDivider__RenderFunc(props) {
         className={classNames(projectcss.all, sty.divider)}
         role={"img"}
       />
-    </Stack__>
+    </div>
   );
 }
 

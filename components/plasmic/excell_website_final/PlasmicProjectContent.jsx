@@ -12,7 +12,6 @@ import * as React from "react";
 import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -83,11 +82,9 @@ function PlasmicProjectContent__RenderFunc(props) {
         sty.content3
       )}
     >
-      <Stack__
-        as={"div"}
+      <div
         data-plasmic-name={"col27"}
         data-plasmic-override={overrides.col27}
-        hasGap={true}
         className={classNames(projectcss.all, sty.col27)}
       >
         {(() => {
@@ -162,9 +159,7 @@ function PlasmicProjectContent__RenderFunc(props) {
             >
               <div className={classNames(projectcss.all, sty.freeBox__vcik1)}>
                 <div className={classNames(projectcss.all, sty.columns__x3Y7A)}>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.column__dGmgz)}
                   >
                     <h3
@@ -179,11 +174,9 @@ function PlasmicProjectContent__RenderFunc(props) {
                     >
                       {"Project Title"}
                     </h3>
-                    <Stack__
-                      as={"div"}
+                    <div
                       data-plasmic-name={"projectLoc4"}
                       data-plasmic-override={overrides.projectLoc4}
-                      hasGap={true}
                       className={classNames(projectcss.all, sty.projectLoc4)}
                     >
                       <PinIconSvgIcon
@@ -208,8 +201,8 @@ function PlasmicProjectContent__RenderFunc(props) {
                       >
                         {"Project Location"}
                       </h5>
-                    </Stack__>
-                  </Stack__>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div
@@ -262,9 +255,7 @@ function PlasmicProjectContent__RenderFunc(props) {
                     data-plasmic-override={overrides.kWpContainer4}
                     className={classNames(projectcss.all, sty.kWpContainer4)}
                   >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__vg7Bv)}
                     >
                       <h3
@@ -290,7 +281,7 @@ function PlasmicProjectContent__RenderFunc(props) {
                       >
                         {"Kilowatt Peak"}
                       </div>
-                    </Stack__>
+                    </div>
                   </div>
                   <div
                     data-plasmic-name={"solarFractionContainer4"}
@@ -300,9 +291,7 @@ function PlasmicProjectContent__RenderFunc(props) {
                       sty.solarFractionContainer4
                     )}
                   >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__mcJlp)}
                     >
                       <h3
@@ -328,7 +317,7 @@ function PlasmicProjectContent__RenderFunc(props) {
                       >
                         {"Solar Fraction"}
                       </div>
-                    </Stack__>
+                    </div>
                   </div>
                   <div
                     data-plasmic-name={"roiOrSavingsContainer4"}
@@ -338,9 +327,7 @@ function PlasmicProjectContent__RenderFunc(props) {
                       sty.roiOrSavingsContainer4
                     )}
                   >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(
                         projectcss.all,
                         sty.freeBox___2LeHw
@@ -369,14 +356,14 @@ function PlasmicProjectContent__RenderFunc(props) {
                       >
                         {"ROI/Savings"}
                       </div>
-                    </Stack__>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </Stack__>
+      </div>
     </div>
   );
 }

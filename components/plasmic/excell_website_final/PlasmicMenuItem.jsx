@@ -11,7 +11,6 @@
 import * as React from "react";
 import { useRouter } from "next/router";
 import {
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts
@@ -102,11 +101,7 @@ function PlasmicMenuItem__RenderFunc(props) {
       plasmicUpdateVariant={updateVariant}
       textValue={args.label}
     >
-      <Stack__
-        as={"div"}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__yliDg)}
-      >
+      <div className={classNames(projectcss.all, sty.freeBox__yliDg)}>
         <BaseText
           data-plasmic-name={"ariaText"}
           data-plasmic-override={overrides.ariaText}
@@ -169,7 +164,7 @@ function PlasmicMenuItem__RenderFunc(props) {
             </div>
           </BaseText2>
         ) : null}
-      </Stack__>
+      </div>
     </BaseListBoxItem>
   );
 }

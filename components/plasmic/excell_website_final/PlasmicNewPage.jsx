@@ -15,7 +15,6 @@ import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
   PlasmicLink as PlasmicLink__,
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -116,6 +115,42 @@ function PlasmicNewPage__RenderFunc(props) {
                 className={classNames(projectcss.all, sty.heading)}
               >
                 <div className={classNames(projectcss.all, sty.column__hPLp)}>
+                  <h1
+                    data-plasmic-name={"h1"}
+                    data-plasmic-override={overrides.h1}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                      <React.Fragment>
+                        <React.Fragment>{"Got Questions?\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 700 }}
+                        >
+                          {"Reach us Today"}
+                        </span>
+                      </React.Fragment>
+                    ) : (
+                      <React.Fragment>
+                        <React.Fragment>{"Got Questions?\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 700 }}
+                        >
+                          {"Reach us Today"}
+                        </span>
+                      </React.Fragment>
+                    )}
+                  </h1>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__fz9T)}
                   >
@@ -134,43 +169,6 @@ function PlasmicNewPage__RenderFunc(props) {
                       displayWidth={"16px"}
                       loading={"lazy"}
                     />
-
-                    <h1
-                      data-plasmic-name={"h1"}
-                      data-plasmic-override={overrides.h1}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h1,
-                        projectcss.__wab_text,
-                        sty.h1
-                      )}
-                    >
-                      {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                        <React.Fragment>
-                          <React.Fragment>{"Got Questions?\n"}</React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Reach us Today"}
-                          </span>
-                        </React.Fragment>
-                      ) : (
-                        <React.Fragment>
-                          <React.Fragment>{"Got Questions?\n"}</React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {"Reach us Today"}
-                          </span>
-                        </React.Fragment>
-                      )}
-                    </h1>
                   </div>
                 </div>
               </div>
@@ -426,9 +424,7 @@ function PlasmicNewPage__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.column__pOtiN)}
                     >
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox__x8E43
@@ -468,7 +464,7 @@ function PlasmicNewPage__RenderFunc(props) {
                             "\u00a9 Copyright 2025 Excell Energy and Powergen Inc. All rights reserved."
                           }
                         </div>
-                      </Stack__>
+                      </div>
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column__vWkD)}
@@ -498,9 +494,7 @@ function PlasmicNewPage__RenderFunc(props) {
                             {"Where to find us?"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__xix56
@@ -525,7 +519,7 @@ function PlasmicNewPage__RenderFunc(props) {
                               "Unit 2618, 26th flr, High Street South Corporate Plaza Tower 1 26th St, cor 9th Ave, 1634 Taguig, Philippines"
                             }
                           </div>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"connectWithUs4"}
@@ -552,9 +546,7 @@ function PlasmicNewPage__RenderFunc(props) {
                             {"Connect with us!"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__iDTkB
@@ -581,10 +573,8 @@ function PlasmicNewPage__RenderFunc(props) {
                           >
                             {"solutions@excell.energy"}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__teLpf
@@ -611,10 +601,8 @@ function PlasmicNewPage__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__lrDcu
@@ -641,24 +629,20 @@ function PlasmicNewPage__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"getSolar3"}
                         data-plasmic-override={overrides.getSolar3}
                         className={classNames(projectcss.all, sty.getSolar3)}
                       >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__h3UQk
                           )}
                         >
-                          <Stack__
-                            as={PlasmicLink__}
-                            hasGap={true}
+                          <PlasmicLink__
                             className={classNames(
                               projectcss.all,
                               projectcss.a,
@@ -685,8 +669,8 @@ function PlasmicNewPage__RenderFunc(props) {
                               )}
                               role={"img"}
                             />
-                          </Stack__>
-                        </Stack__>
+                          </PlasmicLink__>
+                        </div>
                       </div>
                     </div>
                   </div>

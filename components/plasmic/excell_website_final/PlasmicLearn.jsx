@@ -15,7 +15,6 @@ import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
   PlasmicLink as PlasmicLink__,
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -350,11 +349,9 @@ function PlasmicLearn__RenderFunc(props) {
               />
             </div>
           </div>
-          <Stack__
-            as={"div"}
+          <div
             data-plasmic-name={"container"}
             data-plasmic-override={overrides.container}
-            hasGap={true}
             className={classNames(projectcss.all, sty.container)}
           />
 
@@ -404,9 +401,7 @@ function PlasmicLearn__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.column__nWbGe)}
                     >
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox__jIVtk
@@ -446,7 +441,7 @@ function PlasmicLearn__RenderFunc(props) {
                             "\u00a9 Copyright 2025 Excell Energy and Powergen Inc. All rights reserved."
                           }
                         </div>
-                      </Stack__>
+                      </div>
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column__o0JpY)}
@@ -476,9 +471,7 @@ function PlasmicLearn__RenderFunc(props) {
                             {"Where to find us?"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__v2Ipr
@@ -503,7 +496,7 @@ function PlasmicLearn__RenderFunc(props) {
                               "Unit 2618, 26th flr, High Street South Corporate Plaza Tower 1 26th St, cor 9th Ave, 1634 Taguig, Philippines"
                             }
                           </div>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"connectWithUs4"}
@@ -530,9 +523,7 @@ function PlasmicLearn__RenderFunc(props) {
                             {"Connect with us!"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__oOpAu
@@ -559,10 +550,8 @@ function PlasmicLearn__RenderFunc(props) {
                           >
                             {"solutions@excell.energy"}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__hCLd5
@@ -589,10 +578,8 @@ function PlasmicLearn__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__z9JlO
@@ -619,24 +606,20 @@ function PlasmicLearn__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"getSolar3"}
                         data-plasmic-override={overrides.getSolar3}
                         className={classNames(projectcss.all, sty.getSolar3)}
                       >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox___2VIcY
                           )}
                         >
-                          <Stack__
-                            as={PlasmicLink__}
-                            hasGap={true}
+                          <PlasmicLink__
                             className={classNames(
                               projectcss.all,
                               projectcss.a,
@@ -663,8 +646,8 @@ function PlasmicLearn__RenderFunc(props) {
                               )}
                               role={"img"}
                             />
-                          </Stack__>
-                        </Stack__>
+                          </PlasmicLink__>
+                        </div>
                       </div>
                     </div>
                   </div>

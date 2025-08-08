@@ -15,7 +15,6 @@ import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
   PlasmicLink as PlasmicLink__,
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -289,7 +288,7 @@ function PlasmicLanding__RenderFunc(props) {
                     component={Link}
                     href={`/TestPage`}
                     platform={"nextjs"}
-                    target={"_blank"}
+                    target={undefined}
                   >
                     {"Learn"}
                   </PlasmicLink__>
@@ -446,9 +445,7 @@ function PlasmicLanding__RenderFunc(props) {
                   </PlasmicLink__>
                 </div>
                 <div className={classNames(projectcss.all, sty.column__i2Mjc)}>
-                  <Stack__
-                    as={PlasmicLink__}
-                    hasGap={true}
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -485,7 +482,7 @@ function PlasmicLanding__RenderFunc(props) {
                     >
                       {"Get Solar Now"}
                     </div>
-                  </Stack__>
+                  </PlasmicLink__>
                 </div>
               </div>
             </div>
@@ -1213,9 +1210,7 @@ function PlasmicLanding__RenderFunc(props) {
                   <div
                     className={classNames(projectcss.all, sty.column__psl6A)}
                   >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(projectcss.all, sty.freeBox__qJNtO)}
                     >
                       <div
@@ -1251,7 +1246,7 @@ function PlasmicLanding__RenderFunc(props) {
                           role={"img"}
                         />
                       </div>
-                    </Stack__>
+                    </div>
                   </div>
                 </div>
                 <Reveal
@@ -1300,11 +1295,7 @@ function PlasmicLanding__RenderFunc(props) {
                     </React.Fragment>
                   </h1>
                 </Reveal>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__iYsmv)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__iYsmv)}>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1345,7 +1336,7 @@ function PlasmicLanding__RenderFunc(props) {
                       </React.Fragment>
                     </div>
                   </PlasmicLink__>
-                </Stack__>
+                </div>
               </div>
             </div>
           </div>
@@ -1395,9 +1386,7 @@ function PlasmicLanding__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.column___5ZCxv)}
                     >
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox__gtTdh
@@ -1437,7 +1426,7 @@ function PlasmicLanding__RenderFunc(props) {
                             "\u00a9 Copyright 2025 Excell Energy and Powergen Inc. All rights reserved."
                           }
                         </div>
-                      </Stack__>
+                      </div>
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column___5Vdi)}
@@ -1467,9 +1456,7 @@ function PlasmicLanding__RenderFunc(props) {
                             {"Where to find us?"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__y22Gt
@@ -1494,7 +1481,7 @@ function PlasmicLanding__RenderFunc(props) {
                               "Unit 2618, 26th flr, High Street South Corporate Plaza Tower 1 26th St, cor 9th Ave, 1634 Taguig, Philippines"
                             }
                           </div>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"connectWithUs4"}
@@ -1521,9 +1508,7 @@ function PlasmicLanding__RenderFunc(props) {
                             {"Connect with us!"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__vH4SK
@@ -1550,10 +1535,8 @@ function PlasmicLanding__RenderFunc(props) {
                           >
                             {"solutions@excell.energy"}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__ouSjF
@@ -1580,10 +1563,8 @@ function PlasmicLanding__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__hqCnb
@@ -1610,24 +1591,20 @@ function PlasmicLanding__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"getSolar3"}
                         data-plasmic-override={overrides.getSolar3}
                         className={classNames(projectcss.all, sty.getSolar3)}
                       >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__fp7DO
                           )}
                         >
-                          <Stack__
-                            as={PlasmicLink__}
-                            hasGap={true}
+                          <PlasmicLink__
                             className={classNames(
                               projectcss.all,
                               projectcss.a,
@@ -1654,8 +1631,8 @@ function PlasmicLanding__RenderFunc(props) {
                               )}
                               role={"img"}
                             />
-                          </Stack__>
-                        </Stack__>
+                          </PlasmicLink__>
+                        </div>
                       </div>
                     </div>
                   </div>

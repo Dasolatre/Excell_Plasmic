@@ -15,7 +15,6 @@ import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
   PlasmicLink as PlasmicLink__,
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -133,11 +132,7 @@ function PlasmicSolutions__RenderFunc(props) {
                 data-plasmic-override={overrides.heading}
                 className={classNames(projectcss.all, sty.heading)}
               >
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.column___08PWv)}
-                >
+                <div className={classNames(projectcss.all, sty.column___08PWv)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__zpHIt)}
                   >
@@ -180,9 +175,7 @@ function PlasmicSolutions__RenderFunc(props) {
                       )}
                     </h1>
                   </div>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__wp6Jk)}
                   >
                     <div
@@ -196,15 +189,13 @@ function PlasmicSolutions__RenderFunc(props) {
                         "Ready to make the switch to solar? Let our experts guide you in finding the best energy solution for your business or industry."
                       }
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
+                  </div>
+                  <div
                     data-plasmic-name={"image"}
                     data-plasmic-override={overrides.image}
-                    hasGap={true}
                     className={classNames(projectcss.all, sty.image)}
                   />
-                </Stack__>
+                </div>
               </div>
             </div>
             <NavigationBar
@@ -407,18 +398,12 @@ function PlasmicSolutions__RenderFunc(props) {
               responsiveBreakpoint={768}
             />
           </div>
-          <Stack__
-            as={"div"}
+          <div
             data-plasmic-name={"value"}
             data-plasmic-override={overrides.value}
-            hasGap={true}
             className={classNames(projectcss.all, sty.value)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__ogcsC)}
-            >
+            <div className={classNames(projectcss.all, sty.columns__ogcsC)}>
               <div className={classNames(projectcss.all, sty.column__eqYg4)}>
                 <PlasmicImg__
                   alt={""}
@@ -442,11 +427,7 @@ function PlasmicSolutions__RenderFunc(props) {
                   }}
                 />
               </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__ajwm2)}
-              >
+              <div className={classNames(projectcss.all, sty.column__ajwm2)}>
                 <h1
                   className={classNames(
                     projectcss.all,
@@ -468,9 +449,7 @@ function PlasmicSolutions__RenderFunc(props) {
                     "Save money. Help the planet. Stand out. Our solar solutions are tailored for your company\u2019s growth and long-term resilience.\r"
                   }
                 </div>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -493,27 +472,17 @@ function PlasmicSolutions__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.svg__gyWBf)}
                     role={"img"}
                   />
-                </Stack__>
-              </Stack__>
-            </Stack__>
-          </Stack__>
-          <Stack__
-            as={"div"}
+                </PlasmicLink__>
+              </div>
+            </div>
+          </div>
+          <div
             data-plasmic-name={"offers"}
             data-plasmic-override={overrides.offers}
-            hasGap={true}
             className={classNames(projectcss.all, sty.offers)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__uqdN2)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__mn0O)}
-              >
+            <div className={classNames(projectcss.all, sty.columns__uqdN2)}>
+              <div className={classNames(projectcss.all, sty.column__mn0O)}>
                 <div className={classNames(projectcss.all, sty.freeBox__zyAal)}>
                   <h1
                     className={classNames(
@@ -526,16 +495,10 @@ function PlasmicSolutions__RenderFunc(props) {
                     {"What more can we offer?"}
                   </h1>
                 </div>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.columns__nY8X0)}
-                >
-                  <Stack__
-                    as={"div"}
+                <div className={classNames(projectcss.all, sty.columns__nY8X0)}>
+                  <div
                     data-plasmic-name={"offer"}
                     data-plasmic-override={overrides.offer}
-                    hasGap={true}
                     className={classNames(projectcss.all, sty.offer)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -553,12 +516,10 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Load and Energy Study"}
                     </h1>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
+                  </div>
+                  <div
                     data-plasmic-name={"offer2"}
                     data-plasmic-override={overrides.offer2}
-                    hasGap={true}
                     className={classNames(projectcss.all, sty.offer2)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -576,12 +537,10 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Optimized Design"}
                     </h1>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
+                  </div>
+                  <div
                     data-plasmic-name={"offer3"}
                     data-plasmic-override={overrides.offer3}
-                    hasGap={true}
                     className={classNames(projectcss.all, sty.offer3)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -599,12 +558,10 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Best-in-class Components "}
                     </h1>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
+                  </div>
+                  <div
                     data-plasmic-name={"offer4"}
                     data-plasmic-override={overrides.offer4}
-                    hasGap={true}
                     className={classNames(projectcss.all, sty.offer4)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -622,12 +579,10 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Flexible Payment Options"}
                     </h1>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
+                  </div>
+                  <div
                     data-plasmic-name={"offer5"}
                     data-plasmic-override={overrides.offer5}
-                    hasGap={true}
                     className={classNames(projectcss.all, sty.offer5)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -645,12 +600,10 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Smart Monitoring"}
                     </h1>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
+                  </div>
+                  <div
                     data-plasmic-name={"offer6"}
                     data-plasmic-override={overrides.offer6}
-                    hasGap={true}
                     className={classNames(projectcss.all, sty.offer6)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -668,28 +621,18 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Long-term Warranty"}
                     </h1>
-                  </Stack__>
-                </Stack__>
-              </Stack__>
-            </Stack__>
-          </Stack__>
-          <Stack__
-            as={"div"}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
             data-plasmic-name={"financingOptions"}
             data-plasmic-override={overrides.financingOptions}
-            hasGap={true}
             className={classNames(projectcss.all, sty.financingOptions)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__hZt79)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__jziQp)}
-              >
+            <div className={classNames(projectcss.all, sty.columns__hZt79)}>
+              <div className={classNames(projectcss.all, sty.column__jziQp)}>
                 <h1
                   className={classNames(
                     projectcss.all,
@@ -711,9 +654,7 @@ function PlasmicSolutions__RenderFunc(props) {
                     "Our ultimate goal is to foster social impact through solutions that drive innovation, sustainable development, and environmental stewardship in the Philippines. We do this by ensuring cost efficiency alongside cutting-edge technologies, one solar rooftop at a time."
                   }
                 </div>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -732,8 +673,8 @@ function PlasmicSolutions__RenderFunc(props) {
                   >
                     {"Get Started"}
                   </div>
-                </Stack__>
-              </Stack__>
+                </PlasmicLink__>
+              </div>
               <div className={classNames(projectcss.all, sty.column__iyRgw)}>
                 <PlasmicImg__
                   alt={""}
@@ -757,29 +698,17 @@ function PlasmicSolutions__RenderFunc(props) {
                   }}
                 />
               </div>
-            </Stack__>
-          </Stack__>
-          <Stack__
-            as={"div"}
+            </div>
+          </div>
+          <div
             data-plasmic-name={"options"}
             data-plasmic-override={overrides.options}
-            hasGap={true}
             className={classNames(projectcss.all, sty.options)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__an29)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__zj7B2)}
-              >
+            <div className={classNames(projectcss.all, sty.columns__an29)}>
+              <div className={classNames(projectcss.all, sty.column__zj7B2)}>
                 <div className={classNames(projectcss.all, sty.freeBox___67Bk)}>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__imiLz)}
                   >
                     <SunFillSvgIcon
@@ -796,7 +725,7 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Option 1"}
                     </div>
-                  </Stack__>
+                  </div>
                 </div>
                 <h1
                   className={classNames(
@@ -808,14 +737,8 @@ function PlasmicSolutions__RenderFunc(props) {
                 >
                   {"Turnkey Purchase"}
                 </h1>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__j3CO)}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                <div className={classNames(projectcss.all, sty.freeBox__j3CO)}>
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__mI8Ap)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -832,10 +755,8 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Pay upfront or by milestone\r"}
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.freeBox___6YdfU)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -852,20 +773,14 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"One-year warranty, semi-annual service\r"}
                     </div>
-                  </Stack__>
-                </Stack__>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__pc8Uj)}
-              >
+                  </div>
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__pc8Uj)}>
                 <div
                   className={classNames(projectcss.all, sty.freeBox___13L6B)}
                 >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox___8TYOb)}
                   >
                     <SunFillSvgIcon
@@ -882,7 +797,7 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Option 2"}
                     </div>
-                  </Stack__>
+                  </div>
                 </div>
                 <h1
                   className={classNames(
@@ -894,14 +809,8 @@ function PlasmicSolutions__RenderFunc(props) {
                 >
                   {"Build - Operate - Transfer (BOT)"}
                 </h1>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__khgfs)}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                <div className={classNames(projectcss.all, sty.freeBox__khgfs)}>
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__joeGn)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -918,10 +827,8 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Zero CAPEX, fixed monthly fee"}
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__oNwkG)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -938,18 +845,12 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"System transferred after term\r"}
                     </div>
-                  </Stack__>
-                </Stack__>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column___8FQrE)}
-              >
+                  </div>
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.column___8FQrE)}>
                 <div className={classNames(projectcss.all, sty.freeBox__c8LHz)}>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox___8ShRx)}
                   >
                     <SunFillSvgIcon
@@ -966,7 +867,7 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Option 3"}
                     </div>
-                  </Stack__>
+                  </div>
                 </div>
                 <h1
                   className={classNames(
@@ -978,14 +879,8 @@ function PlasmicSolutions__RenderFunc(props) {
                 >
                   {"Power Purchase Agreement (PPA)"}
                 </h1>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__tobiW)}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                <div className={classNames(projectcss.all, sty.freeBox__tobiW)}>
+                  <div
                     className={classNames(projectcss.all, sty.freeBox___1KmB7)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -1002,10 +897,8 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Pay per kWh usage\r"}
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__sFw00)}
                   >
                     <CheckCircleFill1SvgIcon
@@ -1022,11 +915,11 @@ function PlasmicSolutions__RenderFunc(props) {
                     >
                       {"Long-term savings, no upfront cost\r"}
                     </div>
-                  </Stack__>
-                </Stack__>
-              </Stack__>
-            </Stack__>
-          </Stack__>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -1073,9 +966,7 @@ function PlasmicSolutions__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.column__j7VxV)}
                     >
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
+                      <div
                         className={classNames(
                           projectcss.all,
                           sty.freeBox___19Dd2
@@ -1115,7 +1006,7 @@ function PlasmicSolutions__RenderFunc(props) {
                             "\u00a9 Copyright 2025 Excell Energy and Powergen Inc. All rights reserved."
                           }
                         </div>
-                      </Stack__>
+                      </div>
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column__xbfVt)}
@@ -1145,9 +1036,7 @@ function PlasmicSolutions__RenderFunc(props) {
                             {"Where to find us?"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__fdqeC
@@ -1172,7 +1061,7 @@ function PlasmicSolutions__RenderFunc(props) {
                               "Unit 2618, 26th flr, High Street South Corporate Plaza Tower 1 26th St, cor 9th Ave, 1634 Taguig, Philippines"
                             }
                           </div>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"connectWithUs4"}
@@ -1199,9 +1088,7 @@ function PlasmicSolutions__RenderFunc(props) {
                             {"Connect with us!"}
                           </h5>
                         </div>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__tjWXz
@@ -1228,10 +1115,8 @@ function PlasmicSolutions__RenderFunc(props) {
                           >
                             {"solutions@excell.energy"}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__yKqK
@@ -1258,10 +1143,8 @@ function PlasmicSolutions__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__vl5Tj
@@ -1288,24 +1171,20 @@ function PlasmicSolutions__RenderFunc(props) {
                           >
                             {"Excell Energy and PowerGen Corp."}
                           </PlasmicLink__>
-                        </Stack__>
+                        </div>
                       </div>
                       <div
                         data-plasmic-name={"getSolar3"}
                         data-plasmic-override={overrides.getSolar3}
                         className={classNames(projectcss.all, sty.getSolar3)}
                       >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
                             sty.freeBox__qNTl
                           )}
                         >
-                          <Stack__
-                            as={PlasmicLink__}
-                            hasGap={true}
+                          <PlasmicLink__
                             className={classNames(
                               projectcss.all,
                               projectcss.a,
@@ -1332,8 +1211,8 @@ function PlasmicSolutions__RenderFunc(props) {
                               )}
                               role={"img"}
                             />
-                          </Stack__>
-                        </Stack__>
+                          </PlasmicLink__>
+                        </div>
                       </div>
                     </div>
                   </div>

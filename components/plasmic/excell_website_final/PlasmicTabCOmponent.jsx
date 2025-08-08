@@ -13,7 +13,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import {
   PlasmicLink as PlasmicLink__,
-  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -99,13 +98,11 @@ function PlasmicTabCOmponent__RenderFunc(props) {
     $refs
   });
   return (
-    <Stack__
-      as={"div"}
+    <div
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      hasGap={true}
       className={classNames(
         projectcss.all,
         projectcss.root_reset,
@@ -310,21 +307,9 @@ function PlasmicTabCOmponent__RenderFunc(props) {
         type={"card"}
       />
 
-      <Stack__
-        as={"div"}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__hr1J5)}
-      >
-        <Stack__
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__qAces)}
-        >
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__p5ZD)}
-          >
+      <div className={classNames(projectcss.all, sty.freeBox__hr1J5)}>
+        <div className={classNames(projectcss.all, sty.freeBox__qAces)}>
+          <div className={classNames(projectcss.all, sty.freeBox__p5ZD)}>
             <h1
               className={classNames(
                 projectcss.all,
@@ -345,14 +330,12 @@ function PlasmicTabCOmponent__RenderFunc(props) {
             >
               {"We got you covered!"}
             </h1>
-          </Stack__>
-        </Stack__>
+          </div>
+        </div>
         <div className={classNames(projectcss.all, sty.freeBox__rOpPg)}>
-          <Stack__
-            as={PlasmicLink__}
+          <PlasmicLink__
             data-plasmic-name={"link"}
             data-plasmic-override={overrides.link}
-            hasGap={true}
             className={classNames(projectcss.all, projectcss.a, sty.link)}
             component={Link}
             platform={"nextjs"}
@@ -366,10 +349,10 @@ function PlasmicTabCOmponent__RenderFunc(props) {
             >
               {"Send us your Questions"}
             </div>
-          </Stack__>
+          </PlasmicLink__>
         </div>
-      </Stack__>
-    </Stack__>
+      </div>
+    </div>
   );
 }
 
