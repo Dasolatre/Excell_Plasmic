@@ -709,11 +709,10 @@
   padding: 0px;
 }
 .sliderCarousel5:global(.__wab_instance) {
-  width: 100%;
+  width: auto;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
-  min-width: 0;
 }
 .cmsEntryField__smhfa:global(.__wab_instance) {
   object-fit: cover;
@@ -721,6 +720,7 @@
   height: 440px;
   width: 568px;
   background: none;
+  overflow: hidden;
   border-radius: 16px;
 }
 .cmsEntryField__idGRw:global(.__wab_instance) {

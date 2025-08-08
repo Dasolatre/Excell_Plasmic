@@ -696,7 +696,8 @@ function PlasmicProjects__RenderFunc(props) {
                                           "__wab_instance",
                                           sty.sliderCarousel5
                                         ),
-                                        dots: true,
+                                        dots: false,
+                                        infinite: true,
                                         initialSlide: generateStateValueProp(
                                           $state,
                                           ["sliderCarousel5", "currentSlide"]
