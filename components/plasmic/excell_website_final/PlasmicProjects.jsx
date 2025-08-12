@@ -595,6 +595,7 @@ function PlasmicProjects__RenderFunc(props) {
               noLayout={false}
               offset={0}
               orderBy={"kilowattPeak"}
+              table={"excellWebsiteCms"}
               useDraft={false}
             >
               <DataCtxReader__>
@@ -745,6 +746,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.plasmic_tokens,
                                               plasmic_antd_5_hostless_css.plasmic_tokens
                                             )}
+                                            usePlasmicTheme={true}
                                           />
 
                                           <CmsRowField
