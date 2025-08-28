@@ -1370,22 +1370,6 @@ function PlasmicProjects__RenderFunc(props) {
                             <CmsRowField
                               className={classNames(
                                 "__wab_instance",
-                                sty.cmsEntryField__eq7Lz
-                              )}
-                              field={"projectImage"}
-                              themeResetClassName={classNames(
-                                projectcss.root_reset,
-                                projectcss.root_reset_tags,
-                                projectcss.plasmic_default_styles,
-                                projectcss.plasmic_mixins,
-                                styleTokensClassNames,
-                                styleTokensClassNames_antd_5_hostless
-                              )}
-                            />
-
-                            <CmsRowField
-                              className={classNames(
-                                "__wab_instance",
                                 sty.cmsEntryField__d719S
                               )}
                               field={"kilowattPeak"}
@@ -1753,22 +1737,6 @@ function PlasmicProjects__RenderFunc(props) {
                                     <CmsRowField
                                       className={classNames(
                                         "__wab_instance",
-                                        sty.cmsEntryField__rs45Y
-                                      )}
-                                      field={"projectImage"}
-                                      themeResetClassName={classNames(
-                                        projectcss.root_reset,
-                                        projectcss.root_reset_tags,
-                                        projectcss.plasmic_default_styles,
-                                        projectcss.plasmic_mixins,
-                                        styleTokensClassNames,
-                                        styleTokensClassNames_antd_5_hostless
-                                      )}
-                                    />
-
-                                    <CmsRowField
-                                      className={classNames(
-                                        "__wab_instance",
                                         sty.cmsEntryField___4CjVk
                                       )}
                                       field={"kilowattPeak"}
@@ -2086,22 +2054,6 @@ function PlasmicProjects__RenderFunc(props) {
                                     <CmsRowField
                                       className={classNames(
                                         "__wab_instance",
-                                        sty.cmsEntryField__pfIje
-                                      )}
-                                      field={"projectImage"}
-                                      themeResetClassName={classNames(
-                                        projectcss.root_reset,
-                                        projectcss.root_reset_tags,
-                                        projectcss.plasmic_default_styles,
-                                        projectcss.plasmic_mixins,
-                                        styleTokensClassNames,
-                                        styleTokensClassNames_antd_5_hostless
-                                      )}
-                                    />
-
-                                    <CmsRowField
-                                      className={classNames(
-                                        "__wab_instance",
                                         sty.cmsEntryField__kfOc3
                                       )}
                                       field={"kilowattPeak"}
@@ -2416,22 +2368,6 @@ function PlasmicProjects__RenderFunc(props) {
                                         </SliderWrapper>
                                       );
                                     })()}
-                                    <CmsRowField
-                                      className={classNames(
-                                        "__wab_instance",
-                                        sty.cmsEntryField__vXjue
-                                      )}
-                                      field={"projectImage"}
-                                      themeResetClassName={classNames(
-                                        projectcss.root_reset,
-                                        projectcss.root_reset_tags,
-                                        projectcss.plasmic_default_styles,
-                                        projectcss.plasmic_mixins,
-                                        styleTokensClassNames,
-                                        styleTokensClassNames_antd_5_hostless
-                                      )}
-                                    />
-
                                     <CmsRowField
                                       className={classNames(
                                         "__wab_instance",
