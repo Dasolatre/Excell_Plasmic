@@ -631,7 +631,7 @@ function PlasmicProjects__RenderFunc(props) {
                                   "__wab_instance",
                                   sty.sliderCarousel5
                                 ),
-                                dots: true,
+                                dots: false,
                                 infinite: false,
                                 initialSlide: generateStateValueProp($state, [
                                   "sliderCarousel5",
@@ -642,7 +642,9 @@ function PlasmicProjects__RenderFunc(props) {
                                   $refs["sliderCarousel5"] = ref;
                                 },
                                 sliderScopeClassName:
-                                  sty["sliderCarousel5__slider"]
+                                  sty["sliderCarousel5__slider"],
+                                useCSS: true,
+                                useTransform: true
                               };
                               initializeCodeComponentStates(
                                 $state,
@@ -894,9 +896,11 @@ function PlasmicProjects__RenderFunc(props) {
                       )}
                     </DataCtxReader__>
                   }
+                  mode={"rows"}
                   noAutoRepeat={false}
                   noLayout={false}
                   offset={5}
+                  table={"excellWebsiteCms"}
                   useDraft={false}
                 >
                   <DataCtxReader__>
