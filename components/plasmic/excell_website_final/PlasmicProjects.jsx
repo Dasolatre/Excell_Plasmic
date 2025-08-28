@@ -728,7 +728,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             "__wab_instance",
                                             sty.cmsEntryField__smhfa
                                           )}
-                                          field={"projectImage"}
+                                          field={"logo"}
                                           themeResetClassName={classNames(
                                             projectcss.root_reset,
                                             projectcss.root_reset_tags,
