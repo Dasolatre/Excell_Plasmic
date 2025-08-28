@@ -697,11 +697,10 @@
   padding: 0px;
 }
 .sliderCarousel5:global(.__wab_instance) {
-  width: 100%;
+  width: auto;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
-  min-width: 0;
 }
 .cmsEntryField__smhfa:global(.__wab_instance) {
   object-fit: cover;
@@ -716,6 +715,7 @@
   max-width: 100%;
   height: 440px;
   width: 568px;
+  display: none;
   border-radius: 16px;
 }
 .cmsEntryField__gsVAc:global(.__wab_instance) {
@@ -723,6 +723,7 @@
   max-width: 100%;
   height: 440px;
   width: 568px;
+  display: none;
   border-radius: 16px;
 }
 .cmsEntryField__lHnUd:global(.__wab_instance) {
