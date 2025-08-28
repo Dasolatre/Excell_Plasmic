@@ -728,7 +728,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             "__wab_instance",
                                             sty.cmsEntryField__smhfa
                                           )}
-                                          field={"logo"}
+                                          field={"projectImage"}
                                           themeResetClassName={classNames(
                                             projectcss.root_reset,
                                             projectcss.root_reset_tags,
@@ -737,6 +737,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             styleTokensClassNames,
                                             styleTokensClassNames_antd_5_hostless
                                           )}
+                                          usePlasmicTheme={true}
                                         />
 
                                         <CmsRowField
