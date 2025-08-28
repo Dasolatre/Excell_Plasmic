@@ -701,7 +701,7 @@
   height: 440px;
   width: 568px;
   background: none;
-  display: none;
+  display: block;
   border-radius: 16px;
 }
 .cmsEntryField__idGRw:global(.__wab_instance) {
