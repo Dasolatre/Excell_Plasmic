@@ -1289,7 +1289,8 @@ function PlasmicProjects__RenderFunc(props) {
                                   "__wab_instance",
                                   sty.sliderCarousel7
                                 ),
-                                dots: true,
+                                dots: false,
+                                infinite: false,
                                 initialSlide: generateStateValueProp($state, [
                                   "sliderCarousel7",
                                   "currentSlide"
@@ -1656,7 +1657,8 @@ function PlasmicProjects__RenderFunc(props) {
                                           "__wab_instance",
                                           sty.sliderCarousel2
                                         ),
-                                        dots: true,
+                                        dots: false,
+                                        infinite: false,
                                         initialSlide: generateStateValueProp(
                                           $state,
                                           ["sliderCarousel2", "currentSlide"]
@@ -1973,7 +1975,8 @@ function PlasmicProjects__RenderFunc(props) {
                                           "__wab_instance",
                                           sty.sliderCarousel3
                                         ),
-                                        dots: true,
+                                        dots: false,
+                                        infinite: false,
                                         initialSlide: generateStateValueProp(
                                           $state,
                                           ["sliderCarousel3", "currentSlide"]
@@ -2290,7 +2293,8 @@ function PlasmicProjects__RenderFunc(props) {
                                           "__wab_instance",
                                           sty.sliderCarousel4
                                         ),
-                                        dots: true,
+                                        dots: false,
+                                        infinite: false,
                                         initialSlide: generateStateValueProp(
                                           $state,
                                           ["sliderCarousel4", "currentSlide"]
@@ -2615,9 +2619,11 @@ function PlasmicProjects__RenderFunc(props) {
                               )}
                             </DataCtxReader__>
                           }
+                          mode={"rows"}
                           noAutoRepeat={false}
                           noLayout={false}
                           offset={0}
+                          table={"excellWebsiteCms"}
                           useDraft={false}
                         >
                           <DataCtxReader__>
@@ -2659,7 +2665,7 @@ function PlasmicProjects__RenderFunc(props) {
                                           "__wab_instance",
                                           sty.sliderCarousel
                                         ),
-                                        dots: true,
+                                        dots: false,
                                         initialSlide: generateStateValueProp(
                                           $state,
                                           ["sliderCarousel", "currentSlide"]
