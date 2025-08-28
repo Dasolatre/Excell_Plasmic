@@ -552,238 +552,148 @@ function PlasmicProjects__RenderFunc(props) {
             data-plasmic-override={overrides.projects}
             className={classNames(projectcss.all, sty.projects)}
           >
-            <CmsQueryRepeater
-              className={classNames(
-                "__wab_instance",
-                sty.cmsDataFetcher__fFzB2
-              )}
-              desc={false}
-              emptyMessage={
-                <DataCtxReader__>
-                  {$ctx => (
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__zK8Tb
-                      )}
-                    >
-                      {"No matching published entries found."}
-                    </div>
+            <div className={classNames(projectcss.all, sty.columns__seCOc)}>
+              <div className={classNames(projectcss.all, sty.column__qzXz6)}>
+                <CmsQueryRepeater
+                  className={classNames(
+                    "__wab_instance",
+                    sty.cmsDataFetcher__vtw3M
                   )}
-                </DataCtxReader__>
-              }
-              fields={[]}
-              forceEmptyState={true}
-              forceLoadingState={false}
-              limit={1}
-              loadingMessage={
-                <DataCtxReader__>
-                  {$ctx => (
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___19WKq
+                  desc={false}
+                  emptyMessage={
+                    <DataCtxReader__>
+                      {$ctx => (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__lcSd
+                          )}
+                        >
+                          {"No matching published entries found."}
+                        </div>
                       )}
-                    >
-                      {"Loading..."}
-                    </div>
-                  )}
-                </DataCtxReader__>
-              }
-              mode={"count"}
-              noAutoRepeat={false}
-              noLayout={true}
-              offset={0}
-              table={"excellWebsiteCms"}
-              useDraft={false}
-            >
-              <DataCtxReader__>
-                {$ctx => (
-                  <div
-                    className={classNames(projectcss.all, sty.columns__seCOc)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.column__qzXz6)}
-                    >
-                      <CmsQueryRepeater
+                    </DataCtxReader__>
+                  }
+                  fields={[]}
+                  forceEmptyState={false}
+                  forceLoadingState={false}
+                  limit={1}
+                  loadingMessage={
+                    <DataCtxReader__>
+                      {$ctx => (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__gj7KL
+                          )}
+                        >
+                          {"Loading..."}
+                        </div>
+                      )}
+                    </DataCtxReader__>
+                  }
+                  mode={"rows"}
+                  noAutoRepeat={false}
+                  noLayout={true}
+                  offset={6}
+                  table={"excellWebsiteCms"}
+                  useDraft={false}
+                >
+                  <DataCtxReader__>
+                    {$ctx => (
+                      <div
                         className={classNames(
-                          "__wab_instance",
-                          sty.cmsDataFetcher__vtw3M
+                          projectcss.all,
+                          sty.freeBox__w2YIm
                         )}
-                        desc={false}
-                        emptyMessage={
-                          <DataCtxReader__>
-                            {$ctx => (
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__lcSd
-                                )}
-                              >
-                                {"No matching published entries found."}
-                              </div>
-                            )}
-                          </DataCtxReader__>
-                        }
-                        fields={[]}
-                        forceEmptyState={false}
-                        forceLoadingState={false}
-                        limit={1}
-                        loadingMessage={
-                          <DataCtxReader__>
-                            {$ctx => (
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__gj7KL
-                                )}
-                              >
-                                {"Loading..."}
-                              </div>
-                            )}
-                          </DataCtxReader__>
-                        }
-                        mode={"rows"}
-                        noAutoRepeat={false}
-                        noLayout={true}
-                        offset={6}
-                        table={"excellWebsiteCms"}
-                        useDraft={false}
                       >
-                        <DataCtxReader__>
-                          {$ctx => (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__w2YIm
-                              )}
-                            >
-                              <div
-                                data-plasmic-name={"card8"}
-                                data-plasmic-override={overrides.card8}
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.card8
-                                )}
-                              >
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.freeBox__mJxdy
-                                  )}
+                        <div
+                          data-plasmic-name={"card8"}
+                          data-plasmic-override={overrides.card8}
+                          className={classNames(projectcss.all, sty.card8)}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__mJxdy
+                            )}
+                          >
+                            {(() => {
+                              const child$Props = {
+                                arrows: false,
+                                autoplay: false,
+                                beforeChange: async (...eventArgs) => {
+                                  generateStateOnChangePropForCodeComponents(
+                                    $state,
+                                    "currentSlide",
+                                    ["sliderCarousel5", "currentSlide"],
+                                    SliderWrapper_Helpers
+                                  ).apply(null, eventArgs);
+                                },
+                                centerMode: false,
+                                className: classNames(
+                                  "__wab_instance",
+                                  sty.sliderCarousel5
+                                ),
+                                dots: true,
+                                initialSlide: generateStateValueProp($state, [
+                                  "sliderCarousel5",
+                                  "currentSlide"
+                                ]),
+                                pauseOnHover: true,
+                                ref: ref => {
+                                  $refs["sliderCarousel5"] = ref;
+                                },
+                                sliderScopeClassName:
+                                  sty["sliderCarousel5__slider"]
+                              };
+                              initializeCodeComponentStates(
+                                $state,
+                                [
+                                  {
+                                    name: "currentSlide",
+                                    plasmicStateName:
+                                      "sliderCarousel5.currentSlide"
+                                  }
+                                ],
+
+                                [],
+                                SliderWrapper_Helpers ?? {},
+                                child$Props
+                              );
+                              return (
+                                <SliderWrapper
+                                  data-plasmic-name={"sliderCarousel5"}
+                                  data-plasmic-override={
+                                    overrides.sliderCarousel5
+                                  }
+                                  {...child$Props}
                                 >
-                                  {(() => {
-                                    const child$Props = {
-                                      arrows: false,
-                                      autoplay: false,
-                                      beforeChange: async (...eventArgs) => {
-                                        generateStateOnChangePropForCodeComponents(
-                                          $state,
-                                          "currentSlide",
-                                          ["sliderCarousel5", "currentSlide"],
-                                          SliderWrapper_Helpers
-                                        ).apply(null, eventArgs);
-                                      },
-                                      centerMode: false,
-                                      className: classNames(
-                                        "__wab_instance",
-                                        sty.sliderCarousel5
-                                      ),
-                                      dots: true,
-                                      initialSlide: generateStateValueProp(
-                                        $state,
-                                        ["sliderCarousel5", "currentSlide"]
-                                      ),
-                                      pauseOnHover: true,
-                                      ref: ref => {
-                                        $refs["sliderCarousel5"] = ref;
-                                      },
-                                      sliderScopeClassName:
-                                        sty["sliderCarousel5__slider"]
-                                    };
-                                    initializeCodeComponentStates(
-                                      $state,
-                                      [
-                                        {
-                                          name: "currentSlide",
-                                          plasmicStateName:
-                                            "sliderCarousel5.currentSlide"
-                                        }
-                                      ],
-
-                                      [],
-                                      SliderWrapper_Helpers ?? {},
-                                      child$Props
-                                    );
-                                    return (
-                                      <SliderWrapper
-                                        data-plasmic-name={"sliderCarousel5"}
-                                        data-plasmic-override={
-                                          overrides.sliderCarousel5
-                                        }
-                                        {...child$Props}
-                                      >
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__smhfa
-                                          )}
-                                          field={"projectImage"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                          usePlasmicTheme={true}
-                                        />
-
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__idGRw
-                                          )}
-                                          field={"projectImageAerial"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__gsVAc
-                                          )}
-                                          field={"projectImageCeremonial"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-                                      </SliderWrapper>
-                                    );
-                                  })()}
                                   <CmsRowField
                                     className={classNames(
                                       "__wab_instance",
-                                      sty.cmsEntryField__lHnUd
+                                      sty.cmsEntryField__smhfa
                                     )}
-                                    field={"kilowattPeak"}
+                                    field={"projectImage"}
+                                    themeResetClassName={classNames(
+                                      projectcss.root_reset,
+                                      projectcss.root_reset_tags,
+                                      projectcss.plasmic_default_styles,
+                                      projectcss.plasmic_mixins,
+                                      styleTokensClassNames,
+                                      styleTokensClassNames_antd_5_hostless
+                                    )}
+                                    usePlasmicTheme={true}
+                                  />
+
+                                  <CmsRowField
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.cmsEntryField__idGRw
+                                    )}
+                                    field={"projectImageAerial"}
                                     themeResetClassName={classNames(
                                       projectcss.root_reset,
                                       projectcss.root_reset_tags,
@@ -794,316 +704,295 @@ function PlasmicProjects__RenderFunc(props) {
                                     )}
                                   />
 
-                                  <h4
+                                  <CmsRowField
                                     className={classNames(
-                                      projectcss.all,
-                                      projectcss.h4,
-                                      projectcss.__wab_text,
-                                      sty.h4__oYiCy
+                                      "__wab_instance",
+                                      sty.cmsEntryField__gsVAc
                                     )}
-                                  >
-                                    {"Kilowatt (kWp) Project"}
-                                  </h4>
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.columns__ei7VJ
+                                    field={"projectImageCeremonial"}
+                                    themeResetClassName={classNames(
+                                      projectcss.root_reset,
+                                      projectcss.root_reset_tags,
+                                      projectcss.plasmic_default_styles,
+                                      projectcss.plasmic_mixins,
+                                      styleTokensClassNames,
+                                      styleTokensClassNames_antd_5_hostless
                                     )}
-                                  >
-                                    <div
-                                      className={classNames(
-                                        projectcss.all,
-                                        sty.column__o789
-                                      )}
-                                    >
-                                      <CmsRowField
-                                        className={classNames(
-                                          "__wab_instance",
-                                          sty.cmsEntryField__gvts5
-                                        )}
-                                        field={"logo"}
-                                        themeResetClassName={classNames(
-                                          projectcss.root_reset,
-                                          projectcss.root_reset_tags,
-                                          projectcss.plasmic_default_styles,
-                                          projectcss.plasmic_mixins,
-                                          styleTokensClassNames,
-                                          styleTokensClassNames_antd_5_hostless
-                                        )}
-                                      />
-                                    </div>
-                                    <div
-                                      className={classNames(
-                                        projectcss.all,
-                                        sty.column__nTmqY
-                                      )}
-                                    >
-                                      <div
-                                        className={classNames(
-                                          projectcss.all,
-                                          sty.freeBox___6YkiK
-                                        )}
-                                      >
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__jZsoN
-                                          )}
-                                          field={"projectName"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
+                                  />
+                                </SliderWrapper>
+                              );
+                            })()}
+                            <CmsRowField
+                              className={classNames(
+                                "__wab_instance",
+                                sty.cmsEntryField__lHnUd
+                              )}
+                              field={"kilowattPeak"}
+                              themeResetClassName={classNames(
+                                projectcss.root_reset,
+                                projectcss.root_reset_tags,
+                                projectcss.plasmic_default_styles,
+                                projectcss.plasmic_mixins,
+                                styleTokensClassNames,
+                                styleTokensClassNames_antd_5_hostless
+                              )}
+                            />
 
-                                        <div
-                                          className={classNames(
-                                            projectcss.all,
-                                            sty.freeBox___1B4Fl
-                                          )}
-                                        >
-                                          <GeoAltFillSvgIcon
-                                            className={classNames(
-                                              projectcss.all,
-                                              sty.svg__holmb
-                                            )}
-                                            role={"img"}
-                                          />
-
-                                          <CmsRowField
-                                            className={classNames(
-                                              "__wab_instance",
-                                              sty.cmsEntryField___5RY8E
-                                            )}
-                                            field={"projectLocation"}
-                                            themeResetClassName={classNames(
-                                              projectcss.root_reset,
-                                              projectcss.root_reset_tags,
-                                              projectcss.plasmic_default_styles,
-                                              projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
-                                            )}
-                                          />
-                                        </div>
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__y9Yv1
-                                          )}
-                                          field={"projectDescription"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          )}
-                        </DataCtxReader__>
-                      </CmsQueryRepeater>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.column___3QLWo)}
-                    >
-                      <CmsQueryRepeater
-                        className={classNames(
-                          "__wab_instance",
-                          sty.cmsDataFetcher__w1G9J
-                        )}
-                        desc={false}
-                        emptyMessage={
-                          <DataCtxReader__>
-                            {$ctx => (
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__tyh1V
-                                )}
-                              >
-                                {"No matching published entries found."}
-                              </div>
-                            )}
-                          </DataCtxReader__>
-                        }
-                        forceEmptyState={false}
-                        forceLoadingState={false}
-                        limit={1}
-                        loadingMessage={
-                          <DataCtxReader__>
-                            {$ctx => (
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__qxa9Y
-                                )}
-                              >
-                                {"Loading..."}
-                              </div>
-                            )}
-                          </DataCtxReader__>
-                        }
-                        noAutoRepeat={false}
-                        noLayout={false}
-                        offset={5}
-                        useDraft={false}
-                      >
-                        <DataCtxReader__>
-                          {$ctx => (
+                            <h4
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h4,
+                                projectcss.__wab_text,
+                                sty.h4__oYiCy
+                              )}
+                            >
+                              {"Kilowatt (kWp) Project"}
+                            </h4>
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.freeBox__cYNbb
+                                sty.columns__ei7VJ
                               )}
                             >
-                              <CmsRowField
-                                className={classNames(
-                                  "__wab_instance",
-                                  sty.cmsEntryField__waT
-                                )}
-                                themeResetClassName={classNames(
-                                  projectcss.root_reset,
-                                  projectcss.root_reset_tags,
-                                  projectcss.plasmic_default_styles,
-                                  projectcss.plasmic_mixins,
-                                  styleTokensClassNames,
-                                  styleTokensClassNames_antd_5_hostless
-                                )}
-                              />
-
                               <div
-                                data-plasmic-name={"card9"}
-                                data-plasmic-override={overrides.card9}
                                 className={classNames(
                                   projectcss.all,
-                                  sty.card9
+                                  sty.column__o789
+                                )}
+                              >
+                                <CmsRowField
+                                  className={classNames(
+                                    "__wab_instance",
+                                    sty.cmsEntryField__gvts5
+                                  )}
+                                  field={"logo"}
+                                  themeResetClassName={classNames(
+                                    projectcss.root_reset,
+                                    projectcss.root_reset_tags,
+                                    projectcss.plasmic_default_styles,
+                                    projectcss.plasmic_mixins,
+                                    styleTokensClassNames,
+                                    styleTokensClassNames_antd_5_hostless
+                                  )}
+                                />
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__nTmqY
                                 )}
                               >
                                 <div
                                   className={classNames(
                                     projectcss.all,
-                                    sty.freeBox__wqoAq
+                                    sty.freeBox___6YkiK
                                   )}
                                 >
-                                  {(() => {
-                                    const child$Props = {
-                                      arrows: false,
-                                      autoplay: false,
-                                      beforeChange: async (...eventArgs) => {
-                                        generateStateOnChangePropForCodeComponents(
-                                          $state,
-                                          "currentSlide",
-                                          ["sliderCarousel6", "currentSlide"],
-                                          SliderWrapper_Helpers
-                                        ).apply(null, eventArgs);
-                                      },
-                                      centerMode: false,
-                                      className: classNames(
-                                        "__wab_instance",
-                                        sty.sliderCarousel6
-                                      ),
-                                      dots: true,
-                                      initialSlide: generateStateValueProp(
-                                        $state,
-                                        ["sliderCarousel6", "currentSlide"]
-                                      ),
-                                      pauseOnHover: true,
-                                      ref: ref => {
-                                        $refs["sliderCarousel6"] = ref;
-                                      },
-                                      sliderScopeClassName:
-                                        sty["sliderCarousel6__slider"]
-                                    };
-                                    initializeCodeComponentStates(
-                                      $state,
-                                      [
-                                        {
-                                          name: "currentSlide",
-                                          plasmicStateName:
-                                            "sliderCarousel6.currentSlide"
-                                        }
-                                      ],
-
-                                      [],
-                                      SliderWrapper_Helpers ?? {},
-                                      child$Props
-                                    );
-                                    return (
-                                      <SliderWrapper
-                                        data-plasmic-name={"sliderCarousel6"}
-                                        data-plasmic-override={
-                                          overrides.sliderCarousel6
-                                        }
-                                        {...child$Props}
-                                      >
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField___67RBx
-                                          )}
-                                          field={"projectImage"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__buGzG
-                                          )}
-                                          field={"projectImageAerial"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__dWtb4
-                                          )}
-                                          field={"projectImageCeremonial"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-                                      </SliderWrapper>
-                                    );
-                                  })()}
                                   <CmsRowField
                                     className={classNames(
                                       "__wab_instance",
-                                      sty.cmsEntryField__oaZ0C
+                                      sty.cmsEntryField__jZsoN
+                                    )}
+                                    field={"projectName"}
+                                    themeResetClassName={classNames(
+                                      projectcss.root_reset,
+                                      projectcss.root_reset_tags,
+                                      projectcss.plasmic_default_styles,
+                                      projectcss.plasmic_mixins,
+                                      styleTokensClassNames,
+                                      styleTokensClassNames_antd_5_hostless
+                                    )}
+                                  />
+
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.freeBox___1B4Fl
+                                    )}
+                                  >
+                                    <GeoAltFillSvgIcon
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.svg__holmb
+                                      )}
+                                      role={"img"}
+                                    />
+
+                                    <CmsRowField
+                                      className={classNames(
+                                        "__wab_instance",
+                                        sty.cmsEntryField___5RY8E
+                                      )}
+                                      field={"projectLocation"}
+                                      themeResetClassName={classNames(
+                                        projectcss.root_reset,
+                                        projectcss.root_reset_tags,
+                                        projectcss.plasmic_default_styles,
+                                        projectcss.plasmic_mixins,
+                                        styleTokensClassNames,
+                                        styleTokensClassNames_antd_5_hostless
+                                      )}
+                                    />
+                                  </div>
+                                  <CmsRowField
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.cmsEntryField__y9Yv1
+                                    )}
+                                    field={"projectDescription"}
+                                    themeResetClassName={classNames(
+                                      projectcss.root_reset,
+                                      projectcss.root_reset_tags,
+                                      projectcss.plasmic_default_styles,
+                                      projectcss.plasmic_mixins,
+                                      styleTokensClassNames,
+                                      styleTokensClassNames_antd_5_hostless
+                                    )}
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </DataCtxReader__>
+                </CmsQueryRepeater>
+              </div>
+              <div className={classNames(projectcss.all, sty.column___3QLWo)}>
+                <CmsQueryRepeater
+                  className={classNames(
+                    "__wab_instance",
+                    sty.cmsDataFetcher__w1G9J
+                  )}
+                  desc={false}
+                  emptyMessage={
+                    <DataCtxReader__>
+                      {$ctx => (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__tyh1V
+                          )}
+                        >
+                          {"No matching published entries found."}
+                        </div>
+                      )}
+                    </DataCtxReader__>
+                  }
+                  forceEmptyState={false}
+                  forceLoadingState={false}
+                  limit={1}
+                  loadingMessage={
+                    <DataCtxReader__>
+                      {$ctx => (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__qxa9Y
+                          )}
+                        >
+                          {"Loading..."}
+                        </div>
+                      )}
+                    </DataCtxReader__>
+                  }
+                  noAutoRepeat={false}
+                  noLayout={false}
+                  offset={5}
+                  useDraft={false}
+                >
+                  <DataCtxReader__>
+                    {$ctx => (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__cYNbb
+                        )}
+                      >
+                        <CmsRowField
+                          className={classNames(
+                            "__wab_instance",
+                            sty.cmsEntryField__waT
+                          )}
+                          themeResetClassName={classNames(
+                            projectcss.root_reset,
+                            projectcss.root_reset_tags,
+                            projectcss.plasmic_default_styles,
+                            projectcss.plasmic_mixins,
+                            styleTokensClassNames,
+                            styleTokensClassNames_antd_5_hostless
+                          )}
+                        />
+
+                        <div
+                          data-plasmic-name={"card9"}
+                          data-plasmic-override={overrides.card9}
+                          className={classNames(projectcss.all, sty.card9)}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__wqoAq
+                            )}
+                          >
+                            {(() => {
+                              const child$Props = {
+                                arrows: false,
+                                autoplay: false,
+                                beforeChange: async (...eventArgs) => {
+                                  generateStateOnChangePropForCodeComponents(
+                                    $state,
+                                    "currentSlide",
+                                    ["sliderCarousel6", "currentSlide"],
+                                    SliderWrapper_Helpers
+                                  ).apply(null, eventArgs);
+                                },
+                                centerMode: false,
+                                className: classNames(
+                                  "__wab_instance",
+                                  sty.sliderCarousel6
+                                ),
+                                dots: true,
+                                initialSlide: generateStateValueProp($state, [
+                                  "sliderCarousel6",
+                                  "currentSlide"
+                                ]),
+                                pauseOnHover: true,
+                                ref: ref => {
+                                  $refs["sliderCarousel6"] = ref;
+                                },
+                                sliderScopeClassName:
+                                  sty["sliderCarousel6__slider"]
+                              };
+                              initializeCodeComponentStates(
+                                $state,
+                                [
+                                  {
+                                    name: "currentSlide",
+                                    plasmicStateName:
+                                      "sliderCarousel6.currentSlide"
+                                  }
+                                ],
+
+                                [],
+                                SliderWrapper_Helpers ?? {},
+                                child$Props
+                              );
+                              return (
+                                <SliderWrapper
+                                  data-plasmic-name={"sliderCarousel6"}
+                                  data-plasmic-override={
+                                    overrides.sliderCarousel6
+                                  }
+                                  {...child$Props}
+                                >
+                                  <CmsRowField
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.cmsEntryField___67RBx
                                     )}
                                     field={"projectImage"}
                                     themeResetClassName={classNames(
@@ -1119,9 +1008,9 @@ function PlasmicProjects__RenderFunc(props) {
                                   <CmsRowField
                                     className={classNames(
                                       "__wab_instance",
-                                      sty.cmsEntryField__xofvN
+                                      sty.cmsEntryField__buGzG
                                     )}
-                                    field={"kilowattPeak"}
+                                    field={"projectImageAerial"}
                                     themeResetClassName={classNames(
                                       projectcss.root_reset,
                                       projectcss.root_reset_tags,
@@ -1132,316 +1021,311 @@ function PlasmicProjects__RenderFunc(props) {
                                     )}
                                   />
 
-                                  <h4
+                                  <CmsRowField
                                     className={classNames(
-                                      projectcss.all,
-                                      projectcss.h4,
-                                      projectcss.__wab_text,
-                                      sty.h4___2CTc
+                                      "__wab_instance",
+                                      sty.cmsEntryField__dWtb4
                                     )}
-                                  >
-                                    {"Kilowatt (kWp) Project"}
-                                  </h4>
-                                  <div
-                                    className={classNames(
-                                      projectcss.all,
-                                      sty.columns___2Ap7E
+                                    field={"projectImageCeremonial"}
+                                    themeResetClassName={classNames(
+                                      projectcss.root_reset,
+                                      projectcss.root_reset_tags,
+                                      projectcss.plasmic_default_styles,
+                                      projectcss.plasmic_mixins,
+                                      styleTokensClassNames,
+                                      styleTokensClassNames_antd_5_hostless
                                     )}
-                                  >
-                                    <div
-                                      className={classNames(
-                                        projectcss.all,
-                                        sty.column___9Mn2N
-                                      )}
-                                    >
-                                      <CmsRowField
-                                        className={classNames(
-                                          "__wab_instance",
-                                          sty.cmsEntryField__eh9Gu
-                                        )}
-                                        field={"logo"}
-                                        themeResetClassName={classNames(
-                                          projectcss.root_reset,
-                                          projectcss.root_reset_tags,
-                                          projectcss.plasmic_default_styles,
-                                          projectcss.plasmic_mixins,
-                                          styleTokensClassNames,
-                                          styleTokensClassNames_antd_5_hostless
-                                        )}
-                                      />
-                                    </div>
-                                    <div
-                                      className={classNames(
-                                        projectcss.all,
-                                        sty.column__nq7Pa
-                                      )}
-                                    >
-                                      <div
-                                        className={classNames(
-                                          projectcss.all,
-                                          sty.freeBox__jsP7F
-                                        )}
-                                      >
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__uYget
-                                          )}
-                                          field={"projectName"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
+                                  />
+                                </SliderWrapper>
+                              );
+                            })()}
+                            <CmsRowField
+                              className={classNames(
+                                "__wab_instance",
+                                sty.cmsEntryField__oaZ0C
+                              )}
+                              field={"projectImage"}
+                              themeResetClassName={classNames(
+                                projectcss.root_reset,
+                                projectcss.root_reset_tags,
+                                projectcss.plasmic_default_styles,
+                                projectcss.plasmic_mixins,
+                                styleTokensClassNames,
+                                styleTokensClassNames_antd_5_hostless
+                              )}
+                            />
 
-                                        <div
-                                          className={classNames(
-                                            projectcss.all,
-                                            sty.freeBox__qi6C2
-                                          )}
-                                        >
-                                          <GeoAltFillSvgIcon
-                                            className={classNames(
-                                              projectcss.all,
-                                              sty.svg__byp0F
-                                            )}
-                                            role={"img"}
-                                          />
+                            <CmsRowField
+                              className={classNames(
+                                "__wab_instance",
+                                sty.cmsEntryField__xofvN
+                              )}
+                              field={"kilowattPeak"}
+                              themeResetClassName={classNames(
+                                projectcss.root_reset,
+                                projectcss.root_reset_tags,
+                                projectcss.plasmic_default_styles,
+                                projectcss.plasmic_mixins,
+                                styleTokensClassNames,
+                                styleTokensClassNames_antd_5_hostless
+                              )}
+                            />
 
-                                          <CmsRowField
-                                            className={classNames(
-                                              "__wab_instance",
-                                              sty.cmsEntryField__mbxlj
-                                            )}
-                                            field={"projectLocation"}
-                                            themeResetClassName={classNames(
-                                              projectcss.root_reset,
-                                              projectcss.root_reset_tags,
-                                              projectcss.plasmic_default_styles,
-                                              projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
-                                            )}
-                                          />
-                                        </div>
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__vjtds
-                                          )}
-                                          field={"projectDescription"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          )}
-                        </DataCtxReader__>
-                      </CmsQueryRepeater>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.column__lni3V)}
-                    >
-                      <CmsQueryRepeater
-                        className={classNames(
-                          "__wab_instance",
-                          sty.cmsDataFetcher__yjE
-                        )}
-                        desc={false}
-                        emptyMessage={
-                          <DataCtxReader__>
-                            {$ctx => (
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___5L32R
-                                )}
-                              >
-                                {"No matching published entries found."}
-                              </div>
-                            )}
-                          </DataCtxReader__>
-                        }
-                        forceEmptyState={false}
-                        forceLoadingState={false}
-                        limit={1}
-                        loadingMessage={
-                          <DataCtxReader__>
-                            {$ctx => (
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__xLjy0
-                                )}
-                              >
-                                {"Loading..."}
-                              </div>
-                            )}
-                          </DataCtxReader__>
-                        }
-                        noAutoRepeat={false}
-                        noLayout={false}
-                        offset={4}
-                        useDraft={false}
-                      >
-                        <DataCtxReader__>
-                          {$ctx => (
+                            <h4
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h4,
+                                projectcss.__wab_text,
+                                sty.h4___2CTc
+                              )}
+                            >
+                              {"Kilowatt (kWp) Project"}
+                            </h4>
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.freeBox__s6Ikl
+                                sty.columns___2Ap7E
                               )}
                             >
-                              <CmsRowField
-                                className={classNames(
-                                  "__wab_instance",
-                                  sty.cmsEntryField__exjZj
-                                )}
-                                themeResetClassName={classNames(
-                                  projectcss.root_reset,
-                                  projectcss.root_reset_tags,
-                                  projectcss.plasmic_default_styles,
-                                  projectcss.plasmic_mixins,
-                                  styleTokensClassNames,
-                                  styleTokensClassNames_antd_5_hostless
-                                )}
-                              />
-
                               <div
-                                data-plasmic-name={"card10"}
-                                data-plasmic-override={overrides.card10}
                                 className={classNames(
                                   projectcss.all,
-                                  sty.card10
+                                  sty.column___9Mn2N
+                                )}
+                              >
+                                <CmsRowField
+                                  className={classNames(
+                                    "__wab_instance",
+                                    sty.cmsEntryField__eh9Gu
+                                  )}
+                                  field={"logo"}
+                                  themeResetClassName={classNames(
+                                    projectcss.root_reset,
+                                    projectcss.root_reset_tags,
+                                    projectcss.plasmic_default_styles,
+                                    projectcss.plasmic_mixins,
+                                    styleTokensClassNames,
+                                    styleTokensClassNames_antd_5_hostless
+                                  )}
+                                />
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__nq7Pa
                                 )}
                               >
                                 <div
                                   className={classNames(
                                     projectcss.all,
-                                    sty.freeBox__rCa
+                                    sty.freeBox__jsP7F
                                   )}
                                 >
-                                  {(() => {
-                                    const child$Props = {
-                                      arrows: false,
-                                      autoplay: false,
-                                      beforeChange: async (...eventArgs) => {
-                                        generateStateOnChangePropForCodeComponents(
-                                          $state,
-                                          "currentSlide",
-                                          ["sliderCarousel7", "currentSlide"],
-                                          SliderWrapper_Helpers
-                                        ).apply(null, eventArgs);
-                                      },
-                                      centerMode: false,
-                                      className: classNames(
-                                        "__wab_instance",
-                                        sty.sliderCarousel7
-                                      ),
-                                      dots: true,
-                                      initialSlide: generateStateValueProp(
-                                        $state,
-                                        ["sliderCarousel7", "currentSlide"]
-                                      ),
-                                      pauseOnHover: true,
-                                      ref: ref => {
-                                        $refs["sliderCarousel7"] = ref;
-                                      },
-                                      sliderScopeClassName:
-                                        sty["sliderCarousel7__slider"]
-                                    };
-                                    initializeCodeComponentStates(
-                                      $state,
-                                      [
-                                        {
-                                          name: "currentSlide",
-                                          plasmicStateName:
-                                            "sliderCarousel7.currentSlide"
-                                        }
-                                      ],
-
-                                      [],
-                                      SliderWrapper_Helpers ?? {},
-                                      child$Props
-                                    );
-                                    return (
-                                      <SliderWrapper
-                                        data-plasmic-name={"sliderCarousel7"}
-                                        data-plasmic-override={
-                                          overrides.sliderCarousel7
-                                        }
-                                        {...child$Props}
-                                      >
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__nzDr
-                                          )}
-                                          field={"projectImage"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField___0RxP2
-                                          )}
-                                          field={"projectImageAerial"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__kDsjU
-                                          )}
-                                          field={"projectImageCeremonial"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-                                      </SliderWrapper>
-                                    );
-                                  })()}
                                   <CmsRowField
                                     className={classNames(
                                       "__wab_instance",
-                                      sty.cmsEntryField__eq7Lz
+                                      sty.cmsEntryField__uYget
+                                    )}
+                                    field={"projectName"}
+                                    themeResetClassName={classNames(
+                                      projectcss.root_reset,
+                                      projectcss.root_reset_tags,
+                                      projectcss.plasmic_default_styles,
+                                      projectcss.plasmic_mixins,
+                                      styleTokensClassNames,
+                                      styleTokensClassNames_antd_5_hostless
+                                    )}
+                                  />
+
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.freeBox__qi6C2
+                                    )}
+                                  >
+                                    <GeoAltFillSvgIcon
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.svg__byp0F
+                                      )}
+                                      role={"img"}
+                                    />
+
+                                    <CmsRowField
+                                      className={classNames(
+                                        "__wab_instance",
+                                        sty.cmsEntryField__mbxlj
+                                      )}
+                                      field={"projectLocation"}
+                                      themeResetClassName={classNames(
+                                        projectcss.root_reset,
+                                        projectcss.root_reset_tags,
+                                        projectcss.plasmic_default_styles,
+                                        projectcss.plasmic_mixins,
+                                        styleTokensClassNames,
+                                        styleTokensClassNames_antd_5_hostless
+                                      )}
+                                    />
+                                  </div>
+                                  <CmsRowField
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.cmsEntryField__vjtds
+                                    )}
+                                    field={"projectDescription"}
+                                    themeResetClassName={classNames(
+                                      projectcss.root_reset,
+                                      projectcss.root_reset_tags,
+                                      projectcss.plasmic_default_styles,
+                                      projectcss.plasmic_mixins,
+                                      styleTokensClassNames,
+                                      styleTokensClassNames_antd_5_hostless
+                                    )}
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </DataCtxReader__>
+                </CmsQueryRepeater>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__lni3V)}>
+                <CmsQueryRepeater
+                  className={classNames(
+                    "__wab_instance",
+                    sty.cmsDataFetcher__yjE
+                  )}
+                  desc={false}
+                  emptyMessage={
+                    <DataCtxReader__>
+                      {$ctx => (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___5L32R
+                          )}
+                        >
+                          {"No matching published entries found."}
+                        </div>
+                      )}
+                    </DataCtxReader__>
+                  }
+                  forceEmptyState={false}
+                  forceLoadingState={false}
+                  limit={1}
+                  loadingMessage={
+                    <DataCtxReader__>
+                      {$ctx => (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__xLjy0
+                          )}
+                        >
+                          {"Loading..."}
+                        </div>
+                      )}
+                    </DataCtxReader__>
+                  }
+                  noAutoRepeat={false}
+                  noLayout={false}
+                  offset={4}
+                  useDraft={false}
+                >
+                  <DataCtxReader__>
+                    {$ctx => (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__s6Ikl
+                        )}
+                      >
+                        <CmsRowField
+                          className={classNames(
+                            "__wab_instance",
+                            sty.cmsEntryField__exjZj
+                          )}
+                          themeResetClassName={classNames(
+                            projectcss.root_reset,
+                            projectcss.root_reset_tags,
+                            projectcss.plasmic_default_styles,
+                            projectcss.plasmic_mixins,
+                            styleTokensClassNames,
+                            styleTokensClassNames_antd_5_hostless
+                          )}
+                        />
+
+                        <div
+                          data-plasmic-name={"card10"}
+                          data-plasmic-override={overrides.card10}
+                          className={classNames(projectcss.all, sty.card10)}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__rCa
+                            )}
+                          >
+                            {(() => {
+                              const child$Props = {
+                                arrows: false,
+                                autoplay: false,
+                                beforeChange: async (...eventArgs) => {
+                                  generateStateOnChangePropForCodeComponents(
+                                    $state,
+                                    "currentSlide",
+                                    ["sliderCarousel7", "currentSlide"],
+                                    SliderWrapper_Helpers
+                                  ).apply(null, eventArgs);
+                                },
+                                centerMode: false,
+                                className: classNames(
+                                  "__wab_instance",
+                                  sty.sliderCarousel7
+                                ),
+                                dots: true,
+                                initialSlide: generateStateValueProp($state, [
+                                  "sliderCarousel7",
+                                  "currentSlide"
+                                ]),
+                                pauseOnHover: true,
+                                ref: ref => {
+                                  $refs["sliderCarousel7"] = ref;
+                                },
+                                sliderScopeClassName:
+                                  sty["sliderCarousel7__slider"]
+                              };
+                              initializeCodeComponentStates(
+                                $state,
+                                [
+                                  {
+                                    name: "currentSlide",
+                                    plasmicStateName:
+                                      "sliderCarousel7.currentSlide"
+                                  }
+                                ],
+
+                                [],
+                                SliderWrapper_Helpers ?? {},
+                                child$Props
+                              );
+                              return (
+                                <SliderWrapper
+                                  data-plasmic-name={"sliderCarousel7"}
+                                  data-plasmic-override={
+                                    overrides.sliderCarousel7
+                                  }
+                                  {...child$Props}
+                                >
+                                  <CmsRowField
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.cmsEntryField__nzDr
                                     )}
                                     field={"projectImage"}
                                     themeResetClassName={classNames(
@@ -1457,9 +1341,9 @@ function PlasmicProjects__RenderFunc(props) {
                                   <CmsRowField
                                     className={classNames(
                                       "__wab_instance",
-                                      sty.cmsEntryField__d719S
+                                      sty.cmsEntryField___0RxP2
                                     )}
-                                    field={"kilowattPeak"}
+                                    field={"projectImageAerial"}
                                     themeResetClassName={classNames(
                                       projectcss.root_reset,
                                       projectcss.root_reset_tags,
@@ -1470,131 +1354,178 @@ function PlasmicProjects__RenderFunc(props) {
                                     )}
                                   />
 
-                                  <h4
+                                  <CmsRowField
                                     className={classNames(
-                                      projectcss.all,
-                                      projectcss.h4,
-                                      projectcss.__wab_text,
-                                      sty.h4__rJ7Ve
+                                      "__wab_instance",
+                                      sty.cmsEntryField__kDsjU
                                     )}
-                                  >
-                                    {"Kilowatt (kWp) Project"}
-                                  </h4>
+                                    field={"projectImageCeremonial"}
+                                    themeResetClassName={classNames(
+                                      projectcss.root_reset,
+                                      projectcss.root_reset_tags,
+                                      projectcss.plasmic_default_styles,
+                                      projectcss.plasmic_mixins,
+                                      styleTokensClassNames,
+                                      styleTokensClassNames_antd_5_hostless
+                                    )}
+                                  />
+                                </SliderWrapper>
+                              );
+                            })()}
+                            <CmsRowField
+                              className={classNames(
+                                "__wab_instance",
+                                sty.cmsEntryField__eq7Lz
+                              )}
+                              field={"projectImage"}
+                              themeResetClassName={classNames(
+                                projectcss.root_reset,
+                                projectcss.root_reset_tags,
+                                projectcss.plasmic_default_styles,
+                                projectcss.plasmic_mixins,
+                                styleTokensClassNames,
+                                styleTokensClassNames_antd_5_hostless
+                              )}
+                            />
+
+                            <CmsRowField
+                              className={classNames(
+                                "__wab_instance",
+                                sty.cmsEntryField__d719S
+                              )}
+                              field={"kilowattPeak"}
+                              themeResetClassName={classNames(
+                                projectcss.root_reset,
+                                projectcss.root_reset_tags,
+                                projectcss.plasmic_default_styles,
+                                projectcss.plasmic_mixins,
+                                styleTokensClassNames,
+                                styleTokensClassNames_antd_5_hostless
+                              )}
+                            />
+
+                            <h4
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h4,
+                                projectcss.__wab_text,
+                                sty.h4__rJ7Ve
+                              )}
+                            >
+                              {"Kilowatt (kWp) Project"}
+                            </h4>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.columns__v9M7P
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__lVzT
+                                )}
+                              >
+                                <CmsRowField
+                                  className={classNames(
+                                    "__wab_instance",
+                                    sty.cmsEntryField___4Six9
+                                  )}
+                                  field={"logo"}
+                                  themeResetClassName={classNames(
+                                    projectcss.root_reset,
+                                    projectcss.root_reset_tags,
+                                    projectcss.plasmic_default_styles,
+                                    projectcss.plasmic_mixins,
+                                    styleTokensClassNames,
+                                    styleTokensClassNames_antd_5_hostless
+                                  )}
+                                />
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__qe1Qk
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__gQwIu
+                                  )}
+                                >
+                                  <CmsRowField
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.cmsEntryField__aRif2
+                                    )}
+                                    field={"projectName"}
+                                    themeResetClassName={classNames(
+                                      projectcss.root_reset,
+                                      projectcss.root_reset_tags,
+                                      projectcss.plasmic_default_styles,
+                                      projectcss.plasmic_mixins,
+                                      styleTokensClassNames,
+                                      styleTokensClassNames_antd_5_hostless
+                                    )}
+                                  />
+
                                   <div
                                     className={classNames(
                                       projectcss.all,
-                                      sty.columns__v9M7P
+                                      sty.freeBox__iqkkg
                                     )}
                                   >
-                                    <div
+                                    <GeoAltFillSvgIcon
                                       className={classNames(
                                         projectcss.all,
-                                        sty.column__lVzT
+                                        sty.svg___5I5Ja
                                       )}
-                                    >
-                                      <CmsRowField
-                                        className={classNames(
-                                          "__wab_instance",
-                                          sty.cmsEntryField___4Six9
-                                        )}
-                                        field={"logo"}
-                                        themeResetClassName={classNames(
-                                          projectcss.root_reset,
-                                          projectcss.root_reset_tags,
-                                          projectcss.plasmic_default_styles,
-                                          projectcss.plasmic_mixins,
-                                          styleTokensClassNames,
-                                          styleTokensClassNames_antd_5_hostless
-                                        )}
-                                      />
-                                    </div>
-                                    <div
+                                      role={"img"}
+                                    />
+
+                                    <CmsRowField
                                       className={classNames(
-                                        projectcss.all,
-                                        sty.column__qe1Qk
+                                        "__wab_instance",
+                                        sty.cmsEntryField___5EKl
                                       )}
-                                    >
-                                      <div
-                                        className={classNames(
-                                          projectcss.all,
-                                          sty.freeBox__gQwIu
-                                        )}
-                                      >
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__aRif2
-                                          )}
-                                          field={"projectName"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-
-                                        <div
-                                          className={classNames(
-                                            projectcss.all,
-                                            sty.freeBox__iqkkg
-                                          )}
-                                        >
-                                          <GeoAltFillSvgIcon
-                                            className={classNames(
-                                              projectcss.all,
-                                              sty.svg___5I5Ja
-                                            )}
-                                            role={"img"}
-                                          />
-
-                                          <CmsRowField
-                                            className={classNames(
-                                              "__wab_instance",
-                                              sty.cmsEntryField___5EKl
-                                            )}
-                                            field={"projectLocation"}
-                                            themeResetClassName={classNames(
-                                              projectcss.root_reset,
-                                              projectcss.root_reset_tags,
-                                              projectcss.plasmic_default_styles,
-                                              projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
-                                            )}
-                                          />
-                                        </div>
-                                        <CmsRowField
-                                          className={classNames(
-                                            "__wab_instance",
-                                            sty.cmsEntryField__wgMe
-                                          )}
-                                          field={"projectDescription"}
-                                          themeResetClassName={classNames(
-                                            projectcss.root_reset,
-                                            projectcss.root_reset_tags,
-                                            projectcss.plasmic_default_styles,
-                                            projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
-                                          )}
-                                        />
-                                      </div>
-                                    </div>
+                                      field={"projectLocation"}
+                                      themeResetClassName={classNames(
+                                        projectcss.root_reset,
+                                        projectcss.root_reset_tags,
+                                        projectcss.plasmic_default_styles,
+                                        projectcss.plasmic_mixins,
+                                        styleTokensClassNames,
+                                        styleTokensClassNames_antd_5_hostless
+                                      )}
+                                    />
                                   </div>
+                                  <CmsRowField
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.cmsEntryField__wgMe
+                                    )}
+                                    field={"projectDescription"}
+                                    themeResetClassName={classNames(
+                                      projectcss.root_reset,
+                                      projectcss.root_reset_tags,
+                                      projectcss.plasmic_default_styles,
+                                      projectcss.plasmic_mixins,
+                                      styleTokensClassNames,
+                                      styleTokensClassNames_antd_5_hostless
+                                    )}
+                                  />
                                 </div>
                               </div>
                             </div>
-                          )}
-                        </DataCtxReader__>
-                      </CmsQueryRepeater>
-                    </div>
-                  </div>
-                )}
-              </DataCtxReader__>
-            </CmsQueryRepeater>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </DataCtxReader__>
+                </CmsQueryRepeater>
+              </div>
+            </div>
             <CmsQueryRepeater
               className={classNames(
                 "__wab_instance",
