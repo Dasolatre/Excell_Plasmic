@@ -27,8 +27,9 @@ import { BaseListBox } from "@plasmicpkgs/react-aria/skinny/registerListBox";
 import { listboxHelpers as BaseListBox_Helpers } from "@plasmicpkgs/react-aria/skinny/registerListBox";
 import MenuItem from "../../MenuItem"; // plasmic-import: CgZJ2xQvPdlI/component
 import MenuSection from "../../MenuSection"; // plasmic-import: Y7fqX3sI9DwK/component
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
+import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
 import sty from "./PlasmicMenuPopover.module.css"; // plasmic-import: KTw_skn9Gx5B/css
 
@@ -93,6 +94,9 @@ function PlasmicMenuPopover__RenderFunc(props) {
     $queries: {},
     $refs
   });
+  const styleTokensClassNames = _useStyleTokens();
+  const styleTokensClassNames_antd_5_hostless =
+    useStyleTokens_antd_5_hostless();
   return (
     <BasePopover
       data-plasmic-name={"root"}
@@ -104,8 +108,8 @@ function PlasmicMenuPopover__RenderFunc(props) {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
-        projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
+        styleTokensClassNames,
+        styleTokensClassNames_antd_5_hostless,
         sty.root
       )}
       matchTriggerWidth={true}
@@ -115,8 +119,8 @@ function PlasmicMenuPopover__RenderFunc(props) {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
-        projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens
+        styleTokensClassNames,
+        styleTokensClassNames_antd_5_hostless
       )}
       shouldFlip={true}
     >

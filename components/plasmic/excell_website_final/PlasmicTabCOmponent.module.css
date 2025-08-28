@@ -16,7 +16,7 @@
   padding: 48px;
 }
 .faQsTab:global(.__wab_instance) {
-  width: 100%;
+  width: 1057px;
   overflow: scroll;
   max-width: 100%;
   object-fit: cover;
@@ -24,7 +24,6 @@
   font-size: 18px;
   color: var(--token-PC6O9-hPHdvT);
   background: #ffffff;
-  min-width: 0;
 }
 .aboutSolar:global(.__wab_instance) {
   max-width: 100%;
