@@ -692,6 +692,7 @@
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
+  overflow: hidden;
   min-width: 0;
 }
 .cmsEntryField__smhfa:global(.__wab_instance) {
@@ -700,6 +701,7 @@
   height: 440px;
   width: 568px;
   background: none;
+  overflow: hidden;
   display: none;
   border-radius: 16px;
 }
