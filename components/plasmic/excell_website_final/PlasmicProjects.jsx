@@ -955,6 +955,7 @@ function PlasmicProjects__RenderFunc(props) {
                                   sty.sliderCarousel6
                                 ),
                                 dots: true,
+                                infinite: true,
                                 initialSlide: generateStateValueProp($state, [
                                   "sliderCarousel6",
                                   "currentSlide"
@@ -1002,6 +1003,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       styleTokensClassNames,
                                       styleTokensClassNames_antd_5_hostless
                                     )}
+                                    usePlasmicTheme={true}
                                   />
 
                                   <CmsRowField
