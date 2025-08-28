@@ -572,7 +572,7 @@ function PlasmicProjects__RenderFunc(props) {
                   fields={[]}
                   forceEmptyState={false}
                   forceLoadingState={false}
-                  limit={0}
+                  limit={1}
                   loadingMessage={
                     <DataCtxReader__>
                       {$ctx => (
