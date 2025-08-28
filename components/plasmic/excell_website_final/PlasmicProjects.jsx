@@ -574,7 +574,7 @@ function PlasmicProjects__RenderFunc(props) {
                 </DataCtxReader__>
               }
               fields={[]}
-              forceEmptyState={false}
+              forceEmptyState={true}
               forceLoadingState={false}
               limit={1}
               loadingMessage={
@@ -592,10 +592,11 @@ function PlasmicProjects__RenderFunc(props) {
                   )}
                 </DataCtxReader__>
               }
-              noAutoRepeat={true}
-              noLayout={false}
+              mode={"count"}
+              noAutoRepeat={false}
+              noLayout={true}
               offset={0}
-              orderBy={"kilowattPeak"}
+              table={"excellWebsiteCms"}
               useDraft={false}
             >
               <DataCtxReader__>
@@ -627,6 +628,7 @@ function PlasmicProjects__RenderFunc(props) {
                             )}
                           </DataCtxReader__>
                         }
+                        fields={[]}
                         forceEmptyState={false}
                         forceLoadingState={false}
                         limit={1}
@@ -645,9 +647,11 @@ function PlasmicProjects__RenderFunc(props) {
                             )}
                           </DataCtxReader__>
                         }
+                        mode={"rows"}
                         noAutoRepeat={false}
-                        noLayout={false}
+                        noLayout={true}
                         offset={6}
+                        table={"excellWebsiteCms"}
                         useDraft={false}
                       >
                         <DataCtxReader__>
