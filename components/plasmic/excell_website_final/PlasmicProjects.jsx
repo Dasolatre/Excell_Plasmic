@@ -592,7 +592,7 @@ function PlasmicProjects__RenderFunc(props) {
                   )}
                 </DataCtxReader__>
               }
-              noAutoRepeat={false}
+              noAutoRepeat={true}
               noLayout={false}
               offset={0}
               orderBy={"kilowattPeak"}
