@@ -632,7 +632,7 @@ function PlasmicProjects__RenderFunc(props) {
                                   sty.sliderCarousel5
                                 ),
                                 dots: false,
-                                infinite: false,
+                                infinite: true,
                                 initialSlide: generateStateValueProp($state, [
                                   "sliderCarousel5",
                                   "currentSlide"
