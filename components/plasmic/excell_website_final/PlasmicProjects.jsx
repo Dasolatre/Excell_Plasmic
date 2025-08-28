@@ -572,7 +572,7 @@ function PlasmicProjects__RenderFunc(props) {
                   fields={[]}
                   forceEmptyState={false}
                   forceLoadingState={false}
-                  limit={1}
+                  limit={0}
                   loadingMessage={
                     <DataCtxReader__>
                       {$ctx => (
@@ -632,6 +632,7 @@ function PlasmicProjects__RenderFunc(props) {
                                   sty.sliderCarousel5
                                 ),
                                 dots: true,
+                                infinite: false,
                                 initialSlide: generateStateValueProp($state, [
                                   "sliderCarousel5",
                                   "currentSlide"
