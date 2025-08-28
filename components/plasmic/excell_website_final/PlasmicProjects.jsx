@@ -86,12 +86,6 @@ function PlasmicProjects__RenderFunc(props) {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "variable",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
-      {
         path: "sliderCarousel.currentSlide",
         type: "private",
         variableType: "number",
