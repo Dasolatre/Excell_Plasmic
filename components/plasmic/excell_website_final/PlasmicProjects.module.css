@@ -588,23 +588,12 @@
   }
 }
 .cmsDataFetcher__fFzB2:global(.__wab_instance) {
-  width: auto;
+  width: 100%;
   display: flex;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
-}
-.freeBox__bLxlc {
-  flex-direction: row;
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: center;
   min-width: 0;
-  display: none;
-  padding: 8px;
 }
 .columns__seCOc {
   display: flex;
@@ -704,15 +693,15 @@
   justify-content: flex-start;
   align-items: center;
   row-gap: 24px;
-  overflow: visible;
   min-width: 0;
   padding: 0px;
 }
 .sliderCarousel5:global(.__wab_instance) {
-  width: auto;
+  width: 100%;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
+  min-width: 0;
 }
 .cmsEntryField__smhfa:global(.__wab_instance) {
   object-fit: cover;
@@ -720,13 +709,7 @@
   height: 440px;
   width: 568px;
   background: none;
-  overflow: hidden;
   border-radius: 16px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .cmsEntryField__smhfa:global(.__wab_instance) {
-    overflow: visible;
-  }
 }
 .cmsEntryField__idGRw:global(.__wab_instance) {
   object-fit: cover;
@@ -740,15 +723,6 @@
   max-width: 100%;
   height: 440px;
   width: 568px;
-  border-radius: 16px;
-}
-.cmsEntryField__qjMgx:global(.__wab_instance) {
-  object-fit: cover;
-  max-width: 100%;
-  height: 440px;
-  width: 568px;
-  flex-shrink: 0;
-  display: none;
   border-radius: 16px;
 }
 .cmsEntryField__lHnUd:global(.__wab_instance) {
@@ -940,11 +914,12 @@
   padding: 0px;
 }
 .cmsDataFetcher__w1G9J:global(.__wab_instance) {
-  width: auto;
+  width: 100%;
   display: flex;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
+  min-width: 0;
 }
 .freeBox__cYNbb {
   display: flex;
@@ -993,10 +968,11 @@
   padding: 0px;
 }
 .sliderCarousel6:global(.__wab_instance) {
-  width: auto;
+  width: 100%;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
+  min-width: 0;
 }
 .cmsEntryField___67RBx:global(.__wab_instance) {
   object-fit: cover;
@@ -1037,11 +1013,12 @@
   font-weight: 700;
 }
 .h4___2CTc {
-  width: auto;
+  width: 100%;
   height: auto;
   max-width: 100%;
   text-align: center;
   font-family: "Open Sans", sans-serif;
+  min-width: 0;
 }
 .columns___2Ap7E {
   display: flex;
@@ -1133,13 +1110,14 @@
 .cmsEntryField__uYget:global(.__wab_instance) {
   object-fit: contain;
   max-width: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
   background: none;
   box-shadow: none;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
+  min-width: 0;
   padding: 0px;
 }
 .freeBox__qi6C2 {
@@ -1215,11 +1193,12 @@
   padding: 0px;
 }
 .cmsDataFetcher__yjE:global(.__wab_instance) {
-  width: auto;
+  width: 100%;
   display: flex;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
+  min-width: 0;
 }
 .freeBox__s6Ikl {
   display: flex;
@@ -1268,10 +1247,11 @@
   padding: 0px;
 }
 .sliderCarousel7:global(.__wab_instance) {
-  width: auto;
+  width: 100%;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
+  min-width: 0;
 }
 .cmsEntryField__nzDr:global(.__wab_instance) {
   object-fit: cover;
@@ -1494,11 +1474,12 @@
   min-width: 0;
 }
 .cmsDataFetcher__iyJxx:global(.__wab_instance) {
-  width: auto;
+  width: 100%;
   display: flex;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
+  min-width: 0;
 }
 .freeBox__yPDc {
   flex-direction: row;
@@ -1595,7 +1576,6 @@
   background: #ffffff;
   box-shadow: 8px 8px 56px 0px #00000014;
   row-gap: 48px;
-  overflow: hidden;
   min-height: 0;
   border-radius: 24px;
   padding: 16px;
@@ -2378,11 +2358,12 @@
   min-width: 0;
 }
 .cmsDataFetcher__dzcOv:global(.__wab_instance) {
-  width: auto;
+  width: 100%;
   display: flex;
   max-width: 100%;
   flex-direction: column;
   object-fit: cover;
+  min-width: 0;
 }
 .freeBox___9PEa2 {
   flex-direction: row;

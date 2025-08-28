@@ -18,11 +18,21 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  hasVariant
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  hasVariant,
+  initializeCodeComponentStates,
+  useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-import TabCOmponent from "../../TabCOmponent"; // plasmic-import: 5N6Gaf5ZBLNG/component
+import { AntdTabs } from "@plasmicpkgs/antd5/skinny/registerTabs";
+import { AntdTabItem } from "@plasmicpkgs/antd5/skinny/registerTabs";
+import { AntdAccordion } from "@plasmicpkgs/antd5/skinny/registerCollapse";
+import { accordionHelpers as AntdAccordion_Helpers } from "@plasmicpkgs/antd5/skinny/registerCollapse";
+import { AntdAccordionItem } from "@plasmicpkgs/antd5/skinny/registerCollapse";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
 import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
@@ -70,6 +80,40 @@ function PlasmicLearn__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "variable",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      },
+      {
+        path: "faQsTab.activeKey",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => "1"
+      },
+      {
+        path: "aboutAccordion.activePanelId",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined,
+        onMutate: generateOnMutateForSpec(
+          "activePanelId",
+          AntdAccordion_Helpers
+        )
+      }
+    ],
+
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
   const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
   const styleTokensClassNames_antd_5_hostless =
@@ -99,6 +143,7 @@ function PlasmicLearn__RenderFunc(props) {
             styleTokensClassNames_antd_5_hostless,
             sty.learnPage
           )}
+          id={``}
         >
           <div
             data-plasmic-name={"landingPage"}
@@ -110,175 +155,6 @@ function PlasmicLearn__RenderFunc(props) {
               data-plasmic-override={overrides.container2}
               className={classNames(projectcss.all, sty.container2)}
             >
-              <NavigationBar
-                data-plasmic-name={"navigationBar"}
-                data-plasmic-override={overrides.navigationBar}
-                brand={null}
-                className={classNames("__wab_instance", sty.navigationBar)}
-                closeButton={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__nx4Ne)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"32px"}
-                    src={{
-                      src: "/plasmic/excell_website_final/images/xLgSvg2.svg",
-                      fullWidth: 24,
-                      fullHeight: 25,
-                      aspectRatio: 0.96
-                    }}
-                  />
-                }
-                forceOpenMenu={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : false
-                }
-                itemsGap={
-                  hasVariant(globalVariants, "screen", "mobileOnly") ? 48 : 48
-                }
-                menuItems={
-                  <React.Fragment>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__l7KWg
-                      )}
-                      component={Link}
-                      href={`/`}
-                      platform={"nextjs"}
-                    >
-                      {"Home"}
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      data-plasmic-name={"solution3"}
-                      data-plasmic-override={overrides.solution3}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.solution3
-                      )}
-                      component={Link}
-                      href={`/solutions`}
-                      platform={"nextjs"}
-                    >
-                      {"Solution"}
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__k5B19
-                      )}
-                      component={Link}
-                      href={`/projects`}
-                      platform={"nextjs"}
-                    >
-                      {"Projects"}
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      data-plasmic-name={"logo4"}
-                      data-plasmic-override={overrides.logo4}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.logo4
-                      )}
-                      component={Link}
-                      href={`/`}
-                      platform={"nextjs"}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__ik9Na)}
-                        displayHeight={"64px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"298px"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"100%"}
-                        src={{
-                          src: "/plasmic/excell_website_final/images/excellVerticalLogoPng.png",
-                          fullWidth: 987,
-                          fullHeight: 1002,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__bwLRf
-                      )}
-                      component={Link}
-                      href={`/about`}
-                      platform={"nextjs"}
-                    >
-                      {"About"}
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__nx5V9
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {"Learn"}
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__hpkki
-                      )}
-                      component={Link}
-                      href={`/contact`}
-                      platform={"nextjs"}
-                    >
-                      {"Contact Us"}
-                    </PlasmicLink__>
-                  </React.Fragment>
-                }
-                openButton={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__od4X)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"32px"}
-                    src={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? {
-                            src: "/plasmic/excell_website_final/images/hamburgerMenuSvg.svg",
-                            fullWidth: 24,
-                            fullHeight: 25,
-                            aspectRatio: 0.96
-                          }
-                        : undefined
-                    }
-                    width={"32"}
-                  />
-                }
-                responsiveBreakpoint={768}
-              />
-
               <div
                 data-plasmic-name={"heading"}
                 data-plasmic-override={overrides.heading}
@@ -305,13 +181,11 @@ function PlasmicLearn__RenderFunc(props) {
                     />
 
                     <h1
-                      data-plasmic-name={"h1"}
-                      data-plasmic-override={overrides.h1}
                       className={classNames(
                         projectcss.all,
                         projectcss.h1,
                         projectcss.__wab_text,
-                        sty.h1
+                        sty.h1__xg4W0
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly") ? (
@@ -343,19 +217,471 @@ function PlasmicLearn__RenderFunc(props) {
                   </div>
                 </div>
               </div>
-              <TabCOmponent
-                data-plasmic-name={"tabCOmponent"}
-                data-plasmic-override={overrides.tabCOmponent}
-                className={classNames("__wab_instance", sty.tabCOmponent)}
-              />
             </div>
+            <NavigationBar
+              data-plasmic-name={"navigationBar"}
+              data-plasmic-override={overrides.navigationBar}
+              brand={
+                <PlasmicLink__
+                  data-plasmic-name={"logo3"}
+                  data-plasmic-override={overrides.logo3}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.logo3
+                  )}
+                  component={Link}
+                  href={"#"}
+                  platform={"nextjs"}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__yPpu9)}
+                    displayHeight={"40px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"298px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    src={{
+                      src: "/plasmic/excell_website_final/images/layer2.svg",
+                      fullWidth: 220.00169372558594,
+                      fullHeight: 80.00094604492188,
+                      aspectRatio: 2.75
+                    }}
+                  />
+                </PlasmicLink__>
+              }
+              className={classNames("__wab_instance", sty.navigationBar)}
+              closeButton={
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__nx4Ne)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"32px"}
+                  src={{
+                    src: "/plasmic/excell_website_final/images/xLgSvg2.svg",
+                    fullWidth: 24,
+                    fullHeight: 25,
+                    aspectRatio: 0.96
+                  }}
+                />
+              }
+              forceOpenMenu={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
+              }
+              itemsGap={
+                hasVariant(globalVariants, "screen", "mobileOnly") ? 48 : 48
+              }
+              menuItems={
+                <React.Fragment>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__l7KWg
+                    )}
+                    component={Link}
+                    href={`/`}
+                    platform={"nextjs"}
+                  >
+                    {"Home"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    data-plasmic-name={"solution3"}
+                    data-plasmic-override={overrides.solution3}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.solution3
+                    )}
+                    component={Link}
+                    href={`/solutions`}
+                    platform={"nextjs"}
+                  >
+                    {"Solution"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__k5B19
+                    )}
+                    component={Link}
+                    href={`/projects`}
+                    platform={"nextjs"}
+                  >
+                    {"Projects"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    data-plasmic-name={"logo4"}
+                    data-plasmic-override={overrides.logo4}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.logo4
+                    )}
+                    component={Link}
+                    href={`/`}
+                    platform={"nextjs"}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__ik9Na)}
+                      displayHeight={"64px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"298px"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      src={{
+                        src: "/plasmic/excell_website_final/images/excellVerticalLogoPng.png",
+                        fullWidth: 987,
+                        fullHeight: 1002,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__bwLRf
+                    )}
+                    component={Link}
+                    href={`/about`}
+                    platform={"nextjs"}
+                  >
+                    {"About"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__nx5V9
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Learn"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__hpkki
+                    )}
+                    component={Link}
+                    href={`/contact`}
+                    platform={"nextjs"}
+                  >
+                    {"Contact Us"}
+                  </PlasmicLink__>
+                </React.Fragment>
+              }
+              openButton={
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__od4X)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"32px"}
+                  src={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? {
+                          src: "/plasmic/excell_website_final/images/hamburgerMenuSvg.svg",
+                          fullWidth: 24,
+                          fullHeight: 25,
+                          aspectRatio: 0.96
+                        }
+                      : undefined
+                  }
+                  width={"32"}
+                />
+              }
+              responsiveBreakpoint={768}
+            />
           </div>
           <div
             data-plasmic-name={"container"}
             data-plasmic-override={overrides.container}
             className={classNames(projectcss.all, sty.container)}
-          />
+            id={"reach-out-section"}
+          >
+            <div
+              data-plasmic-name={"card"}
+              data-plasmic-override={overrides.card}
+              className={classNames(projectcss.all, sty.card)}
+            >
+              <AntdTabs
+                data-plasmic-name={"faQsTab"}
+                data-plasmic-override={overrides.faQsTab}
+                activeKey={generateStateValueProp($state, [
+                  "faQsTab",
+                  "activeKey"
+                ])}
+                animateTabBar={true}
+                animateTabContent={false}
+                animated={true}
+                className={classNames("__wab_instance", sty.faQsTab)}
+                defaultActiveKey={"1"}
+                items={
+                  <AntdTabItem
+                    data-plasmic-name={"aboutSolar"}
+                    data-plasmic-override={overrides.aboutSolar}
+                    className={classNames("__wab_instance", sty.aboutSolar)}
+                    forceRender={false}
+                    key={"1"}
+                    label={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__r909J
+                        )}
+                      >
+                        {"About Solar"}
+                      </div>
+                    }
+                  >
+                    {(() => {
+                      const child$Props = {
+                        activeKey: generateStateValueProp($state, [
+                          "aboutAccordion",
+                          "activePanelId"
+                        ]),
+                        bordered: true,
+                        className: classNames(
+                          "__wab_instance",
+                          sty.aboutAccordion
+                        ),
+                        expandIconPosition: "end",
+                        forceRender: false,
+                        items: (
+                          <React.Fragment>
+                            <AntdAccordionItem
+                              data-plasmic-name={"_1"}
+                              data-plasmic-override={overrides._1}
+                              className={classNames("__wab_instance", sty._1)}
+                              id={1}
+                              label2={
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__ybQGa
+                                  )}
+                                >
+                                  {"Why go Solar now?"}
+                                </div>
+                              }
+                              showArrow={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__kmaK1
+                                )}
+                              >
+                                {
+                                  "It\u2019s abundant, clean, and can drastically lower your bills."
+                                }
+                              </div>
+                            </AntdAccordionItem>
+                            <AntdAccordionItem
+                              data-plasmic-name={"_2"}
+                              data-plasmic-override={overrides._2}
+                              className={classNames("__wab_instance", sty._2)}
+                              id={2}
+                              label2={
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___7AxjU
+                                  )}
+                                >
+                                  {
+                                    "How does a Solar Photovoltaic (PV) system work?"
+                                  }
+                                </div>
+                              }
+                              showArrow={true}
+                            >
+                              {
+                                "PV cells collect sunlight, converted via inverter into usable energy that powers your business operations."
+                              }
+                            </AntdAccordionItem>
+                            <AntdAccordionItem
+                              data-plasmic-name={"_3"}
+                              data-plasmic-override={overrides._3}
+                              className={classNames("__wab_instance", sty._3)}
+                              id={"3"}
+                              label2={
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__rmwPy
+                                  )}
+                                >
+                                  {"What is Net Metering?"}
+                                </div>
+                              }
+                              showArrow={true}
+                            >
+                              {
+                                "Feed excess power to the grid and earn bill credits\u2014if eligible. Under the Renewable Energy Act (RA 9513) and its rules, net metering is available to qualified users, subject to certain utility and technical limitations. We\u2019ll help you check if your system can apply."
+                              }
+                            </AntdAccordionItem>
+                            <AntdAccordionItem
+                              data-plasmic-name={"_4"}
+                              data-plasmic-override={overrides._4}
+                              className={classNames("__wab_instance", sty._4)}
+                              id={"4"}
+                              label2={
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__k4PbD
+                                  )}
+                                >
+                                  {
+                                    "How much can I save on my electricity bills?"
+                                  }
+                                </div>
+                              }
+                              showArrow={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___1Bq8P
+                                )}
+                              >
+                                {
+                                  "Depending on your setup, solar can cut electricity costs by up to 60%. Actual savings vary based on system design and building energy use."
+                                }
+                              </div>
+                            </AntdAccordionItem>
+                          </React.Fragment>
+                        ),
 
+                        onChange: async (...eventArgs) => {
+                          generateStateOnChangePropForCodeComponents(
+                            $state,
+                            "activePanelId",
+                            ["aboutAccordion", "activePanelId"],
+                            AntdAccordion_Helpers
+                          ).apply(null, eventArgs);
+                        },
+                        size: "large"
+                      };
+                      initializeCodeComponentStates(
+                        $state,
+                        [
+                          {
+                            name: "activePanelId",
+                            plasmicStateName: "aboutAccordion.activePanelId"
+                          }
+                        ],
+
+                        [],
+                        AntdAccordion_Helpers ?? {},
+                        child$Props
+                      );
+                      return (
+                        <AntdAccordion
+                          data-plasmic-name={"aboutAccordion"}
+                          data-plasmic-override={overrides.aboutAccordion}
+                          {...child$Props}
+                        />
+                      );
+                    })()}
+                  </AntdTabItem>
+                }
+                onChange={async (...eventArgs) => {
+                  generateStateOnChangeProp($state, [
+                    "faQsTab",
+                    "activeKey"
+                  ]).apply(null, eventArgs);
+                }}
+                size={"large"}
+                sticky={false}
+                tabBarBackground={"#FFF"}
+                tabsDropdownScopeClassName={sty["faQsTab__tabsDropdown"]}
+                tabsScopeClassName={sty["faQsTab__tabs"]}
+                type={"card"}
+              />
+
+              <div className={classNames(projectcss.all, sty.freeBox__vbPwe)}>
+                <div className={classNames(projectcss.all, sty.freeBox__yWXc6)}>
+                  <h1
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1__hFc
+                    )}
+                  >
+                    {"Can't find what you need?"}
+                  </h1>
+                  <h1
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1__ow0Dr
+                    )}
+                  >
+                    {"We got you covered!"}
+                  </h1>
+                </div>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___3MpzZ)}
+                >
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link___000VX
+                    )}
+                    component={Link}
+                    href={`/get-solar`}
+                    platform={"nextjs"}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__hft2
+                      )}
+                    >
+                      {"Send us your Questions"}
+                    </div>
+                  </PlasmicLink__>
+                </div>
+              </div>
+            </div>
+          </div>
           <footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -667,13 +993,20 @@ const PlasmicDescendants = {
     "learnPage",
     "landingPage",
     "container2",
+    "heading",
     "navigationBar",
+    "logo3",
     "solution3",
     "logo4",
-    "heading",
-    "h1",
-    "tabCOmponent",
     "container",
+    "card",
+    "faQsTab",
+    "aboutSolar",
+    "aboutAccordion",
+    "_1",
+    "_2",
+    "_3",
+    "_4",
     "footer",
     "section5",
     "brandLogo3",
@@ -687,31 +1020,49 @@ const PlasmicDescendants = {
   landingPage: [
     "landingPage",
     "container2",
-    "navigationBar",
-    "solution3",
-    "logo4",
     "heading",
-    "h1",
-    "tabCOmponent"
+    "navigationBar",
+    "logo3",
+    "solution3",
+    "logo4"
   ],
 
-  container2: [
-    "container2",
-    "navigationBar",
-    "solution3",
-    "logo4",
-    "heading",
-    "h1",
-    "tabCOmponent"
-  ],
-
-  navigationBar: ["navigationBar", "solution3", "logo4"],
+  container2: ["container2", "heading"],
+  heading: ["heading"],
+  navigationBar: ["navigationBar", "logo3", "solution3", "logo4"],
+  logo3: ["logo3"],
   solution3: ["solution3"],
   logo4: ["logo4"],
-  heading: ["heading", "h1"],
-  h1: ["h1"],
-  tabCOmponent: ["tabCOmponent"],
-  container: ["container"],
+  container: [
+    "container",
+    "card",
+    "faQsTab",
+    "aboutSolar",
+    "aboutAccordion",
+    "_1",
+    "_2",
+    "_3",
+    "_4"
+  ],
+
+  card: [
+    "card",
+    "faQsTab",
+    "aboutSolar",
+    "aboutAccordion",
+    "_1",
+    "_2",
+    "_3",
+    "_4"
+  ],
+
+  faQsTab: ["faQsTab", "aboutSolar", "aboutAccordion", "_1", "_2", "_3", "_4"],
+  aboutSolar: ["aboutSolar", "aboutAccordion", "_1", "_2", "_3", "_4"],
+  aboutAccordion: ["aboutAccordion", "_1", "_2", "_3", "_4"],
+  _1: ["_1"],
+  _2: ["_2"],
+  _3: ["_3"],
+  _4: ["_4"],
   footer: [
     "footer",
     "section5",
@@ -783,13 +1134,20 @@ export const PlasmicLearn = Object.assign(
     // Helper components rendering sub-elements
     landingPage: makeNodeComponent("landingPage"),
     container2: makeNodeComponent("container2"),
+    heading: makeNodeComponent("heading"),
     navigationBar: makeNodeComponent("navigationBar"),
+    logo3: makeNodeComponent("logo3"),
     solution3: makeNodeComponent("solution3"),
     logo4: makeNodeComponent("logo4"),
-    heading: makeNodeComponent("heading"),
-    h1: makeNodeComponent("h1"),
-    tabCOmponent: makeNodeComponent("tabCOmponent"),
     container: makeNodeComponent("container"),
+    card: makeNodeComponent("card"),
+    faQsTab: makeNodeComponent("faQsTab"),
+    aboutSolar: makeNodeComponent("aboutSolar"),
+    aboutAccordion: makeNodeComponent("aboutAccordion"),
+    _1: makeNodeComponent("_1"),
+    _2: makeNodeComponent("_2"),
+    _3: makeNodeComponent("_3"),
+    _4: makeNodeComponent("_4"),
     footer: makeNodeComponent("footer"),
     section5: makeNodeComponent("section5"),
     brandLogo3: makeNodeComponent("brandLogo3"),

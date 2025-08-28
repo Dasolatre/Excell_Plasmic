@@ -427,7 +427,7 @@ function PlasmicAbout__RenderFunc(props) {
                       sty.link__ctHzQ
                     )}
                     component={Link}
-                    href={`/TestPage`}
+                    href={`/learn`}
                     platform={"nextjs"}
                   >
                     {"Learn"}

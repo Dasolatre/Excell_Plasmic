@@ -350,7 +350,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       sty.link___59Hpu
                     )}
                     component={Link}
-                    href={`/TestPage`}
+                    href={`/learn`}
                     platform={"nextjs"}
                   >
                     {"Learn"}

@@ -1211,7 +1211,7 @@
           "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
           "renderModuleFilePath": "plasmic/excell_website_final/PlasmicLearn.jsx",
           "importSpec": {
-            "modulePath": "../pages/new-page-2.jsx"
+            "modulePath": "../pages/learn.jsx"
           },
           "cssFilePath": "plasmic/excell_website_final/PlasmicLearn.module.css",
           "scheme": "blackbox",
@@ -1256,73 +1256,6 @@
             "modulePath": "Modal.jsx"
           },
           "cssFilePath": "plasmic/excell_website_final/PlasmicModal.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "qJnrkQ2kVZUX",
-          "name": "NewPage",
-          "type": "managed",
-          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
-          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicNewPage.jsx",
-          "importSpec": {
-            "modulePath": "../pages/TestPage.jsx"
-          },
-          "cssFilePath": "plasmic/excell_website_final/PlasmicNewPage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/new-page"
-        },
-        {
-          "id": "x3cP0LSzfthw",
-          "name": "Button2",
-          "type": "managed",
-          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
-          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicButton2.jsx",
-          "importSpec": {
-            "modulePath": "Button2.jsx"
-          },
-          "cssFilePath": "plasmic/excell_website_final/PlasmicButton2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "x-0MJgWs5WQl",
-          "name": "LearnAccordion",
-          "type": "managed",
-          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
-          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicLearnAccordion.jsx",
-          "importSpec": {
-            "modulePath": "LearnAccordion.jsx"
-          },
-          "cssFilePath": "plasmic/excell_website_final/PlasmicLearnAccordion.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "ScqfZYBQYDXV",
-          "name": "NewPage2",
-          "type": "managed",
-          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
-          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicNewPage2.jsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page.jsx"
-          },
-          "cssFilePath": "plasmic/excell_website_final/PlasmicNewPage2.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/new-page"
-        },
-        {
-          "id": "5N6Gaf5ZBLNG",
-          "name": "TabCOmponent",
-          "type": "managed",
-          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
-          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicTabCOmponent.jsx",
-          "importSpec": {
-            "modulePath": "TabCOmponent.jsx"
-          },
-          "cssFilePath": "plasmic/excell_website_final/PlasmicTabCOmponent.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
@@ -2164,11 +2097,6 @@
           "id": "KP9c2sX0Ad0j",
           "name": "branchLogo.png",
           "filePath": "../public/plasmic/excell_website_final/images/branchLogoPng.png"
-        },
-        {
-          "id": "t_fGoCy3UmP8",
-          "name": "image",
-          "filePath": "../public/plasmic/excell_website_final/images/image.png"
         }
       ],
       "indirect": false,

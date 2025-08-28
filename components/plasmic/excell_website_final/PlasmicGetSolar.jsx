@@ -454,7 +454,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                       sty.link__emm4Q
                     )}
                     component={Link}
-                    href={`/TestPage`}
+                    href={`/learn`}
                     platform={"nextjs"}
                   >
                     {"Learn"}

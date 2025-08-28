@@ -284,12 +284,11 @@ function PlasmicLanding__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__fCcB5
+                      sty.link___032Zt
                     )}
                     component={Link}
-                    href={`/TestPage`}
+                    href={`/learn`}
                     platform={"nextjs"}
-                    target={undefined}
                   >
                     {"Learn"}
                   </PlasmicLink__>
@@ -1167,7 +1166,7 @@ function PlasmicLanding__RenderFunc(props) {
                         sty.link__kc0Ii
                       )}
                       component={Link}
-                      href={`/new-page-2`}
+                      href={`/learn`}
                       platform={"nextjs"}
                     >
                       <div
