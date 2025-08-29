@@ -65,7 +65,7 @@ createPlasmicElementProxy;
 
 export const PlasmicGetSolar__VariantProps = new Array();
 
-export const PlasmicGetSolar__ArgProps = new Array("useSlot");
+export const PlasmicGetSolar__ArgProps = new Array();
 
 const $$ = {};
 
@@ -81,21 +81,7 @@ function PlasmicGetSolar__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {
-          useSlot: (() => {
-            try {
-              return $ctx.fetchedData;
-            } catch (e) {
-              if (
-                e instanceof TypeError ||
-                e?.plasmicType === "PlasmicUndefinedDataError"
-              ) {
-                return true;
-              }
-              throw e;
-            }
-          })()
-        },
+        {},
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -1034,14 +1020,12 @@ function PlasmicGetSolar__RenderFunc(props) {
                                 </div>
                               }
                               name={"region"}
-                              preserve={true}
                               rules={[
                                 {
                                   ruleType: "required",
                                   message: "Please select your region."
                                 }
                               ]}
-                              shouldUpdate={false}
                             >
                               <AntdSelect
                                 data-plasmic-name={"regionDropdown"}
@@ -1058,28 +1042,19 @@ function PlasmicGetSolar__RenderFunc(props) {
                                   styleTokensClassNames,
                                   styleTokensClassNames_antd_5_hostless
                                 )}
-                                disabled={false}
-                                mode={"single"}
                                 onChange={async (...eventArgs) => {
                                   generateStateOnChangeProp($state, [
                                     "regionDropdown",
                                     "value"
                                   ]).apply(null, eventArgs);
                                 }}
-                                options={(() => {
-                                  try {
-                                    return $ctx.fetchedData;
-                                  } catch (e) {
-                                    if (
-                                      e instanceof TypeError ||
-                                      e?.plasmicType ===
-                                        "PlasmicUndefinedDataError"
-                                    ) {
-                                      return [];
-                                    }
-                                    throw e;
+                                options={[
+                                  {
+                                    value: "option1",
+                                    label: "Option 1",
+                                    type: "option"
                                   }
-                                })()}
+                                ]}
                                 placeholder={
                                   <div
                                     className={classNames(
@@ -1094,6 +1069,20 @@ function PlasmicGetSolar__RenderFunc(props) {
                                 popupScopeClassName={
                                   sty["regionDropdown__popup"]
                                 }
+                                useChildren={(() => {
+                                  try {
+                                    return $ctx.fetchedData;
+                                  } catch (e) {
+                                    if (
+                                      e instanceof TypeError ||
+                                      e?.plasmicType ===
+                                        "PlasmicUndefinedDataError"
+                                    ) {
+                                      return true;
+                                    }
+                                    throw e;
+                                  }
+                                })()}
                                 value={generateStateValueProp($state, [
                                   "regionDropdown",
                                   "value"
