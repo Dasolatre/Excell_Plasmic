@@ -2552,10 +2552,12 @@ function PlasmicProjects__RenderFunc(props) {
                   )}
                 </DataCtxReader__>
               }
+              mode={"rows"}
               noAutoRepeat={false}
               noLayout={false}
               offset={0}
               orderBy={"kilowattPeak"}
+              table={"excellWebsiteCms"}
               useDraft={false}
             >
               <DataCtxReader__>
@@ -2666,6 +2668,7 @@ function PlasmicProjects__RenderFunc(props) {
                                           sty.sliderCarousel
                                         ),
                                         dots: false,
+                                        infinite: false,
                                         initialSlide: generateStateValueProp(
                                           $state,
                                           ["sliderCarousel", "currentSlide"]
