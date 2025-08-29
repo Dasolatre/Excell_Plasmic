@@ -1042,6 +1042,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                                   styleTokensClassNames,
                                   styleTokensClassNames_antd_5_hostless
                                 )}
+                                mode={"multiple"}
                                 onChange={async (...eventArgs) => {
                                   generateStateOnChangeProp($state, [
                                     "regionDropdown",
@@ -1069,7 +1070,20 @@ function PlasmicGetSolar__RenderFunc(props) {
                                 popupScopeClassName={
                                   sty["regionDropdown__popup"]
                                 }
-                                useChildren={true}
+                                useChildren={(() => {
+                                  try {
+                                    return $ctx.fetchedData;
+                                  } catch (e) {
+                                    if (
+                                      e instanceof TypeError ||
+                                      e?.plasmicType ===
+                                        "PlasmicUndefinedDataError"
+                                    ) {
+                                      return true;
+                                    }
+                                    throw e;
+                                  }
+                                })()}
                                 value={generateStateValueProp($state, [
                                   "regionDropdown",
                                   "value"
