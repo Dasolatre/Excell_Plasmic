@@ -1069,20 +1069,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                                 popupScopeClassName={
                                   sty["regionDropdown__popup"]
                                 }
-                                useChildren={(() => {
-                                  try {
-                                    return $ctx.fetchedData;
-                                  } catch (e) {
-                                    if (
-                                      e instanceof TypeError ||
-                                      e?.plasmicType ===
-                                        "PlasmicUndefinedDataError"
-                                    ) {
-                                      return true;
-                                    }
-                                    throw e;
-                                  }
-                                })()}
+                                useChildren={true}
                                 value={generateStateValueProp($state, [
                                   "regionDropdown",
                                   "value"
