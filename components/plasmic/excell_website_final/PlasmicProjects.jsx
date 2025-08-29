@@ -590,7 +590,7 @@ function PlasmicProjects__RenderFunc(props) {
                   }
                   mode={"rows"}
                   noAutoRepeat={false}
-                  noLayout={true}
+                  noLayout={false}
                   offset={6}
                   table={"excellWebsiteCms"}
                   useDraft={false}
@@ -632,7 +632,7 @@ function PlasmicProjects__RenderFunc(props) {
                                   sty.sliderCarousel5
                                 ),
                                 dots: false,
-                                infinite: true,
+                                infinite: false,
                                 initialSlide: generateStateValueProp($state, [
                                   "sliderCarousel5",
                                   "currentSlide"
