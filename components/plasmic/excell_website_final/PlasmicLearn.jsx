@@ -83,12 +83,6 @@ function PlasmicLearn__RenderFunc(props) {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "variable",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
-      {
         path: "faQsTab.activeKey",
         type: "private",
         variableType: "text",
@@ -438,6 +432,7 @@ function PlasmicLearn__RenderFunc(props) {
                 animateTabBar={true}
                 animateTabContent={false}
                 animated={false}
+                centered={false}
                 className={classNames("__wab_instance", sty.faQsTab)}
                 defaultActiveKey={"1"}
                 items={
@@ -445,7 +440,7 @@ function PlasmicLearn__RenderFunc(props) {
                     data-plasmic-name={"aboutSolar"}
                     data-plasmic-override={overrides.aboutSolar}
                     className={classNames("__wab_instance", sty.aboutSolar)}
-                    forceRender={false}
+                    forceRender={true}
                     key={"1"}
                     label={
                       <div
@@ -470,8 +465,9 @@ function PlasmicLearn__RenderFunc(props) {
                           "__wab_instance",
                           sty.aboutAccordion
                         ),
-                        expandIconPosition: "end",
+                        expandIconPosition: "start",
                         forceRender: false,
+                        ghost: false,
                         items: (
                           <React.Fragment>
                             <AntdAccordionItem
@@ -602,7 +598,7 @@ function PlasmicLearn__RenderFunc(props) {
                             AntdAccordion_Helpers
                           ).apply(null, eventArgs);
                         },
-                        size: "large"
+                        size: "middle"
                       };
                       initializeCodeComponentStates(
                         $state,
