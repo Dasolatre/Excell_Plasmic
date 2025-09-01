@@ -437,7 +437,7 @@ function PlasmicLearn__RenderFunc(props) {
                 ])}
                 animateTabBar={true}
                 animateTabContent={false}
-                animated={true}
+                animated={false}
                 className={classNames("__wab_instance", sty.faQsTab)}
                 defaultActiveKey={"1"}
                 items={
@@ -624,12 +624,12 @@ function PlasmicLearn__RenderFunc(props) {
                     "activeKey"
                   ]).apply(null, eventArgs);
                 }}
-                size={"large"}
+                size={"small"}
                 sticky={false}
                 tabBarBackground={"#FFF"}
                 tabsDropdownScopeClassName={sty["faQsTab__tabsDropdown"]}
                 tabsScopeClassName={sty["faQsTab__tabs"]}
-                type={"card"}
+                type={"line"}
               />
 
               <div className={classNames(projectcss.all, sty.freeBox__vbPwe)}>
