@@ -1258,6 +1258,20 @@
           "cssFilePath": "plasmic/excell_website_final/PlasmicModal.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "scQY0OAao2y2",
+          "name": "Learn2",
+          "type": "managed",
+          "projectId": "dFCW3EJJak7e5FJ1Eb9ZNV",
+          "renderModuleFilePath": "plasmic/excell_website_final/PlasmicLearn2.jsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.jsx"
+          },
+          "cssFilePath": "plasmic/excell_website_final/PlasmicLearn2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/new-page"
         }
       ],
       "icons": [
