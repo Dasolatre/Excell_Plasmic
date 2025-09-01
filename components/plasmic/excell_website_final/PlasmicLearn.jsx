@@ -460,7 +460,7 @@ function PlasmicLearn__RenderFunc(props) {
                           "aboutAccordion",
                           "activePanelId"
                         ]),
-                        bordered: true,
+                        bordered: false,
                         className: classNames(
                           "__wab_instance",
                           sty.aboutAccordion
@@ -474,7 +474,7 @@ function PlasmicLearn__RenderFunc(props) {
                               data-plasmic-name={"_1"}
                               data-plasmic-override={overrides._1}
                               className={classNames("__wab_instance", sty._1)}
-                              id={1}
+                              id={``}
                               label2={
                                 <div
                                   className={classNames(
@@ -504,7 +504,7 @@ function PlasmicLearn__RenderFunc(props) {
                               data-plasmic-name={"_2"}
                               data-plasmic-override={overrides._2}
                               className={classNames("__wab_instance", sty._2)}
-                              id={2}
+                              id={``}
                               label2={
                                 <div
                                   className={classNames(
@@ -537,7 +537,7 @@ function PlasmicLearn__RenderFunc(props) {
                               data-plasmic-override={overrides._3}
                               className={classNames("__wab_instance", sty._3)}
                               collapsible={"header"}
-                              id={"3"}
+                              id={``}
                               label2={
                                 <div
                                   className={classNames(
@@ -559,7 +559,7 @@ function PlasmicLearn__RenderFunc(props) {
                               data-plasmic-name={"_4"}
                               data-plasmic-override={overrides._4}
                               className={classNames("__wab_instance", sty._4)}
-                              id={"4"}
+                              id={``}
                               label2={
                                 <div
                                   className={classNames(
