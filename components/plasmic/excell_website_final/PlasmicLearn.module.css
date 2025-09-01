@@ -216,7 +216,6 @@
   }
 }
 .logo3 {
-  display: flex;
   flex-direction: row;
   position: relative;
   align-items: stretch;
@@ -226,6 +225,7 @@
   max-width: 100%;
   text-align: left;
   min-width: 0;
+  display: none;
   padding: 0px;
 }
 .img__yPpu9 {
@@ -242,6 +242,7 @@
 .img__od4X {
   object-fit: cover;
   width: 32px;
+  display: none;
 }
 .img__od4X > picture > img {
   object-fit: cover;
