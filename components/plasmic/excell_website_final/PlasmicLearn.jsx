@@ -524,14 +524,23 @@ function PlasmicLearn__RenderFunc(props) {
                               }
                               showArrow={true}
                             >
-                              {
-                                "PV cells collect sunlight, converted via inverter into usable energy that powers your business operations."
-                              }
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__rLIkT
+                                )}
+                              >
+                                {
+                                  "PV cells collect sunlight, converted via inverter into usable energy that powers your business operations."
+                                }
+                              </div>
                             </AntdAccordionItem>
                             <AntdAccordionItem
                               data-plasmic-name={"_3"}
                               data-plasmic-override={overrides._3}
                               className={classNames("__wab_instance", sty._3)}
+                              collapsible={"header"}
                               id={"3"}
                               label2={
                                 <div
@@ -629,7 +638,7 @@ function PlasmicLearn__RenderFunc(props) {
                 tabBarBackground={"#FFF"}
                 tabsDropdownScopeClassName={sty["faQsTab__tabsDropdown"]}
                 tabsScopeClassName={sty["faQsTab__tabs"]}
-                type={"line"}
+                type={"card"}
               />
 
               <div className={classNames(projectcss.all, sty.freeBox__vbPwe)}>
