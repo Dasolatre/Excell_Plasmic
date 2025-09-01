@@ -10,13 +10,19 @@
 // Component: scQY0OAao2y2
 import * as React from "react";
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
 import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -58,6 +64,7 @@ function PlasmicLearn2__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
   const styleTokensClassNames_antd_5_hostless =
     useStyleTokens_antd_5_hostless();
@@ -91,7 +98,196 @@ function PlasmicLearn2__RenderFunc(props) {
             data-plasmic-name={"freeBox"}
             data-plasmic-override={overrides.freeBox}
             className={classNames(projectcss.all, sty.freeBox)}
-          />
+          >
+            <NavigationBar
+              data-plasmic-name={"navigationBar"}
+              data-plasmic-override={overrides.navigationBar}
+              brand={
+                <PlasmicLink__
+                  data-plasmic-name={"logo"}
+                  data-plasmic-override={overrides.logo}
+                  className={classNames(projectcss.all, projectcss.a, sty.logo)}
+                  component={Link}
+                  href={"#"}
+                  platform={"nextjs"}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___3AZx2)}
+                    displayHeight={"40px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"298px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    src={{
+                      src: "/plasmic/excell_website_final/images/layer2.svg",
+                      fullWidth: 220.00169372558594,
+                      fullHeight: 80.00094604492188,
+                      aspectRatio: 2.75
+                    }}
+                  />
+                </PlasmicLink__>
+              }
+              className={classNames("__wab_instance", sty.navigationBar)}
+              closeButton={
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img___0JcGp)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"32px"}
+                  src={{
+                    src: "/plasmic/excell_website_final/images/xLgSvg2.svg",
+                    fullWidth: 24,
+                    fullHeight: 25,
+                    aspectRatio: 0.96
+                  }}
+                />
+              }
+              forceOpenMenu={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
+              }
+              itemsGap={
+                hasVariant(globalVariants, "screen", "mobileOnly") ? 48 : 48
+              }
+              menuItems={
+                <React.Fragment>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__aiV0C
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Home"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    data-plasmic-name={"solution2"}
+                    data-plasmic-override={overrides.solution2}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.solution2
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Solution"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__vruSf
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Projects"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    data-plasmic-name={"logo2"}
+                    data-plasmic-override={overrides.logo2}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.logo2
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__gnowq)}
+                      displayHeight={"64px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"298px"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      src={{
+                        src: "/plasmic/excell_website_final/images/excellVerticalLogoPng.png",
+                        fullWidth: 987,
+                        fullHeight: 1002,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__uc4Vj
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"About"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__zppCy
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Learn"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link___4X3Z
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {"Contact Us"}
+                  </PlasmicLink__>
+                </React.Fragment>
+              }
+              openButton={
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__faBkf)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"32px"}
+                  src={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? {
+                          src: "/plasmic/excell_website_final/images/hamburgerMenuSvg.svg",
+                          fullWidth: 24,
+                          fullHeight: 25,
+                          aspectRatio: 0.96
+                        }
+                      : undefined
+                  }
+                  width={"32"}
+                />
+              }
+              responsiveBreakpoint={768}
+            />
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -99,8 +295,12 @@ function PlasmicLearn2__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox"],
-  freeBox: ["freeBox"]
+  root: ["root", "freeBox", "navigationBar", "logo", "solution2", "logo2"],
+  freeBox: ["freeBox", "navigationBar", "logo", "solution2", "logo2"],
+  navigationBar: ["navigationBar", "logo", "solution2", "logo2"],
+  logo: ["logo"],
+  solution2: ["solution2"],
+  logo2: ["logo2"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -136,6 +336,10 @@ export const PlasmicLearn2 = Object.assign(
   {
     // Helper components rendering sub-elements
     freeBox: makeNodeComponent("freeBox"),
+    navigationBar: makeNodeComponent("navigationBar"),
+    logo: makeNodeComponent("logo"),
+    solution2: makeNodeComponent("solution2"),
+    logo2: makeNodeComponent("logo2"),
     // Metadata about props expected for PlasmicLearn2
     internalVariantProps: PlasmicLearn2__VariantProps,
     internalArgProps: PlasmicLearn2__ArgProps,
