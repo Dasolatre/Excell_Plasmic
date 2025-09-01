@@ -94,7 +94,11 @@ function PlasmicLearn2__RenderFunc(props) {
             sty.root
           )}
         >
-          <div className={classNames(projectcss.all, sty.freeBox___8Dugn)}>
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
             <NavigationBar
               data-plasmic-name={"navigationBar"}
               data-plasmic-override={overrides.navigationBar}
@@ -292,68 +296,7 @@ function PlasmicLearn2__RenderFunc(props) {
               data-plasmic-name={"heading"}
               data-plasmic-override={overrides.heading}
               className={classNames(projectcss.all, sty.heading)}
-            >
-              <div
-                data-plasmic-name={"column"}
-                data-plasmic-override={overrides.column}
-                className={classNames(projectcss.all, sty.column)}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__fCpbq)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__dgHr1)}
-                    displayHeight={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "223px"
-                        : "317px"
-                    }
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"16px"}
-                    loading={"lazy"}
-                  />
-
-                  <h1
-                    data-plasmic-name={"h1"}
-                    data-plasmic-override={overrides.h1}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.h1
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                      <React.Fragment>
-                        <React.Fragment>{"Got Questions?\n"}</React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"Reach us Today"}
-                        </span>
-                      </React.Fragment>
-                    ) : (
-                      <React.Fragment>
-                        <React.Fragment>{"Got Questions?\n"}</React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"Reach us Today"}
-                        </span>
-                      </React.Fragment>
-                    )}
-                  </h1>
-                </div>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>
@@ -364,22 +307,28 @@ function PlasmicLearn2__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
+    "freeBox",
     "navigationBar",
     "logo3",
     "solution3",
     "logo4",
-    "heading",
-    "column",
-    "h1"
+    "heading"
+  ],
+
+  freeBox: [
+    "freeBox",
+    "navigationBar",
+    "logo3",
+    "solution3",
+    "logo4",
+    "heading"
   ],
 
   navigationBar: ["navigationBar", "logo3", "solution3", "logo4"],
   logo3: ["logo3"],
   solution3: ["solution3"],
   logo4: ["logo4"],
-  heading: ["heading", "column", "h1"],
-  column: ["column", "h1"],
-  h1: ["h1"]
+  heading: ["heading"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -414,13 +363,12 @@ export const PlasmicLearn2 = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    freeBox: makeNodeComponent("freeBox"),
     navigationBar: makeNodeComponent("navigationBar"),
     logo3: makeNodeComponent("logo3"),
     solution3: makeNodeComponent("solution3"),
     logo4: makeNodeComponent("logo4"),
     heading: makeNodeComponent("heading"),
-    column: makeNodeComponent("column"),
-    h1: makeNodeComponent("h1"),
     // Metadata about props expected for PlasmicLearn2
     internalVariantProps: PlasmicLearn2__VariantProps,
     internalArgProps: PlasmicLearn2__ArgProps,

@@ -21,7 +21,7 @@
 .root > * {
   grid-column: 4;
 }
-.freeBox___8Dugn {
+.freeBox {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -325,9 +325,6 @@
   --plsmc-rc-col-gap: 0px;
   padding: 8px;
 }
-.heading > :nth-child(1n + 1) {
-  width: calc((100% - 0 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .heading {
     width: 100%;
@@ -336,91 +333,5 @@
     flex-wrap: wrap;
     min-width: 0;
     --plsmc-rc-col-gap: 0px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .heading > :nth-child(1n + 1) {
-    width: calc((100% - 0 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
-  }
-}
-.column {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  min-width: 0;
-  padding: 8px 0px 8px 8px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .column {
-    padding-right: 8px;
-  }
-}
-.freeBox__fCpbq {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  align-self: center;
-  min-width: 0;
-  padding: 8px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__fCpbq {
-    padding-left: 8px;
-  }
-}
-.img__dgHr1 {
-  object-fit: contain;
-  max-width: 100%;
-  width: 16px;
-  height: 317px;
-  flex-shrink: 0;
-  display: none;
-}
-.img__dgHr1 > picture > img {
-  object-fit: contain;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .img__dgHr1 {
-    align-self: flex-end;
-    height: 223px;
-  }
-}
-.h1 {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  color: #235936;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 48px;
-  font-weight: 300;
-  align-self: center;
-  font-style: normal;
-  text-transform: none;
-  line-height: 1;
-  letter-spacing: -1px;
-  white-space: pre-wrap;
-  user-select: text;
-  text-decoration-line: none;
-  text-overflow: clip;
-  min-width: 0;
-  padding: 0px;
-  margin: 0px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .h1 {
-    font-size: 40px;
-    text-align: center;
-    margin: 0px;
   }
 }
