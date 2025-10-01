@@ -51,7 +51,6 @@ import { inputHelpers as AntdTextArea_Helpers } from "@plasmicpkgs/antd5/skinny/
 import { AntdButton } from "@plasmicpkgs/antd5/skinny/registerButton";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
 import sty from "./PlasmicGetSolar.module.css"; // plasmic-import: -vUKywbRqfpw/css
@@ -96,6 +95,7 @@ function PlasmicGetSolar__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const globalVariants = _useGlobalVariants();
   const $globalActions = useGlobalActions?.();
   const stateSpecs = React.useMemo(
     () => [
@@ -194,10 +194,7 @@ function PlasmicGetSolar__RenderFunc(props) {
   });
   const dataSourcesCtx = usePlasmicDataSourceContext();
   const plasmicInvalidate = usePlasmicInvalidate();
-  const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
   return (
     <React.Fragment>
       <Head></Head>
@@ -220,7 +217,6 @@ function PlasmicGetSolar__RenderFunc(props) {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             styleTokensClassNames,
-            styleTokensClassNames_antd_5_hostless,
             sty.getSolarPage
           )}
           id={``}
@@ -1039,8 +1035,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                                   projectcss.root_reset,
                                   projectcss.plasmic_default_styles,
                                   projectcss.plasmic_mixins,
-                                  styleTokensClassNames,
-                                  styleTokensClassNames_antd_5_hostless
+                                  styleTokensClassNames
                                 )}
                                 onChange={async (...eventArgs) => {
                                   generateStateOnChangeProp($state, [
@@ -1078,7 +1073,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                                       e?.plasmicType ===
                                         "PlasmicUndefinedDataError"
                                     ) {
-                                      return true;
+                                      return false;
                                     }
                                     throw e;
                                   }
@@ -1268,8 +1263,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                             projectcss.root_reset,
                             projectcss.plasmic_default_styles,
                             projectcss.plasmic_mixins,
-                            styleTokensClassNames,
-                            styleTokensClassNames_antd_5_hostless
+                            styleTokensClassNames
                           )}
                           onChange={async (...eventArgs) => {
                             generateStateOnChangeProp($state, [
@@ -1332,8 +1326,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                             projectcss.root_reset,
                             projectcss.plasmic_default_styles,
                             projectcss.plasmic_mixins,
-                            styleTokensClassNames,
-                            styleTokensClassNames_antd_5_hostless
+                            styleTokensClassNames
                           )}
                           onChange={async (...eventArgs) => {
                             generateStateOnChangeProp($state, [

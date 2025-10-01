@@ -21,7 +21,6 @@ import {
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { BaseLabel } from "@plasmicpkgs/react-aria/skinny/registerLabel";
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
 import sty from "./PlasmicLabel.module.css"; // plasmic-import: Rc2SewPcdB-E/css
@@ -90,8 +89,6 @@ function PlasmicLabel__RenderFunc(props) {
     $refs
   });
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
   return (
     <BaseLabel
       data-plasmic-name={"root"}
@@ -104,7 +101,6 @@ function PlasmicLabel__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        styleTokensClassNames_antd_5_hostless,
         sty.root,
         {
           [sty.rootrequirementIndicator_optional]: hasVariant(

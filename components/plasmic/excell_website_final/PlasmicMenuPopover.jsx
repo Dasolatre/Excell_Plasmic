@@ -28,7 +28,6 @@ import { listboxHelpers as BaseListBox_Helpers } from "@plasmicpkgs/react-aria/s
 import MenuItem from "../../MenuItem"; // plasmic-import: CgZJ2xQvPdlI/component
 import MenuSection from "../../MenuSection"; // plasmic-import: Y7fqX3sI9DwK/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
 import sty from "./PlasmicMenuPopover.module.css"; // plasmic-import: KTw_skn9Gx5B/css
@@ -95,8 +94,6 @@ function PlasmicMenuPopover__RenderFunc(props) {
     $refs
   });
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
   return (
     <BasePopover
       data-plasmic-name={"root"}
@@ -109,7 +106,6 @@ function PlasmicMenuPopover__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        styleTokensClassNames_antd_5_hostless,
         sty.root
       )}
       matchTriggerWidth={true}
@@ -119,8 +115,7 @@ function PlasmicMenuPopover__RenderFunc(props) {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
-        styleTokensClassNames,
-        styleTokensClassNames_antd_5_hostless
+        styleTokensClassNames
       )}
       shouldFlip={true}
     >

@@ -24,7 +24,6 @@ import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
 import sty from "./PlasmicLearn2.module.css"; // plasmic-import: scQY0OAao2y2/css
@@ -66,8 +65,6 @@ function PlasmicLearn2__RenderFunc(props) {
   const $refs = refsRef.current;
   const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
   return (
     <React.Fragment>
       <Head></Head>
@@ -90,7 +87,6 @@ function PlasmicLearn2__RenderFunc(props) {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             styleTokensClassNames,
-            styleTokensClassNames_antd_5_hostless,
             sty.root
           )}
         >

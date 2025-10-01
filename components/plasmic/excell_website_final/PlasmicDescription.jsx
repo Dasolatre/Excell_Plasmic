@@ -19,7 +19,6 @@ import {
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { BaseText } from "@plasmicpkgs/react-aria/skinny/registerText";
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
 import sty from "./PlasmicDescription.module.css"; // plasmic-import: yo9YPI9NYHJ_/css
@@ -60,8 +59,6 @@ function PlasmicDescription__RenderFunc(props) {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
   return (
     <BaseText
       data-plasmic-name={"root"}
@@ -74,7 +71,6 @@ function PlasmicDescription__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        styleTokensClassNames_antd_5_hostless,
         sty.root
       )}
       slot={"description"}

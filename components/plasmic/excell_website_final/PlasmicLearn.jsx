@@ -35,7 +35,6 @@ import { accordionHelpers as AntdAccordion_Helpers } from "@plasmicpkgs/antd5/sk
 import { AntdAccordionItem } from "@plasmicpkgs/antd5/skinny/registerCollapse";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
 import sty from "./PlasmicLearn.module.css"; // plasmic-import: c-WoZsknJMvG/css
@@ -80,6 +79,7 @@ function PlasmicLearn__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const globalVariants = _useGlobalVariants();
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -108,10 +108,7 @@ function PlasmicLearn__RenderFunc(props) {
     $queries: {},
     $refs
   });
-  const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
   return (
     <React.Fragment>
       <Head></Head>
@@ -134,7 +131,6 @@ function PlasmicLearn__RenderFunc(props) {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             styleTokensClassNames,
-            styleTokensClassNames_antd_5_hostless,
             sty.learnPage
           )}
           id={``}

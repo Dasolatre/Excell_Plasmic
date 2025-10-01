@@ -36,7 +36,6 @@ import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick
 import { CmsRowField } from "@plasmicpkgs/plasmic-cms";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
 import sty from "./PlasmicProjects.module.css"; // plasmic-import: DItQ1R29cnxx/css
@@ -83,6 +82,7 @@ function PlasmicProjects__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const globalVariants = _useGlobalVariants();
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -151,10 +151,7 @@ function PlasmicProjects__RenderFunc(props) {
     $queries: {},
     $refs
   });
-  const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
   return (
     <React.Fragment>
       <Head></Head>
@@ -177,7 +174,6 @@ function PlasmicProjects__RenderFunc(props) {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             styleTokensClassNames,
-            styleTokensClassNames_antd_5_hostless,
             sty.projectPage
           )}
         >
@@ -679,8 +675,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                     usePlasmicTheme={true}
                                   />
@@ -696,8 +691,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
 
@@ -712,8 +706,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
                                 </SliderWrapper>
@@ -730,8 +723,7 @@ function PlasmicProjects__RenderFunc(props) {
                                 projectcss.root_reset_tags,
                                 projectcss.plasmic_default_styles,
                                 projectcss.plasmic_mixins,
-                                styleTokensClassNames,
-                                styleTokensClassNames_antd_5_hostless
+                                styleTokensClassNames
                               )}
                             />
 
@@ -768,8 +760,7 @@ function PlasmicProjects__RenderFunc(props) {
                                     projectcss.root_reset_tags,
                                     projectcss.plasmic_default_styles,
                                     projectcss.plasmic_mixins,
-                                    styleTokensClassNames,
-                                    styleTokensClassNames_antd_5_hostless
+                                    styleTokensClassNames
                                   )}
                                 />
                               </div>
@@ -796,8 +787,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
 
@@ -826,8 +816,7 @@ function PlasmicProjects__RenderFunc(props) {
                                         projectcss.root_reset_tags,
                                         projectcss.plasmic_default_styles,
                                         projectcss.plasmic_mixins,
-                                        styleTokensClassNames,
-                                        styleTokensClassNames_antd_5_hostless
+                                        styleTokensClassNames
                                       )}
                                     />
                                   </div>
@@ -842,8 +831,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
                                 </div>
@@ -921,8 +909,7 @@ function PlasmicProjects__RenderFunc(props) {
                             projectcss.root_reset_tags,
                             projectcss.plasmic_default_styles,
                             projectcss.plasmic_mixins,
-                            styleTokensClassNames,
-                            styleTokensClassNames_antd_5_hostless
+                            styleTokensClassNames
                           )}
                         />
 
@@ -1000,8 +987,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                     usePlasmicTheme={true}
                                   />
@@ -1017,8 +1003,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
 
@@ -1033,8 +1018,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
                                 </SliderWrapper>
@@ -1051,8 +1035,7 @@ function PlasmicProjects__RenderFunc(props) {
                                 projectcss.root_reset_tags,
                                 projectcss.plasmic_default_styles,
                                 projectcss.plasmic_mixins,
-                                styleTokensClassNames,
-                                styleTokensClassNames_antd_5_hostless
+                                styleTokensClassNames
                               )}
                             />
 
@@ -1067,8 +1050,7 @@ function PlasmicProjects__RenderFunc(props) {
                                 projectcss.root_reset_tags,
                                 projectcss.plasmic_default_styles,
                                 projectcss.plasmic_mixins,
-                                styleTokensClassNames,
-                                styleTokensClassNames_antd_5_hostless
+                                styleTokensClassNames
                               )}
                             />
 
@@ -1105,8 +1087,7 @@ function PlasmicProjects__RenderFunc(props) {
                                     projectcss.root_reset_tags,
                                     projectcss.plasmic_default_styles,
                                     projectcss.plasmic_mixins,
-                                    styleTokensClassNames,
-                                    styleTokensClassNames_antd_5_hostless
+                                    styleTokensClassNames
                                   )}
                                 />
                               </div>
@@ -1133,8 +1114,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
 
@@ -1163,8 +1143,7 @@ function PlasmicProjects__RenderFunc(props) {
                                         projectcss.root_reset_tags,
                                         projectcss.plasmic_default_styles,
                                         projectcss.plasmic_mixins,
-                                        styleTokensClassNames,
-                                        styleTokensClassNames_antd_5_hostless
+                                        styleTokensClassNames
                                       )}
                                     />
                                   </div>
@@ -1179,8 +1158,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
                                 </div>
@@ -1256,8 +1234,7 @@ function PlasmicProjects__RenderFunc(props) {
                             projectcss.root_reset_tags,
                             projectcss.plasmic_default_styles,
                             projectcss.plasmic_mixins,
-                            styleTokensClassNames,
-                            styleTokensClassNames_antd_5_hostless
+                            styleTokensClassNames
                           )}
                         />
 
@@ -1335,8 +1312,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
 
@@ -1351,8 +1327,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
 
@@ -1367,8 +1342,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
                                 </SliderWrapper>
@@ -1385,8 +1359,7 @@ function PlasmicProjects__RenderFunc(props) {
                                 projectcss.root_reset_tags,
                                 projectcss.plasmic_default_styles,
                                 projectcss.plasmic_mixins,
-                                styleTokensClassNames,
-                                styleTokensClassNames_antd_5_hostless
+                                styleTokensClassNames
                               )}
                             />
 
@@ -1423,8 +1396,7 @@ function PlasmicProjects__RenderFunc(props) {
                                     projectcss.root_reset_tags,
                                     projectcss.plasmic_default_styles,
                                     projectcss.plasmic_mixins,
-                                    styleTokensClassNames,
-                                    styleTokensClassNames_antd_5_hostless
+                                    styleTokensClassNames
                                   )}
                                 />
                               </div>
@@ -1451,8 +1423,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
 
@@ -1481,8 +1452,7 @@ function PlasmicProjects__RenderFunc(props) {
                                         projectcss.root_reset_tags,
                                         projectcss.plasmic_default_styles,
                                         projectcss.plasmic_mixins,
-                                        styleTokensClassNames,
-                                        styleTokensClassNames_antd_5_hostless
+                                        styleTokensClassNames
                                       )}
                                     />
                                   </div>
@@ -1497,8 +1467,7 @@ function PlasmicProjects__RenderFunc(props) {
                                       projectcss.root_reset_tags,
                                       projectcss.plasmic_default_styles,
                                       projectcss.plasmic_mixins,
-                                      styleTokensClassNames,
-                                      styleTokensClassNames_antd_5_hostless
+                                      styleTokensClassNames
                                     )}
                                   />
                                 </div>
@@ -1703,8 +1672,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -1719,8 +1687,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -1735,8 +1702,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
                                         </SliderWrapper>
@@ -1753,8 +1719,7 @@ function PlasmicProjects__RenderFunc(props) {
                                         projectcss.root_reset_tags,
                                         projectcss.plasmic_default_styles,
                                         projectcss.plasmic_mixins,
-                                        styleTokensClassNames,
-                                        styleTokensClassNames_antd_5_hostless
+                                        styleTokensClassNames
                                       )}
                                     />
 
@@ -1791,8 +1756,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             projectcss.root_reset_tags,
                                             projectcss.plasmic_default_styles,
                                             projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
+                                            styleTokensClassNames
                                           )}
                                         />
                                       </div>
@@ -1819,8 +1783,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -1841,8 +1804,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 projectcss.root_reset_tags,
                                                 projectcss.plasmic_default_styles,
                                                 projectcss.plasmic_mixins,
-                                                styleTokensClassNames,
-                                                styleTokensClassNames_antd_5_hostless
+                                                styleTokensClassNames
                                               )}
                                             />
                                           </div>
@@ -1857,8 +1819,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
                                         </div>
@@ -1939,8 +1900,7 @@ function PlasmicProjects__RenderFunc(props) {
                                     projectcss.root_reset_tags,
                                     projectcss.plasmic_default_styles,
                                     projectcss.plasmic_mixins,
-                                    styleTokensClassNames,
-                                    styleTokensClassNames_antd_5_hostless
+                                    styleTokensClassNames
                                   )}
                                 />
 
@@ -2021,8 +1981,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -2037,8 +1996,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -2053,8 +2011,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
                                         </SliderWrapper>
@@ -2071,8 +2028,7 @@ function PlasmicProjects__RenderFunc(props) {
                                         projectcss.root_reset_tags,
                                         projectcss.plasmic_default_styles,
                                         projectcss.plasmic_mixins,
-                                        styleTokensClassNames,
-                                        styleTokensClassNames_antd_5_hostless
+                                        styleTokensClassNames
                                       )}
                                     />
 
@@ -2109,8 +2065,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             projectcss.root_reset_tags,
                                             projectcss.plasmic_default_styles,
                                             projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
+                                            styleTokensClassNames
                                           )}
                                         />
                                       </div>
@@ -2137,8 +2092,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -2159,8 +2113,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 projectcss.root_reset_tags,
                                                 projectcss.plasmic_default_styles,
                                                 projectcss.plasmic_mixins,
-                                                styleTokensClassNames,
-                                                styleTokensClassNames_antd_5_hostless
+                                                styleTokensClassNames
                                               )}
                                             />
                                           </div>
@@ -2175,8 +2128,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
                                         </div>
@@ -2257,8 +2209,7 @@ function PlasmicProjects__RenderFunc(props) {
                                     projectcss.root_reset_tags,
                                     projectcss.plasmic_default_styles,
                                     projectcss.plasmic_mixins,
-                                    styleTokensClassNames,
-                                    styleTokensClassNames_antd_5_hostless
+                                    styleTokensClassNames
                                   )}
                                 />
 
@@ -2339,8 +2290,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -2355,8 +2305,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -2371,8 +2320,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
                                         </SliderWrapper>
@@ -2389,8 +2337,7 @@ function PlasmicProjects__RenderFunc(props) {
                                         projectcss.root_reset_tags,
                                         projectcss.plasmic_default_styles,
                                         projectcss.plasmic_mixins,
-                                        styleTokensClassNames,
-                                        styleTokensClassNames_antd_5_hostless
+                                        styleTokensClassNames
                                       )}
                                     />
 
@@ -2427,8 +2374,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             projectcss.root_reset_tags,
                                             projectcss.plasmic_default_styles,
                                             projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
+                                            styleTokensClassNames
                                           )}
                                         />
                                       </div>
@@ -2455,8 +2401,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -2477,8 +2422,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 projectcss.root_reset_tags,
                                                 projectcss.plasmic_default_styles,
                                                 projectcss.plasmic_mixins,
-                                                styleTokensClassNames,
-                                                styleTokensClassNames_antd_5_hostless
+                                                styleTokensClassNames
                                               )}
                                             />
                                           </div>
@@ -2493,8 +2437,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
                                         </div>
@@ -2713,8 +2656,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -2729,8 +2671,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -2745,8 +2686,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
                                         </SliderWrapper>
@@ -2763,8 +2703,7 @@ function PlasmicProjects__RenderFunc(props) {
                                         projectcss.root_reset_tags,
                                         projectcss.plasmic_default_styles,
                                         projectcss.plasmic_mixins,
-                                        styleTokensClassNames,
-                                        styleTokensClassNames_antd_5_hostless
+                                        styleTokensClassNames
                                       )}
                                     />
 
@@ -2801,8 +2740,7 @@ function PlasmicProjects__RenderFunc(props) {
                                             projectcss.root_reset_tags,
                                             projectcss.plasmic_default_styles,
                                             projectcss.plasmic_mixins,
-                                            styleTokensClassNames,
-                                            styleTokensClassNames_antd_5_hostless
+                                            styleTokensClassNames
                                           )}
                                         />
                                       </div>
@@ -2829,8 +2767,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
 
@@ -2851,8 +2788,7 @@ function PlasmicProjects__RenderFunc(props) {
                                                 projectcss.root_reset_tags,
                                                 projectcss.plasmic_default_styles,
                                                 projectcss.plasmic_mixins,
-                                                styleTokensClassNames,
-                                                styleTokensClassNames_antd_5_hostless
+                                                styleTokensClassNames
                                               )}
                                             />
                                           </div>
@@ -2867,8 +2803,7 @@ function PlasmicProjects__RenderFunc(props) {
                                               projectcss.root_reset_tags,
                                               projectcss.plasmic_default_styles,
                                               projectcss.plasmic_mixins,
-                                              styleTokensClassNames,
-                                              styleTokensClassNames_antd_5_hostless
+                                              styleTokensClassNames
                                             )}
                                           />
                                         </div>

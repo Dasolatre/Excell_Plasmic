@@ -21,7 +21,6 @@ import {
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { BaseButton } from "@plasmicpkgs/react-aria/skinny/registerButton";
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: dFCW3EJJak7e5FJ1Eb9ZNV/projectcss
 import sty from "./PlasmicButton.module.css"; // plasmic-import: Bu5HROyf1jyv/css
@@ -140,8 +139,6 @@ function PlasmicButton__RenderFunc(props) {
     $refs
   });
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
   const [$ccVariants, setDollarCcVariants] = React.useState({
     hovered: false,
     pressed: false,
@@ -170,7 +167,6 @@ function PlasmicButton__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        styleTokensClassNames_antd_5_hostless,
         sty.root,
         {
           [sty.rootcolor_errorDestructive]: hasVariant(

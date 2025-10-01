@@ -146,7 +146,6 @@
   width: 16px;
   height: 317px;
   flex-shrink: 0;
-  display: none;
 }
 .img___5Z8Ja > picture > img {
   object-fit: contain;
@@ -448,6 +447,7 @@
   }
 }
 .card {
+  display: flex;
   flex-direction: column;
   position: absolute;
   width: 1280px;
@@ -461,7 +461,6 @@
   z-index: 999;
   background: #ffffff;
   row-gap: 48px;
-  display: none;
   border-radius: 24px;
   padding: 48px;
   margin: 0px;
@@ -471,7 +470,6 @@
     position: absolute;
     left: auto;
     top: -300%;
-    display: flex;
   }
 }
 .faQsTab:global(.__wab_instance) {
