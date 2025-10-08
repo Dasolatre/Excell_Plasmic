@@ -548,9 +548,8 @@ function PlasmicGetSolar__RenderFunc(props) {
                         typeof $steps["updateInputValue"] === "object" &&
                         typeof $steps["updateInputValue"].then === "function"
                       ) {
-                        $steps["updateInputValue"] = await $steps[
-                          "updateInputValue"
-                        ];
+                        $steps["updateInputValue"] =
+                          await $steps["updateInputValue"];
                       }
                     }).apply(null, eventArgs);
                   },
@@ -1066,7 +1065,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                                 }
                                 useChildren={(() => {
                                   try {
-                                    return $ctx.fetchedData;
+                                    return $ctx.fetchedData[0];
                                   } catch (e) {
                                     if (
                                       e instanceof TypeError ||
@@ -1087,8 +1086,8 @@ function PlasmicGetSolar__RenderFunc(props) {
                                   !_par
                                     ? []
                                     : Array.isArray(_par)
-                                    ? _par
-                                    : [_par])(
+                                      ? _par
+                                      : [_par])(
                                   (() => {
                                     try {
                                       return $ctx.fetchedData;
