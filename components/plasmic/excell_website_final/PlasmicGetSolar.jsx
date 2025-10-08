@@ -1065,7 +1065,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                                 }
                                 useChildren={(() => {
                                   try {
-                                    return $ctx.fetchedData[0];
+                                    return $ctx.fetchedData[0].name;
                                   } catch (e) {
                                     if (
                                       e instanceof TypeError ||
