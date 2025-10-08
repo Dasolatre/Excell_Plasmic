@@ -1003,6 +1003,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                                 "__wab_instance",
                                 sty.regionField
                               )}
+                              hidden={false}
                               label={
                                 <div
                                   className={classNames(
@@ -1011,7 +1012,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                                     sty.text__s6L48
                                   )}
                                 >
-                                  {"Region"}
+                                  {"Address"}
                                 </div>
                               }
                               name={"region"}
@@ -1036,19 +1037,27 @@ function PlasmicGetSolar__RenderFunc(props) {
                                   projectcss.plasmic_mixins,
                                   styleTokensClassNames
                                 )}
+                                mode={"single"}
                                 onChange={async (...eventArgs) => {
                                   generateStateOnChangeProp($state, [
                                     "regionDropdown",
                                     "value"
                                   ]).apply(null, eventArgs);
                                 }}
-                                options={[
-                                  {
-                                    value: "option1",
-                                    label: "Option 1",
-                                    type: "option"
+                                options={(() => {
+                                  try {
+                                    return $ctx.fetchedData;
+                                  } catch (e) {
+                                    if (
+                                      e instanceof TypeError ||
+                                      e?.plasmicType ===
+                                        "PlasmicUndefinedDataError"
+                                    ) {
+                                      return [];
+                                    }
+                                    throw e;
                                   }
-                                ]}
+                                })()}
                                 placeholder={
                                   <div
                                     className={classNames(
@@ -1063,20 +1072,7 @@ function PlasmicGetSolar__RenderFunc(props) {
                                 popupScopeClassName={
                                   sty["regionDropdown__popup"]
                                 }
-                                useChildren={(() => {
-                                  try {
-                                    return $ctx.fetchedData[0].name;
-                                  } catch (e) {
-                                    if (
-                                      e instanceof TypeError ||
-                                      e?.plasmicType ===
-                                        "PlasmicUndefinedDataError"
-                                    ) {
-                                      return false;
-                                    }
-                                    throw e;
-                                  }
-                                })()}
+                                useChildren={false}
                                 value={generateStateValueProp($state, [
                                   "regionDropdown",
                                   "value"
